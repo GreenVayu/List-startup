@@ -17,25 +17,6 @@ function newsletter() {
 }
 
 
-{/* 
-    
-    <div className="w-[923px] h-[252.58px] relative">
-  <div className="w-[149px] left-[88px] top-[211px] absolute text-stone-200 text-[22px] font-semibold font-['Mukta'] tracking-wide">Your email</div>
-  <div className="w-[923px] h-[151px] left-0 top-0 absolute">
-    <div className="w-[739px] left-[79px] top-[116px] absolute text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Subscribe to our newsletter and be the first to receive exclusive insights, expert tips, success stories, and upcoming event announcements. </div>
-    <div className="w-[923px] left-0 top-0 absolute text-center text-emerald-800 text-[46px] font-normal font-['Palanquin Dark'] leading-[46px] tracking-widest">Get the Latest Insights, Tips, and Success Stories Delivered to Your Inbox</div>
-  </div>
-  <div className="w-[741.23px] h-12 left-[91px] top-[204.58px] absolute">
-    <div className="w-[527.58px] h-12 left-0 top-0 absolute rounded-lg border border-black" />
-    <div className="w-[179px] h-12 px-7 py-3 left-[562.23px] top-0 absolute bg-emerald-800 rounded-lg flex-col justify-center items-center gap-4 inline-flex">
-      <div className="text-white text-base font-normal font-['Roboto'] leading-none">Subscribe</div>
-    </div>
-  </div>
-</div>
-
-    */}
-
-
 export default newsletter
 
 

@@ -5,9 +5,12 @@ import Contact from "./Contact.tsx";
 import NotFound from "./NotFound.tsx";
 import About from "./About.tsx";
 import Newsletter from "./newsletter.tsx";
+import Footer from "./Footer.tsx";
+import Ourstory from "./Ourstory.tsx";
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -16,9 +19,14 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
           <Route path="Newsletter" element={<Newsletter />} />
+          <Route path="Footer" element={<Footer />} />
+          <Route path="Ourstory" element={<Ourstory/>} />
         </Route>
       </Routes>
     </BrowserRouter>
+
+    {/* <Newsletter/> */}
+    </>
   );
 }
 
