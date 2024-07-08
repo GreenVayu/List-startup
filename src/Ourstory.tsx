@@ -141,58 +141,73 @@ function Ourstory() {
 
       </div>
 
-      {/* <div className="sec6 mt-20 mb-8 lg:mr-8">
+      <div className="sec6 mt-20 mb-8 lg:mr-8">
 
-        <div className="lg:bg-gradient-to-b from-emerald-800 via-slate-600 to-white lg:ml-4 pb-6">
+      <div className="bg-gray-100 py-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl leading-9 font-extrabold text-emerald-800">
+                        Why choose us?
+                    </h2>
+                    <p className="mt-4 text-lg leading-6 text-stone-500">
+                        Our Low Investment Start Up Programs are tailored to meet the needs of entrepreneurs at every stage of their journey.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                        <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
+                            <img src="/ourstory/MdBorderColor.png" alt="Icon" className="h-6" />
+                        </div>
+                        <h3 className="text-xl leading-7 font-semibold text-stone-500 mb-2 text-center">
+                            Practical Knowledge
+                        </h3>
+                        <p className="text-base leading-6 text-stone-500 text-center">
+                            We focus on practical, applied learning to better prepare you for real-world challenges.
+                        </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                        <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
+                            <img src="/ourstory/Vector3.png" alt="Icon" className="h-5" />
+                        </div>
 
-          <div className="py-6">
-            <div className="text-emerald-800 w-fit mx-auto lg:mx-0 lg:text-white text-xl font-semibold font-['Mukta'] tracking-widest lg:px-8 ">Why choose us?</div>
-            <div className="text-stone-500 text-sm font-normal font-['Orienta'] leading-6 tracking-wide px-6 py-4 w-fit mx-auto lg:mx-0">Our Low Investment Start Up Programs are tailored to meet the needs of entrepreneurs  at every stage of their journey.</div>
-          </div>
+                        <h3 className="text-xl leading-7 font-semibold text-stone-500 mb-2 text-center">
+                            Theory to Application
+                        </h3>
+                        <p className="text-base leading-6 text-stone-500 text-center">
+                            We focus on applied, and concise learning, replacing lengthy content with techniques relevant to real-world work.
+                        </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow-md">
 
-          <div className="space-y-8 lg:mt-0 lg:flex lg:space-y-0 lg:space-x-4 lg:ml-4 lg:mx-4">
+                    <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
+                            <img src="/ourstory/Vector4.png" alt="Icon" className="h-6" />
+                        </div>
 
+                        <h3 className="text-xl leading-7 font-semibold text-stone-500 mb-2 text-center">
+                            Interactive and Practical Examples
+                        </h3>
+                        <p className="text-base leading-6 text-stone-500 text-center">
+                            Our questions and examples are crafted to stimulate critical thinking and draw out ideas.
+                        </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg shadow-md">
 
-          <div className="shadow shadow-gray-500 w-fit py-4 bg-white rounded-lg mx-auto">
+                        <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
+                            <img src="/ourstory/MdOutlineVideoLibrary.png" alt="Icon" className="h-6" />
+                        </div>
 
-              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg w-fit px-2 py-2 mx-auto">
-                <img src="/ourstory/MdBorderColor.png" />
-              </div>
-              <div className="text-black text-lg font-semibold font-['Mukta'] leading-5 tracking-wide w-fit mx-auto py-2" >Practical Knowledge</div>
-              <div className="text-center text-stone-500 text-xs font-normal font-['Orienta'] leading-6 tracking-wide w-4/5 mx-auto lg:w-3/5" >We focus on practical, applied learning to better prepare you for real-world challenges.</div>
+                        <h3 className="text-xl leading-7 font-semibold text-stone-500 mb-2 text-center">
+                            Bite-Sized, Impactful Videos
+                        </h3>
+                        <p className="text-base leading-6 text-stone-500 text-center">
+                            We deliver our practical learning through creatively designed, and crisp videos, each under 10 minutes.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div className="shadow shadow-gray-500 w-fit py-4 bg-white rounded-lg mx-auto">
-
-              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg w-fit px-2 py-2 mx-auto">
-                <img src="/ourstory/Vector3.png" />
-              </div>
-              <div className="text-black text-lg font-semibold font-['Mukta'] leading-5 tracking-wide w-fit mx-auto py-2" >Theory to Application</div>
-              <div className="text-center text-stone-500 text-xs font-normal font-['Orienta'] leading-6 tracking-wide w-4/5 mx-auto lg:w-3/5" >We focus on applied, and concise learning, replacing lengthy content with techniques relevant to real-world work.</div>
-            </div>
-
-            <div className="shadow shadow-gray-500 w-fit py-4 bg-white rounded-lg mx-auto">
-
-              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg w-fit px-2 py-2 mx-auto">
-                <img src="/ourstory/Vector4.png" />
-              </div>
-              <div className="text-black text-lg font-semibold font-['Mukta'] leading-5 tracking-wide w-fit mx-auto py-2 " >Practical Examples</div>
-              <div className="text-center text-stone-500 text-xs font-normal font-['Orienta'] leading-6 tracking-wide w-4/5 mx-auto lg:w-3/5" >Our questions and examples are crafted to stimulate critical thinking and draw out ideas.</div>
-            </div>
-
-            <div className="shadow shadow-gray-500 w-fit py-4 bg-white rounded-lg mx-auto">
-
-              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg w-fit px-2 py-2 mx-auto">
-                <img src="/ourstory/Group.png" />
-              </div>
-              <div className="text-black text-lg font-semibold font-['Mukta'] leading-5 tracking-wide w-fit mx-auto py-2" >Bite-Sized, Impactful Videos</div>
-              <div className="text-center text-stone-500 text-xs font-normal font-['Orienta'] leading-6 tracking-wide w-4/5 mx-auto lg:w-3/5" >We deliver our practical learning through creatively designed, and crisp videos, each under 10 minutes.</div>
-            </div>
-
-          </div>
-
         </div>
-      </div> */}
+
+      </div>
 
 <div className="sec7 mt-12">
 
@@ -226,7 +241,7 @@ function Ourstory() {
 <div className="bg-white rounded-2xl shadow py-4 sm:flex sm:pb-6">
 
   <div>
-    <div className="text-emerald-800 text-xl font-semibold font-['Palanquin Dark'] leading-5 tracking-widest w-fit mx-auto px-16 sm:mt-4 sm:text-2xl lg:text-3xl sm:px-16">Start your journey with us</div>
+    <div className="text-emerald-800 text-xl font-semibold font-['Palanquin Dark'] leading-5 tracking-widest mt-4 w-fit mx-auto px-16 sm:mt-4 sm:text-2xl lg:text-3xl sm:px-16">Start your journey with us</div>
     <div className="text-stone-500 text-lg font-normal font-['Orienta'] leading-normal tracking-wide w-4/5 mx-auto mt-4 px-8">Explore our course and get in touch to begin your entrepreneurial journey today!</div>
 
     <div className="sm:flex w-fit sm:ml-16 lg:ml-24 lg:mt-6 sm:space-x-4 mx-auto">
@@ -357,19 +372,70 @@ export default Ourstory
 
 {/* 
 
-<div className="w-[1449px] h-[565px] relative">
-  <img className="w-[1449px] h-[562.94px] left-0 top-[2px] absolute" src="https://via.placeholder.com/1449x563" />
-  <div className="w-[1440px] h-[565px] left-[2px] top-0 absolute bg-black/opacity-75" />
-  <div className="w-[1001px] h-[268px] left-[222px] top-[149px] absolute justify-start items-center gap-24 inline-flex">
-    <div className="w-[497px] h-[250px] relative">
-      <div className="w-[442px] left-[55px] top-[55px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">At LIST Training Academy, we believe in the power of community. Our global network of entrepreneurs, mentors, and industry experts offers invaluable support and networking opportunities. By joining LIST, you become part of a vibrant community that encourages collaboration, innovation, and growth. </div>
-      <div className="left-0 top-0 absolute text-white text-8xl font-normal font-['Inter']">“</div>
-      <div className="w-[183px] h-[30px] left-[65px] top-[220px] absolute">
-        <div className="left-[44px] top-[9px] absolute text-white text-lg font-normal font-['Orienta'] leading-normal tracking-wide">– Abhishek Rai</div>
-        <img className="w-[30px] h-[30px] left-0 top-0 absolute rounded-full" src="https://via.placeholder.com/30x30" />
+<div className="w-[1441px] h-[560px] px-[121px] py-24 bg-gradient-to-b from-emerald-800 via-slate-600 to-white justify-start items-start gap-2.5 inline-flex">
+  <div className="w-[1199px] h-[368px] relative">
+    <div className="w-[732px] h-[94px] left-[3px] top-0 absolute">
+      <div className="left-0 top-0 absolute text-emerald-800 text-[38px] font-semibold font-['Mukta'] tracking-widest">Why choose us?</div>
+      <div className="w-[732px] left-0 top-[66px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">Our Low Investment Start Up Programs are tailored to meet the needs of entrepreneurs  at every stage of their journey. </div>
+    </div>
+    <div className="w-[1199px] h-[232px] left-0 top-[136px] absolute">
+      <div className="w-[272px] h-[232px] left-[927px] top-0 absolute">
+        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
+          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
+          <div className="w-[214px] h-[151px] left-[39px] top-[40px] absolute">
+            <div className="w-[196px] left-0 top-[69px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">We deliver our practical learning through creatively designed, and crisp videos, each under 10 minutes.</div>
+            <div className="w-[152px] left-[62px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Bite-Sized, Impactful Videos</div>
+            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[4.43px] absolute origin-top-left rotate-180 flex-col justify-center items-center inline-flex" />
+          </div>
+        </div>
+        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
+          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
+          <div className="w-6 h-6 left-[10px] top-[9px] absolute" />
+        </div>
+      </div>
+      <div className="w-[272px] h-[232px] left-[309px] top-0 absolute">
+        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
+          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
+          <div className="w-[196px] h-[153px] left-[39px] top-[38px] absolute">
+            <div className="w-[196px] left-0 top-[71px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">We focus on applied, and concise learning, replacing lengthy content with techniques relevant to real-world work.</div>
+            <div className="w-28 left-[65px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Theory to Application</div>
+            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[6.43px] absolute origin-top-left rotate-180 flex-col justify-start items-start inline-flex" />
+          </div>
+        </div>
+        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
+          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
+          <div className="w-6 h-6 left-[10px] top-[9px] absolute" />
+        </div>
+      </div>
+      <div className="w-[272px] h-[232px] left-[618px] top-0 absolute">
+        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
+          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
+          <div className="w-[196px] h-[141px] left-[39px] top-[32px] absolute">
+            <div className="w-[196px] left-0 top-[77px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">Our questions and examples are crafted to stimulate critical thinking and draw out ideas.</div>
+            <div className="w-28 left-[65px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Interactive and Practical Examples</div>
+            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[12.43px] absolute origin-top-left rotate-180 flex-col justify-center items-center inline-flex" />
+          </div>
+        </div>
+        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
+          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
+          <div className="w-6 h-6 left-[10px] top-[9px] absolute" />
+        </div>
+      </div>
+      <div className="w-[272px] h-[232px] left-0 top-0 absolute">
+        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
+          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
+          <div className="w-[196px] h-[132px] left-[39px] top-[41px] absolute">
+            <div className="w-[196px] left-0 top-[68px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">We focus on practical, applied learning to better prepare you for real-world challenges.</div>
+            <div className="w-28 left-[65px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Practical Knowledge</div>
+            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[3.43px] absolute origin-top-left rotate-180 flex-col justify-center items-center inline-flex" />
+          </div>
+        </div>
+        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
+          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
+          <div className="w-[22px] h-[22px] left-[11px] top-[10px] absolute" />
+        </div>
       </div>
     </div>
-    <img className="w-[408px] h-[268px]" src="https://via.placeholder.com/408x268" />
   </div>
 </div>
 
