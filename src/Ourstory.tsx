@@ -3,7 +3,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 function Ourstory() {
   return (
-    <div className="container">
+    <div className="container w-fit mx-auto">
 
       <div className="sec1">
 
@@ -74,6 +74,31 @@ function Ourstory() {
           </div>
         </div>
       </div>
+
+{/* <div className="hidden md:block sec4 mt-12">
+   <div className="relative">
+    <img src='/ourstory/Colorpalette1.jpg' className='hidden md:block w-full' />
+
+    <div className="bg-black opacity-75 w-full h-full md:flex">
+
+      <div className="absolute top-[0px]">
+
+      <div className="text-black md:text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide px-4">“At LIST Training Academy, we believe in the power of community. Our global network of entrepreneurs, mentors, and industry experts offers invaluable support and networking opportunities. By joining LIST, you become part of a vibrant community that encourages collaboration, innovation, and growth.</div>
+
+<div className='flex mx-6 my-4'>
+      <div>
+        <img src='/ourstory/abhi.jpg' className="rounded-2xl h-[25px] w-auto"/>
+      </div>
+      <div className="text-black md:text-white text-lg font-normal font-['Orienta'] leading-normal tracking-wide ml-4">– Abhishek Rai</div>
+      </div>
+
+      </div>
+      <div className='w-fit'><img src="/ourstory/17.jpg"/></div>
+      </div>
+
+
+   </div>
+</div> */}
 
       <div className="sec5 lg:w-[70vw] mt-20">
 
@@ -210,8 +235,8 @@ function Ourstory() {
     </div>
   </div>
 
-  <div className=' hidden w-fit mx-12 my-6 border-l-2 border-gray-500 sm:block '>
-    <img src='/ourstory/logoLISTv4.png' className=''/>
+  <div className=' hidden w-fit mx-12 my-12 md:my-6 border-l-2 border-gray-500 sm:block '>
+    <img src='/ourstory/logoLISTv4.png' className='sm:py-12 md:py-0'/>
   </div>
 
 </div>
@@ -227,7 +252,7 @@ function Ourstory() {
 </div>
 
 <section className="text-gray-600 body-font">
-  <div className="container px-5 py-16 sm:py-24 mx-auto">
+  <div className="container px-5 py-16 sm:py-24 mx-auto md:px-0 md:ml-2 lg:ml-0">
     <div className="flex flex-wrap -m-4 -mt-12">
 
       <div className="p-4 md:w-1/3">
@@ -276,7 +301,7 @@ function Ourstory() {
 
 </div>
 
-{/* <div className="sec10 mt-12 mb-8 relative">
+<div className="sec10 relative">
    
     <div className="text-black opacity-70 text-xl font-semibold font-['Mukta'] tracking-widest w-fit mx-auto" > Success stories </div>
 
@@ -320,9 +345,7 @@ function Ourstory() {
 </section>      
 
     
-</div> */}
-
-
+</div>
 
 
     </div>
@@ -334,64 +357,20 @@ export default Ourstory
 
 {/* 
 
-<div className="w-[1197px] h-[467px] justify-start items-start gap-[38px] inline-flex">
-  <div className="relative">
-    <div className="left-0 top-0 absolute text-emerald-800 text-[38px] font-semibold font-['Mukta'] tracking-widest">Latest Blogs & posts</div>
-    <div className="left-[1083px] top-[27px] absolute text-sky-700 text-base font-normal font-['Mukta'] underline leading-none tracking-wide">View all</div>
+<div className="w-[1449px] h-[565px] relative">
+  <img className="w-[1449px] h-[562.94px] left-0 top-[2px] absolute" src="https://via.placeholder.com/1449x563" />
+  <div className="w-[1440px] h-[565px] left-[2px] top-0 absolute bg-black/opacity-75" />
+  <div className="w-[1001px] h-[268px] left-[222px] top-[149px] absolute justify-start items-center gap-24 inline-flex">
+    <div className="w-[497px] h-[250px] relative">
+      <div className="w-[442px] left-[55px] top-[55px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">At LIST Training Academy, we believe in the power of community. Our global network of entrepreneurs, mentors, and industry experts offers invaluable support and networking opportunities. By joining LIST, you become part of a vibrant community that encourages collaboration, innovation, and growth. </div>
+      <div className="left-0 top-0 absolute text-white text-8xl font-normal font-['Inter']">“</div>
+      <div className="w-[183px] h-[30px] left-[65px] top-[220px] absolute">
+        <div className="left-[44px] top-[9px] absolute text-white text-lg font-normal font-['Orienta'] leading-normal tracking-wide">– Abhishek Rai</div>
+        <img className="w-[30px] h-[30px] left-0 top-0 absolute rounded-full" src="https://via.placeholder.com/30x30" />
+      </div>
+    </div>
+    <img className="w-[408px] h-[268px]" src="https://via.placeholder.com/408x268" />
   </div>
-  <div className="w-[1196.88px] h-[366px] relative">
-    <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
-      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
-        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
-      </div>
-      <div className="w-[234px] h-[147px] left-[18px] top-[192px] absolute">
-        <div className="w-[234px] h-[84px] left-0 top-0 absolute flex-col justify-start items-start gap-[18px] inline-flex">
-          <div className="text-black text-sm font-semibold font-['Mukta'] tracking-wide">How to do Rapid Prototyping?</div>
-          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
-        </div>
-        <div className="w-[114px] h-8 px-7 py-3 left-[57px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
-          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
-        </div>
-      </div>
-    </div>
-    <div className="w-[266.88px] h-[364px] left-[620px] top-0 absolute">
-      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
-        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
-      </div>
-      <div className="w-[234px] h-[147px] left-[18px] top-[192px] absolute">
-        <div className="w-[234px] h-[84px] left-0 top-0 absolute flex-col justify-start items-start gap-[18px] inline-flex">
-          <div className="text-black text-sm font-semibold font-['Mukta'] tracking-wide">How to do Rapid Prototyping?</div>
-          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
-        </div>
-        <div className="w-[114px] h-8 px-7 py-3 left-[57px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
-          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
-        </div>
-      </div>
-    </div>
-    <div className="w-[266.88px] h-[364px] left-[310px] top-[2px] absolute">
-      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
-        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
-      </div>
-      <div className="w-[234px] h-[147px] left-[18px] top-[190px] absolute">
-        <div className="w-[234px] h-[86px] left-0 top-0 absolute flex-col justify-start items-start gap-[13px] inline-flex">
-          <div className="w-[226px] text-black text-sm font-semibold font-['Mukta'] leading-[15px] tracking-wide">Why design thinking is important for your start-up?</div>
-          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
-        </div>
-        <div className="w-[114px] h-8 px-7 py-3 left-[56px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
-          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
-        </div>
-      </div>
-    </div>
-    <div className="w-[266.88px] h-[364px] left-[930px] top-[2px] absolute">
-      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
-        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
-      </div>
-      <div className="w-[234px] h-[147px] left-[18px] top-[190px] absolute">
-        <div className="w-[234px] h-[86px] left-0 top-0 absolute flex-col justify-start items-start gap-[13px] inline-flex">
-          <div className="w-[226px] text-black text-sm font-semibold font-['Mukta'] leading-[15px] tracking-wide">Why design thinking is important for your start-up?</div>
-          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
-        </div>
-        <div className="w-[114px] h-8 px-7 py-3 left-[56px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
-          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
-        </div> 
+</div>
+
         */}

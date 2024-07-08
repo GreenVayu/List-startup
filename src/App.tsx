@@ -4,7 +4,6 @@ import Home from "./Home.tsx";
 import Contact from "./Contact.tsx";
 import NotFound from "./NotFound.tsx";
 import About from "./About.tsx";
-import Newsletter from "./newsletter.tsx";
 import Footer from "./Footer.tsx";
 import Ourstory from "./Ourstory.tsx";
 
@@ -18,14 +17,13 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="Newsletter" element={<Newsletter />} />
           <Route path="Footer" element={<Footer />} />
           <Route path="Ourstory" element={<Ourstory/>} />
         </Route>
       </Routes>
     </BrowserRouter>
 
-    {/* <Newsletter/> */}
+    
     </>
   );
 }
