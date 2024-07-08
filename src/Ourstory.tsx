@@ -116,7 +116,7 @@ function Ourstory() {
 
       </div>
 
-      <div className="sec6 mt-20 mb-8 lg:mr-8">
+      {/* <div className="sec6 mt-20 mb-8 lg:mr-8">
 
         <div className="lg:bg-gradient-to-b from-emerald-800 via-slate-600 to-white lg:ml-4 pb-6">
 
@@ -167,7 +167,7 @@ function Ourstory() {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
 <div className="sec7 mt-12">
 
@@ -219,19 +219,68 @@ function Ourstory() {
 
 </div>
 
-{/* <div className="sec9 mt-12" >
+<div className="sec9 mt-12 lg:ml-0" >
 
+<div className="relative">
+  <div className="text-emerald-800 text-xl font-semibold font-['Mukta'] tracking-widest w-fit mx-auto sm:absolute sm:top-[0px] sm:left-[25px]" >Latest Blogs & posts</div>
+  <div className="hidden sm:block text-sky-700 text-base font-normal font-['Mukta'] underline leading-none tracking-wide w-fit absolute top-[0px] right-[25px]">View all</div>
+</div>
 
+<section className="text-gray-600 body-font">
+  <div className="container px-5 py-16 sm:py-24 mx-auto">
+    <div className="flex flex-wrap -m-4 -mt-12">
 
-</div> */}
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/ourstory/Rectangle.jpg" alt="blog"/>
+          <div className="p-6">
+            <h1 className="text-black text-sm font-semibold font-['Mukta'] tracking-wide mb-3">How to do Rapid Prototyping?</h1>
+            <p className="text-sm font-normal font-['Orienta'] leading-5 tracking-wide mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</p>
 
-<div className="sec10 mt-12 mb-8 relative">
+            <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4" > <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-2 py-2" >Read more</button></div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/ourstory/Rectangle.jpg" alt="blog"/>
+          <div className="p-6">
+            <h1 className="text-black text-sm font-semibold font-['Mukta'] tracking-wide mb-3">How to do Rapid Prototyping?</h1>
+            <p className="text-sm font-normal font-['Orienta'] leading-5 tracking-wide mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</p>
+
+            <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4" > <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-2 py-2" >Read more</button></div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/ourstory/Rectangle.jpg" alt="blog"/>
+          <div className="p-6">
+            <h1 className="text-black text-sm font-semibold font-['Mukta'] tracking-wide mb-3">How to do Rapid Prototyping?</h1>
+            <p className="text-sm font-normal font-['Orienta'] leading-5 tracking-wide mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</p>
+
+            <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4" > <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-2 py-2" >Read more</button></div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div className="sm:hidden text-sky-700 text-base font-normal font-['Mukta'] underline leading-none tracking-wide w-fit mx-auto mt-4">View all</div>
+  </div>
+</section>
+
+</div>
+
+{/* <div className="sec10 mt-12 mb-8 relative">
    
     <div className="text-black opacity-70 text-xl font-semibold font-['Mukta'] tracking-widest w-fit mx-auto" > Success stories </div>
 
-    <div className="">
-
-    <section className="container sm:px-6 py-4 mx-auto">
+    <section className="container sm:px-6 py-4 mx-auto mt-4">
   <div className="grid gap-4 mb-8 md:grid-cols-1 lg:grid-cols-3">
 
     <div className="flex items-center py-4 px-2 sm:p-4 bg-white border-2 border-gray-200 rounded-lg shadow-sm h-fit w-fit">
@@ -270,9 +319,11 @@ function Ourstory() {
   </div>
 </section>      
 
-    </div>
     
-</div>
+</div> */}
+
+
+
 
     </div>
   )
@@ -283,59 +334,64 @@ export default Ourstory
 
 {/* 
 
-<div className="w-[345.67px] h-40 relative">
-  <div className="w-[345.67px] h-40 left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-  <div className="w-[38.01px] h-[7.60px] left-[153.21px] top-[86.64px] absolute">
+<div className="w-[1197px] h-[467px] justify-start items-start gap-[38px] inline-flex">
+  <div className="relative">
+    <div className="left-0 top-0 absolute text-emerald-800 text-[38px] font-semibold font-['Mukta'] tracking-widest">Latest Blogs & posts</div>
+    <div className="left-[1083px] top-[27px] absolute text-sky-700 text-base font-normal font-['Mukta'] underline leading-none tracking-wide">View all</div>
   </div>
-  <div className="w-[164px] left-[153px] top-[36px] absolute text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">“I highly recommend this website to anyone looking to enhance their knowledge.”</div>
-  <div className="left-[153px] top-[104px] absolute text-zinc-700 text-[13px] font-semibold font-['Poppins'] uppercase">Neha SHARMA</div>
-  <div className="w-[92.02px] h-[0.40px] left-[153.21px] top-[97.44px] absolute bg-zinc-700" />
-  <img className="w-[96.48px] h-[96.48px] left-[27.88px] top-[27.70px] absolute" src="https://via.placeholder.com/96x96" />
-</div>
-
-  ----------------------
-
-<div className="w-[1081.67px] h-[310.03px] flex-col justify-start items-start gap-2.5 inline-flex">
-  <div className="h-[310.03px] relative">
-    <div className="w-[1081.67px] h-40 left-0 top-[150px] absolute">
-      <div className="w-[345.67px] h-40 left-0 top-0 absolute">
-        <div className="w-[345.67px] h-40 left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-        <div className="w-[286.12px] h-[96.48px] left-[30px] top-[32px] absolute">
-          <div className="w-[164px] h-[86.58px] left-[122.12px] top-[5px] absolute">
-            <div className="w-[38.01px] h-[7.60px] left-[0.21px] top-[49.22px] absolute">
-            </div>
-            <div className="w-[164px] left-0 top-0 absolute text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">"I highly recommend this website to anyone looking to enhance their knowledge."</div>
-            <div className="left-0 top-[66.58px] absolute text-zinc-700 text-[13px] font-semibold font-['Poppins'] uppercase">Neha SHARMA</div>
-            <div className="w-[92.02px] h-[0.40px] left-[0.21px] top-[60.02px] absolute bg-zinc-700" />
-          </div>
-          <img className="w-[96.48px] h-[96.48px] left-0 top-0 absolute" src="https://via.placeholder.com/96x96" />
-        </div>
+  <div className="w-[1196.88px] h-[366px] relative">
+    <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
+      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
+        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
       </div>
-      <div className="w-[345.67px] h-40 left-[368px] top-0 absolute">
-        <div className="w-[345.67px] h-40 left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-        <div className="w-[38.01px] h-[7.60px] left-[150.21px] top-[83.64px] absolute">
+      <div className="w-[234px] h-[147px] left-[18px] top-[192px] absolute">
+        <div className="w-[234px] h-[84px] left-0 top-0 absolute flex-col justify-start items-start gap-[18px] inline-flex">
+          <div className="text-black text-sm font-semibold font-['Mukta'] tracking-wide">How to do Rapid Prototyping?</div>
+          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
         </div>
-        <div className="w-[164px] left-[150px] top-[30px] absolute text-stone-500 text-[10px] font-normal font-['Poppins']">“I highly recommend this website to anyone looking to enhance their knowledge.”</div>
-        <div className="left-[150px] top-[101px] absolute text-zinc-700 text-[13px] font-semibold font-['Poppins'] uppercase">Rahul Jha</div>
-        <div className="w-[92.02px] h-[0.40px] left-[150.21px] top-[94.44px] absolute bg-zinc-700" />
-        <img className="w-[96.48px] h-[96.48px] left-[27.88px] top-[27.70px] absolute" src="https://via.placeholder.com/96x96" />
-      </div>
-      <div className="w-[345.67px] h-40 left-[736px] top-0 absolute">
-        <div className="w-[345.67px] h-40 left-0 top-0 absolute bg-white rounded-[10px] shadow" />
-        <div className="w-[38.01px] h-[7.60px] left-[153.21px] top-[86.64px] absolute">
+        <div className="w-[114px] h-8 px-7 py-3 left-[57px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
+          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
         </div>
-        <div className="w-[164px] left-[153px] top-[36px] absolute text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">“I highly recommend this website to anyone looking to enhance their knowledge.”</div>
-        <div className="left-[153px] top-[104px] absolute text-zinc-700 text-[13px] font-semibold font-['Poppins'] uppercase">Neha SHARMA</div>
-        <div className="w-[92.02px] h-[0.40px] left-[153.21px] top-[97.44px] absolute bg-zinc-700" />
-        <img className="w-[96.48px] h-[96.48px] left-[27.88px] top-[27.70px] absolute" src="https://via.placeholder.com/96x96" />
       </div>
     </div>
-    <div className="w-[897px] h-[63px] left-[92px] top-0 absolute">
-      <div className="left-[313px] top-0 absolute text-black/opacity-70 text-[38px] font-semibold font-['Mukta'] tracking-widest">Success stories</div>
-      <div className="w-[276px] h-[0px] left-0 top-[32px] absolute border border-black"></div>
-      <div className="w-[276px] h-[0px] left-[621px] top-[32px] absolute border border-black"></div>
+    <div className="w-[266.88px] h-[364px] left-[620px] top-0 absolute">
+      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
+        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
+      </div>
+      <div className="w-[234px] h-[147px] left-[18px] top-[192px] absolute">
+        <div className="w-[234px] h-[84px] left-0 top-0 absolute flex-col justify-start items-start gap-[18px] inline-flex">
+          <div className="text-black text-sm font-semibold font-['Mukta'] tracking-wide">How to do Rapid Prototyping?</div>
+          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
+        </div>
+        <div className="w-[114px] h-8 px-7 py-3 left-[57px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
+          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-    */ }
+    <div className="w-[266.88px] h-[364px] left-[310px] top-[2px] absolute">
+      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
+        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
+      </div>
+      <div className="w-[234px] h-[147px] left-[18px] top-[190px] absolute">
+        <div className="w-[234px] h-[86px] left-0 top-0 absolute flex-col justify-start items-start gap-[13px] inline-flex">
+          <div className="w-[226px] text-black text-sm font-semibold font-['Mukta'] leading-[15px] tracking-wide">Why design thinking is important for your start-up?</div>
+          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
+        </div>
+        <div className="w-[114px] h-8 px-7 py-3 left-[56px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
+          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
+        </div>
+      </div>
+    </div>
+    <div className="w-[266.88px] h-[364px] left-[930px] top-[2px] absolute">
+      <div className="w-[266.88px] h-[364px] left-0 top-0 absolute">
+        <div className="w-[265.90px] h-[363.05px] left-[0.97px] top-[0.95px] absolute bg-white rounded-[7px]" />
+      </div>
+      <div className="w-[234px] h-[147px] left-[18px] top-[190px] absolute">
+        <div className="w-[234px] h-[86px] left-0 top-0 absolute flex-col justify-start items-start gap-[13px] inline-flex">
+          <div className="w-[226px] text-black text-sm font-semibold font-['Mukta'] leading-[15px] tracking-wide">Why design thinking is important for your start-up?</div>
+          <div className="w-[234px] text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....</div>
+        </div>
+        <div className="w-[114px] h-8 px-7 py-3 left-[56px] top-[115px] absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
+          <div className="text-emerald-800 text-xs font-normal font-['Roboto']">Read more</div>
+        </div> 
+        */}
