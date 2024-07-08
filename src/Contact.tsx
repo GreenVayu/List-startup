@@ -1,6 +1,14 @@
-import React from 'react'
-
 function Contact() {
+
+  const persons = [
+    { id: 1, name: 'Person 1', image: '/ourcoaches/abhi.jpg', description: 'Description 1' },
+    { id: 2, name: 'Person 2', image: '/ourcoaches/abhi.jpg', description: 'Description 2' },
+    { id: 3, name: 'Person 3', image: '/ourcoaches/abhi.jpg', description: 'Description 3' },
+    { id: 4, name: 'Person 4', image: '/ourcoaches/abhi.jpg', description: 'Description 4' },
+    { id: 5, name: 'Person 5', image: '/ourcoaches/abhi.jpg', description: 'Description 5' },
+];
+
+
   return (
     <div className="contactsbody">
 
@@ -14,50 +22,9 @@ function Contact() {
           </div>
         </div>
 
-    <div className='sec2 mt-20' >
+<div className="sec2">
 
-        <div className='flex flex-col lg:flex-row lg:w-fit lg:mx-auto'>
-
-        <div className='lg:mt-4'>
-          <div className='flex justify-center items-center'><img src='/ourcoaches/abhi.jpg' className='w-60 lg:h-[217px]'/></div>
-          <div className=" text-emerald-800 text-2xl font-semibold font-['Mukta'] mx-auto w-fit px-2 py-4 " > ABHISHEK RAI</div>
-          <div className="-mt-8 text-center text-emerald-800 text-sm font-normal font-['Orienta'] mx-auto px-4 py-4 leading-4 tracking-wide" > Start-up Coach, Entrepreneur, Founder GreenVayu, LIST</div>
-        </div>
-
-        <div className='mt-4'>
-          <div className='flex justify-center items-center'><img src='/ourcoaches/rohit.png' className='w-60'/></div>
-          <div className=" text-emerald-800 text-2xl font-semibold font-['Mukta'] mx-auto w-fit px-2 py-4 " > ROHIT GUPTA</div>
-          <div className="-mt-8 text-center text-emerald-800 text-sm font-normal font-['Orienta'] mx-auto px-4 py-4 leading-4 tracking-wide" > Start-up Coach, Entrepreneur, Founder GreenVayu, LIST</div>
-        </div>
-
-        <div className='mt-4'>
-          <div className='flex justify-center items-center'><img src='/ourcoaches/richa.png' className='w-60'/></div>
-          <div className=" text-emerald-800 text-2xl font-semibold font-['Mukta'] mx-auto w-fit px-2 py-4 " > RICHA KHARE</div>
-          <div className="-mt-8 text-center text-emerald-800 text-sm font-normal font-['Orienta'] mx-auto px-4 py-4 leading-4 tracking-wide" > Start-up Coach, Entrepreneur, Founder GreenVayu, LIST</div>
-        </div>
-
-
-        </div>
-
-        <div className='flex flex-col mx-auto w-fit lg:flex-row lg:mt-4'>
-
-       <div className='mt-4'>
-          <div className='flex justify-center items-center'><img src='/ourcoaches/niraj.jpg' className='w-60'/></div>
-          <div className=" text-emerald-800 text-2xl font-semibold font-['Mukta'] mx-auto w-fit px-2 py-4 " > NIRAJ SHRIVASTAVA</div>
-          <div className="-mt-8 text-center text-emerald-800 text-sm font-normal font-['Orienta'] mx-auto px-4 py-4 leading-4 tracking-wide" > Start-up Coach, Entrepreneur, Founder GreenVayu, LIST</div>
-        </div>
-
-        <div className='mt-4'>
-          <div className='flex justify-center items-center'><img src='/ourcoaches/sudeep.jpg' className='w-60'/></div>
-          <div className=" text-emerald-800 text-2xl font-semibold font-['Mukta'] mx-auto w-fit px-2 py-4 " >SUDEEP SHRIVASTAVA</div>
-          <div className="-mt-8 text-center text-emerald-800 text-sm font-normal font-['Orienta'] mx-auto px-4 py-4 leading-4 tracking-wide" > Start-up Coach, Entrepreneur, Founder GreenVayu, LIST</div>
-        </div>
-
-        </div>
-
-    </div>
-
-
+</div>
 
     <hr className="border-t-2 border-gray-500 my-4" />
 

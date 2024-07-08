@@ -1,4 +1,5 @@
 import StarIcon from "@mui/icons-material/Star";
+import { Button } from "@mui/material";
 
 function Ourstory() {
   const cardData = [
@@ -54,18 +55,18 @@ function Ourstory() {
         <div className="w-4/5 mx-auto mt-6 h-[2px] opacity-20 border-2 border-stone-500"></div>
       </div>
 
-      <div className="sec2 mt-6 sm:mx-auto sm:flex sm:space-x-4">
+      <div className="sec2 mt-6 sm:mx-auto sm:flex md:space-x-2 ">
         <img
-          src="/ourcoaches/purpose.jpg"
-          className=" hidden w-[30vw] rounded-lg pl-8 mt-8 sm:block sm:ml-6 sm:w-[34vw] sm:h-auto"
+          src="/ourstory/Colorpalette.jpg"
+          className=" hidden w-[30vw] rounded-lg pl-4 ml-4 mt-8 md:block "
         />
 
         <div className="flex flex-col mx-auto border-gray-900 sm:mt-6">
-          <div className="text-emerald-800 text-xl font-semibold font-['Mukta'] tracking-widest mx-auto w-fit">
+          <div className="text-emerald-800 text-xl font-semibold font-['Mukta'] tracking-widest mx-auto w-fit md:text-2xl lg:text-3xl">
             Our <span className="border-b-2 border-yellow-500">Mission</span>
           </div>
 
-          <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-8 tracking-wide w-4/5 mx-auto mt-4 pl-4">
+          <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-8 tracking-wide w-4/5 mx-auto mt-4 pl-4 md:pl-2 lg:text-lg lg:leading-8">
             LIST was created to empower individuals to pursue their
             entrepreneurial dreams with confidence.
             <br />
@@ -78,9 +79,9 @@ function Ourstory() {
 
           <div className="mx-auto mt-6 bg-emerald-800 rounded-lg w-fit sm:pl-0 sm:ml-16">
             {" "}
-            <button className="text-white text-base font-normal font-['Roboto'] px-4 py-2">
-              Meet Our Coaches{" "}
-            </button>
+            <Button variant="contained" color="success">
+                Meet Our Coaches
+              </Button>
           </div>
         </div>
       </div>
@@ -92,37 +93,91 @@ function Ourstory() {
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-around px-6 py-4 mt-8">
+            <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
+              <div className="flex justify-center mb-4">
+                <img
+                  src="/ourstory/MdStackedBarChart.png"
+                  alt="Empowerment Icon"
+                  className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg p-2"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-2">
+                Step-by-Step Guidance
+              </h3>
+              <p className="text-center text-stone-500">
+                We provide structured guidance to help you take the first step
+                and navigate the complexities of starting a business.
+              </p>
+            </div>
 
-        <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
-          <div className="flex justify-center mb-4">
-            <img src='/ourstory/MdStackedBarChart.png' alt="Empowerment Icon" className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg p-2" />
+            <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
+              <div className="flex justify-center mb-4">
+                <img
+                  src="/ourstory/Group.png"
+                  alt="Support Icon"
+                  className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg p-2"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-2">
+                Tailored Resources
+              </h3>
+              <p className="text-center text-stone-500">
+                Access customized resources and tools designed to meet your
+                specific entrepreneurial needs.
+              </p>
+            </div>
+
+            <div className="bg-white shadow-md p-6 rounded-lg flex-1">
+              <div className="flex justify-center mb-4">
+                <img
+                  src="/ourstory/MdPeopleAlt.png"
+                  alt="Education Icon"
+                  className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg p-2"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-2">
+                Community Support
+              </h3>
+              <p className="text-center text-stone-500">
+                Join a vibrant community of like-minded individuals who share
+                your entrepreneurial spirit and are ready to support each other.
+              </p>
+            </div>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2">Step-by-Step Guidance</h3>
-          <p className="text-center text-stone-500">We provide structured guidance to help you take the first step and navigate the complexities of starting a business.</p>
         </div>
-
-        <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
-          <div className="flex justify-center mb-4">
-            <img src='/ourstory/Group.png' alt="Support Icon" className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg p-2" />
-          </div>
-          <h3 className="text-xl font-semibold text-center mb-2">Tailored Resources</h3>
-          <p className="text-center text-stone-500">Access customized resources and tools designed to meet your specific entrepreneurial needs.</p>
-        </div>
-
-        <div className="bg-white shadow-md p-6 rounded-lg flex-1">
-          <div className="flex justify-center mb-4">
-            <img src='/ourstory/MdPeopleAlt.png' alt="Education Icon" className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-lg p-2" />
-          </div>
-          <h3 className="text-xl font-semibold text-center mb-2">Community Support</h3>
-          <p className="text-center text-stone-500">Join a vibrant community of like-minded individuals who share your entrepreneurial spirit and are ready to support each other.</p>
-        </div>
-
       </div>
 
+      <div className="sec4 mt-16">
+        <div className="bg-[url('/ourstory/Colorpalette1.jpg')] bg-cover bg-center">
+          <div className="bg-black opacity-60 md:flex w-fit mx-auto">
+            <div className="firstdiv md:w-1/2 md:p-6 md:ml-5 lg:p-16 p-6">
+              <div className="text-white text-base font-normal leading-normal tracking-wide">
+                “At LIST Training Academy, we believe in the power of community.
+                Our global network of entrepreneurs, mentors, and industry
+                experts offers invaluable support and networking opportunities.
+                By joining LIST, you become part of a vibrant community that
+                encourages collaboration, innovation, and growth.
+              </div>
+
+              <div className="flex p-4 mt-4">
+                <div className="w-fit opacity-100">
+                  <img
+                    src="/ourstory/abhi.jpg"
+                    className="w-[38px] h-[35px] rounded-full"
+                  />
+                </div>
+                <div className="text-white text-lg md:text-xl font-normal leading-normal tracking-wide ml-2 md:ml-4">
+                  – Abhishek Rai
+                </div>
+              </div>
+            </div>
+
+            <div className="hidden md:block w-1/2 my-auto md:pr-16 lg:pl-16">
+              <img src="/ourstory/17.jpg" className="" />
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="sec4"></div>
 
       <div className="sec5 mt-20 ml-6">
         <div className="mb-4 w-fit mx-auto p-4">
@@ -135,32 +190,60 @@ function Ourstory() {
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-around">
-        <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
-          <div className="flex justify-center mb-4">
-            <img src='/ourstory/Vector.png' alt="Empowerment Icon" className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-2" />
+          <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
+            <div className="flex justify-center mb-4">
+              <img
+                src="/ourstory/Vector.png"
+                alt="Empowerment Icon"
+                className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-2"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-center mb-2">
+              Empowerment
+            </h3>
+            <p className="text-center text-stone-500">
+              We believe in equipping individuals with the knowledge & tools
+              needed to take control of their entrepreneurial journey and
+              achieve their goals.
+            </p>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2">Empowerment</h3>
-          <p className="text-center text-stone-500">We believe in equipping individuals with the knowledge & tools needed to take control of their entrepreneurial journey and achieve their goals.</p>
-        </div>
-        <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
-          <div className="flex justify-center mb-4">
-            <img src='/ourstory/Vector1.png' alt="Support Icon" className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-4" />
+          <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
+            <div className="flex justify-center mb-4">
+              <img
+                src="/ourstory/Vector1.png"
+                alt="Support Icon"
+                className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-4"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-center mb-2">Support</h3>
+            <p className="text-center text-stone-500">
+              We offer unwavering assistance and guidance, ensuring that
+              entrepreneurs receive the encouragement and help necessary to
+              navigate challenges and succeed.
+            </p>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2">Support</h3>
-          <p className="text-center text-stone-500">We offer unwavering assistance and guidance, ensuring that entrepreneurs receive the encouragement and help necessary to navigate challenges and succeed.</p>
-        </div>
-        <div className="bg-white shadow-md p-6 rounded-lg flex-1">
-          <div className="flex justify-center mb-4">
-            <img src='/ourstory/Vector2.png' alt="Education Icon" className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-4" />
+          <div className="bg-white shadow-md p-6 rounded-lg flex-1">
+            <div className="flex justify-center mb-4">
+              <img
+                src="/ourstory/Vector2.png"
+                alt="Education Icon"
+                className="w-12 h-12 bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-4"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-center mb-2 text-black">
+              Education
+            </h3>
+            <p className="text-center text-stone-500">
+              Through our workshops, mentorship programs, and resources, we
+              provide valuable learning opportunities that empower entrepreneurs
+              to continuously develop their skills and knowledge.
+            </p>
           </div>
-          <h3 className="text-xl font-semibold text-center mb-2 text-black">Education</h3>
-          <p className="text-center text-stone-500">Through our workshops, mentorship programs, and resources, we provide valuable learning opportunities that empower entrepreneurs to continuously develop their skills and knowledge.</p>
         </div>
-      </div>
       </div>
 
       <div className="sec6 mt-20 mb-8 lg:mr-8">
-        <div className="bg-gray-100 py-12 md:ml-3 lg:ml-6">
+        <div className="bg-gradient-to-b from-emerald-100 py-12 md:ml-3 lg:ml-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl leading-9 font-extrabold text-emerald-800">
@@ -263,14 +346,11 @@ function Ourstory() {
             </div>
 
             <div className="sm:flex w-fit sm:ml-16 lg:ml-24 lg:mt-6 sm:space-x-4 mx-auto">
-              <div className="mx-auto bg-emerald-800 rounded-lg w-fit mt-4">
-                {" "}
-                <button className="text-white text-base font-normal font-['Roboto'] leading-none px-4 py-4">
-                  Explore Courses
-                </button>
-              </div>
-              <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4">
-                {" "}
+              <Button variant="contained" color="success">
+                Explore Courses
+              </Button>
+
+              <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-0">
                 <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-4 py-2">
                   Get in touch
                 </button>
@@ -512,10 +592,19 @@ export default Ourstory;
 {
   /* 
 
-<div className="w-[244.78px] h-[172px] relative">
-  <div className="w-[244.78px] left-0 top-[110px] absolute text-center text-stone-500 text-xs font-normal font-['Orienta'] leading-[18px] tracking-wide">We believe in equipping individuals with the knowledge & tools needed to take control of their entrepreneurial journey and achieve their goals.</div>
-  <div className="w-[49.37px] h-12 left-[97.70px] top-0 absolute">
-    <div className="w-[49.37px] h-12 left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full" />
+<div className="w-[1449px] h-[565px] relative">
+  <img className="w-[1449px] h-[562.94px] left-0 top-[2px] absolute" src="https://via.placeholder.com/1449x563" />
+  <div className="w-[1440px] h-[565px] left-[2px] top-0 absolute bg-black/opacity-75" />
+  <div className="w-[1001px] h-[268px] left-[222px] top-[149px] absolute justify-start items-center gap-24 inline-flex">
+    <div className="w-[497px] h-[250px] relative">
+      <div className="w-[442px] left-[55px] top-[55px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">At LIST Training Academy, we believe in the power of community. Our global network of entrepreneurs, mentors, and industry experts offers invaluable support and networking opportunities. By joining LIST, you become part of a vibrant community that encourages collaboration, innovation, and growth. </div>
+      <div className="left-0 top-0 absolute text-white text-8xl font-normal font-['Inter']">“</div>
+      <div className="w-[183px] h-[30px] left-[65px] top-[220px] absolute">
+        <div className="left-[44px] top-[9px] absolute text-white text-lg font-normal font-['Orienta'] leading-normal tracking-wide">– Abhishek Rai</div>
+        <img className="w-[30px] h-[30px] left-0 top-0 absolute rounded-full" src="https://via.placeholder.com/30x30" />
+      </div>
+    </div>
+    <img className="w-[408px] h-[268px]" src="https://via.placeholder.com/408x268" />
   </div>
 </div>
 
