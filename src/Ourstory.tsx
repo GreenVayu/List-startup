@@ -172,7 +172,7 @@ function Ourstory() {
 
 <div className=' space-y-4 lg:flex lg:space-y-0 lg:space-x-8 w-fit mx-10 sm:mx-auto'>
 
-<div className='lg:ml-6 lg:mr-4'>
+<div className='lg:ml-8 lg:mr-6'>
   <div className="text-emerald-800 text-2xl font-bold font-['Palanquin Dark'] tracking-[3.75px] w-fit mx-auto lg:text-3xl lg:w-4/5">500+</div>
   <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide w-fit mx-auto pr-2 lg:pr-0 lg:text-xl"> Start - up ideas</div>
 </div>
@@ -195,6 +195,29 @@ function Ourstory() {
 
 </div>
 
+<div className="sec8 mt-12">
+
+<div className="bg-white rounded-2xl shadow py-4 sm:flex sm:pb-6">
+
+  <div>
+    <div className="text-emerald-800 text-xl font-semibold font-['Palanquin Dark'] leading-5 tracking-widest w-fit mx-auto px-12 sm:mt-4 sm:text-2xl lg:text-3xl sm:px-16">Start your journey with us</div>
+    <div className="text-stone-500 text-lg font-normal font-['Orienta'] leading-normal tracking-wide w-4/5 mx-auto mt-4 px-8">Explore our course and get in touch to begin your entrepreneurial journey today!</div>
+
+    <div className="sm:flex w-fit sm:ml-16 lg:ml-24 lg:mt-6 sm:space-x-4 mx-auto">
+    <div className="mx-auto bg-emerald-800 rounded-lg w-fit mt-4" > <button className="text-white text-base font-normal font-['Roboto'] leading-none px-4 py-4" >Explore Courses</button></div>
+    <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4" > <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-4 py-2" >Get in touch</button></div>
+    </div>
+  </div>
+
+  <div className=' hidden w-fit mx-12 my-6 border-l-2 border-gray-500 sm:block '>
+    <img src='/ourstory/logoLISTv4.png' className=''/>
+  </div>
+
+</div>
+
+
+</div>
+
     </div>
   )
 }
@@ -204,22 +227,43 @@ export default Ourstory
 
 {/* 
 
-<div className="w-[1052px] h-[202px] relative">
-  <div className="w-[196px] h-[154px] left-0 top-0 absolute">
-    <div className="left-0 top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">500+</div>
-    <div className="left-[33px] top-[143px] absolute text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Start - up ideas</div>
+<div className="w-[1198px] h-[385px] relative">
+  <div className="w-[1198px] h-[385px] left-0 top-0 absolute">
+    <div className="w-[1198px] h-[385px] left-0 top-0 absolute bg-white rounded-2xl shadow">
+      <div className="w-[1184px] h-[464px] left-[-1593px] top-[-3381px] absolute">
+        <div className="w-[360px] h-[360px] left-[396px] top-[102px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
+          <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
+          <div className="w-[278px] h-[19px] bg-zinc-300" />
+        </div>
+        <div className="w-[197px] h-12 px-[26px] pt-3.5 pb-[15px] left-[756px] top-[7px] absolute rounded-2xl border border-neutral-500 justify-center items-center inline-flex">
+          <div className="text-center text-neutral-500 text-base font-normal font-['Inter']">Click to know more</div>
+        </div>
+        <div className="w-[360px] h-[360px] left-0 top-[104px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
+          <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
+          <div className="w-[278px] h-[19px] bg-zinc-300" />
+        </div>
+        <div className="w-[360px] h-[360px] left-[798px] top-[102px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
+          <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
+          <div className="w-[278px] h-[19px] bg-zinc-300" />
+        </div>
+        <div className="w-[46px] h-[46px] left-[1138px] top-[259px] absolute">
+          <div className="w-[46px] h-[46px] left-0 top-0 absolute bg-white rounded-full shadow" />
+        </div>
+        <div className="left-0 top-0 absolute text-black/opacity-70 text-[38px] font-semibold font-['Mukta'] tracking-widest">Our coaches</div>
+      </div>
+      <div className="w-[470px] h-[102.03px] left-[72px] top-[63px] absolute text-emerald-800 text-5xl font-semibold font-['Palanquin Dark'] leading-[48px] tracking-widest">Start your journey with us </div>
+      <img className="w-[439px] h-[247px] left-[723px] top-[69px] absolute" src="https://via.placeholder.com/439x247" />
+      <div className="w-[412px] left-[75px] top-[180px] absolute text-stone-500 text-lg font-normal font-['Orienta'] leading-normal tracking-wide">Explore our course and get in touch to begin your entrepreneurial journey today!</div>
+    </div>
+    <div className="w-[339px] h-[0px] left-[688px] top-[23px] absolute origin-top-left rotate-90 border border-black/opacity-10"></div>
   </div>
-  <div className="w-[236px] h-[202px] left-[268px] top-0 absolute">
-    <div className="left-0 top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">1500+</div>
-    <div className="w-[230px] left-[3px] top-[143px] absolute text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Subscribers joined our program and became self employed</div>
-  </div>
-  <div className="w-[172px] h-[202px] left-[576px] top-0 absolute">
-    <div className="left-[21px] top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">25+</div>
-    <div className="w-[172px] left-0 top-[143px] absolute text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">The Ratio of theory and  practice in each course</div>
-  </div>
-  <div className="w-[232px] h-[202px] left-[820px] top-0 absolute">
-    <div className="left-[29px] top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">99%</div>
-    <div className="w-[232px] left-0 top-[143px] absolute text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Discover the various funding options available for your startup</div>
+  <div className="w-[385px] h-12 left-[76px] top-[283px] absolute">
+    <div className="w-[179px] h-12 px-7 py-3 left-0 top-0 absolute bg-emerald-800 rounded-lg flex-col justify-center items-center gap-4 inline-flex">
+      <div className="text-white text-base font-normal font-['Roboto'] leading-none">Explore Courses</div>
+    </div>
+    <div className="w-[179px] h-12 px-7 py-3 left-[206px] top-0 absolute bg-white rounded-lg border border-emerald-800 flex-col justify-center items-center gap-4 inline-flex">
+      <div className="text-emerald-800 text-base font-normal font-['Roboto']">Get in touch</div>
+    </div>
   </div>
 </div>
 
