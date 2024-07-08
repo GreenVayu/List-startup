@@ -36,13 +36,13 @@ const Layout = () => {
             ref={mobileMenu}
             className={`${
               isMobileMenuOpen ? "" : "hidden"
-            } md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 navigation-menu`}
+            } md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 navigation-menu bg-gray-100 md:bg-white`}
           >
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.link}
-                className="py-2 px-3 block hover:text-gray-800"
+                className="py-2 px-3 block hover:text-white hover:bg-gray-800 hover:rounded-md"
               >
                 {item.name}
               </Link>
