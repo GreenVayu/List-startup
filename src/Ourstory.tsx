@@ -168,7 +168,32 @@ function Ourstory() {
         </div>
       </div>
 
+<div className="sec7 mt-12">
 
+<div className=' space-y-4 lg:flex lg:space-y-0 lg:space-x-8 w-fit mx-10 sm:mx-auto'>
+
+<div className='lg:ml-6 lg:mr-4'>
+  <div className="text-emerald-800 text-2xl font-bold font-['Palanquin Dark'] tracking-[3.75px] w-fit mx-auto lg:text-3xl lg:w-4/5">500+</div>
+  <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide w-fit mx-auto pr-2 lg:pr-0 lg:text-xl"> Start - up ideas</div>
+</div>
+
+<div className=''>
+  <div className="text-emerald-800 text-2xl font-bold font-['Palanquin Dark'] tracking-[3.75px] w-fit mx-auto sm:text-3xl">1500+</div>
+  <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide w-4/5 mx-auto pl-2 lg:text-xl "> Subscribers joined our program and became self employed</div>
+</div>
+
+<div>
+  <div className="text-emerald-800 text-2xl font-bold font-['Palanquin Dark'] tracking-[3.75px] w-fit mx-auto sm:text-3xl">25+</div>
+  <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide w-4/5 mx-auto pl-2 lg:text-xl">The Ratio of theory and  practice in each course</div>
+</div>
+
+<div>
+  <div className="text-emerald-800 text-2xl font-bold font-['Palanquin Dark'] tracking-[3.75px] w-fit mx-auto sm:text-3xl">99%</div>
+  <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide w-4/5 mx-auto pl-2 lg:text-xl">Discover the various funding options available for your startup</div>
+</div>
+</div>
+
+</div>
 
     </div>
   )
@@ -179,87 +204,22 @@ export default Ourstory
 
 {/* 
 
-<div className="w-[272px] h-[232px] relative">
-  <div className="w-[272px] h-[232px] left-0 top-0 absolute">
-    <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-    <div className="w-[196px] h-[132px] left-[39px] top-[41px] absolute">
-      <div className="w-[196px] left-0 top-[68px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">We focus on practical, applied learning to better prepare you for real-world challenges.</div>
-      <div className="w-28 left-[65px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Practical Knowledge</div>
-      <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[3.43px] absolute origin-top-left rotate-180 flex-col justify-center items-center inline-flex" />
-    </div>
+<div className="w-[1052px] h-[202px] relative">
+  <div className="w-[196px] h-[154px] left-0 top-0 absolute">
+    <div className="left-0 top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">500+</div>
+    <div className="left-[33px] top-[143px] absolute text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Start - up ideas</div>
   </div>
-  <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
-    <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
-    <div className="w-[22px] h-[22px] left-[11px] top-[10px] absolute" />
+  <div className="w-[236px] h-[202px] left-[268px] top-0 absolute">
+    <div className="left-0 top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">1500+</div>
+    <div className="w-[230px] left-[3px] top-[143px] absolute text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Subscribers joined our program and became self employed</div>
   </div>
-</div>
-
-  ----------
-    
-<div className="w-[1441px] h-[560px] px-[121px] py-24 bg-gradient-to-b from-emerald-800 via-slate-600 to-white justify-start items-start gap-2.5 inline-flex">
-  <div className="w-[1199px] h-[368px] relative">text-emerald-800 text-[38px] font-semibold font-['Mukta'] tracking-widest
-    <div className="w-[732px] h-[94px] left-[3px] top-0 absolute">
-      <div className="left-0 top-0 absolute text-emerald-800 text-[38px] font-semibold font-['Mukta'] tracking-widest">Why choose us?</div>
-      <div className="w-[732px] left-0 top-[66px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">Our Low Investment Start Up Programs are tailored to meet the needs of entrepreneurs  at every stage of their journey. </div>
-    </div>
-    <div className="w-[1199px] h-[232px] left-0 top-[136px] absolute">
-      <div className="w-[272px] h-[232px] left-[927px] top-0 absolute">
-        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
-          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-          <div className="w-[214px] h-[151px] left-[39px] top-[40px] absolute">
-            <div className="w-[196px] left-0 top-[69px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">We deliver our practical learning through creatively designed, and crisp videos, each under 10 minutes.</div>
-            <div className="w-[152px] left-[62px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Bite-Sized, Impactful Videos</div>
-            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[4.43px] absolute origin-top-left rotate-180 flex-col justify-center items-center inline-flex" />
-          </div>
-        </div>
-        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
-          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
-          <div className="w-6 h-6 left-[10px] top-[9px] absolute" />
-        </div>
-      </div>
-      <div className="w-[272px] h-[232px] left-[309px] top-0 absolute">
-        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
-          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-          <div className="w-[196px] h-[153px] left-[39px] top-[38px] absolute">
-            <div className="w-[196px] left-0 top-[71px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">We focus on applied, and concise learning, replacing lengthy content with techniques relevant to real-world work.</div>
-            <div className="w-28 left-[65px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Theory to Application</div>
-            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[6.43px] absolute origin-top-left rotate-180 flex-col justify-start items-start inline-flex" />
-          </div>
-        </div>
-        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
-          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
-          <div className="w-6 h-6 left-[10px] top-[9px] absolute" />
-        </div>
-      </div>
-      <div className="w-[272px] h-[232px] left-[618px] top-0 absolute">
-        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
-          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-          <div className="w-[196px] h-[141px] left-[39px] top-[32px] absolute">
-            <div className="w-[196px] left-0 top-[77px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">Our questions and examples are crafted to stimulate critical thinking and draw out ideas.</div>
-            <div className="w-28 left-[65px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Interactive and Practical Examples</div>
-            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[12.43px] absolute origin-top-left rotate-180 flex-col justify-center items-center inline-flex" />
-          </div>
-        </div>
-        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
-          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
-          <div className="w-6 h-6 left-[10px] top-[9px] absolute" />
-        </div>
-      </div>
-      <div className="w-[272px] h-[232px] left-0 top-0 absolute">
-        <div className="w-[272px] h-[232px] left-0 top-0 absolute">
-          <div className="w-[272px] h-[232px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-          <div className="w-[196px] h-[132px] left-[39px] top-[41px] absolute">
-            <div className="w-[196px] left-0 top-[68px] absolute text-stone-500 text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">We focus on practical, applied learning to better prepare you for real-world challenges.</div>
-            <div className="w-28 left-[65px] top-0 absolute text-stone-500 text-lg font-semibold font-['Mukta'] leading-[18px] tracking-wide">Practical Knowledge</div>
-            <div className="w-[26.77px] h-[29.62px] left-[35.36px] top-[3.43px] absolute origin-top-left rotate-180 flex-col justify-center items-center inline-flex" />
-          </div>
-        </div>
-        <div className="w-[44.05px] h-[41.96px] left-[39px] top-[38px] absolute">
-          <div className="w-[44.05px] h-[41.96px] left-0 top-0 absolute bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl" />
-          <div className="w-[22px] h-[22px] left-[11px] top-[10px] absolute" />
-        </div>
-      </div>
-    </div>
+  <div className="w-[172px] h-[202px] left-[576px] top-0 absolute">
+    <div className="left-[21px] top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">25+</div>
+    <div className="w-[172px] left-0 top-[143px] absolute text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">The Ratio of theory and  practice in each course</div>
+  </div>
+  <div className="w-[232px] h-[202px] left-[820px] top-0 absolute">
+    <div className="left-[29px] top-0 absolute text-emerald-800 text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">99%</div>
+    <div className="w-[232px] left-0 top-[143px] absolute text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Discover the various funding options available for your startup</div>
   </div>
 </div>
 
