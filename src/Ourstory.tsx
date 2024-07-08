@@ -27,25 +27,25 @@ function Ourstory() {
       <div className="sec1">
         <div className="text-center mt-6">
           <div className="w-fit mx-auto">
-            <span className="text-emerald-800 text-sm font-semibold font-['Palanquin Dark'] leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
+            <span className="text-emerald-800 text-sm font-semibold leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
               OUR{" "}
             </span>
-            <span className="text-amber-500 text-sm font-semibold font-['Palanquin Dark'] leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
+            <span className="text-amber-500 text-sm font-semibold leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
               JOURNEY
             </span>
-            <span className="text-emerald-800 text-sm font-semibold font-['Palanquin Dark'] leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
+            <span className="text-emerald-800 text-sm font-semibold leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
               {" "}
               FOR YOUR{" "}
             </span>
           </div>
           <div className="w-fit mx-auto xsm:mt-2">
-            <span className="text-emerald-800 text-sm font-semibold font-['Palanquin Dark'] leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
+            <span className="text-emerald-800 text-sm font-semibold leading-8 tracking-widest xsm:text-2xl sm:text-3xl">
               LOW-INVESTMENT STARTUP
             </span>
           </div>
         </div>
 
-        <div className="text-center text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide mt-2 w-4/5 sm:w-4/5 mx-auto">
+        <div className="text-center text-stone-500 text-base font-normal leading-normal tracking-wide mt-2 w-4/5 sm:w-4/5 mx-auto">
           LIST was born from a simple desire: to empower individuals to pursue
           their entrepreneurial dreams with confidence and support. LIST was
           established as a guiding light, dispelling uncertainty and fostering a
@@ -62,11 +62,11 @@ function Ourstory() {
         />
 
         <div className="flex flex-col mx-auto border-gray-900 sm:mt-6">
-          <div className="text-emerald-800 text-xl font-semibold font-['Mukta'] tracking-widest mx-auto w-fit md:text-2xl lg:text-3xl">
+          <div className="text-emerald-800 text-xl font-semibold tracking-widest mx-auto w-fit md:text-2xl lg:text-3xl">
             Our <span className="border-b-2 border-yellow-500">Mission</span>
           </div>
 
-          <div className="text-stone-500 text-base font-normal font-['Orienta'] leading-8 tracking-wide w-4/5 mx-auto mt-4 pl-4 md:pl-2 lg:text-lg lg:leading-8">
+          <div className="text-stone-500 text-base font-normal leading-8 tracking-wide w-4/5 mx-auto mt-4 pl-4 md:pl-2 lg:text-lg lg:leading-8">
             LIST was created to empower individuals to pursue their
             entrepreneurial dreams with confidence.
             <br />
@@ -88,7 +88,7 @@ function Ourstory() {
 
       <div className="sec3 mt-20 sm:relative">
         <div className="sm:bg-[url('/ourstory/cp.png')] sm:bg-cover sm:block sm:py-10 ">
-          <div className="text-xl font-semibold font-['Mukta'] tracking-widest w-fit mx-auto text-amber-500 lg:text-2xl sm:text-white sm:absolute sm:left-[40px] sm:top-[25px]">
+          <div className="text-xl font-semibold tracking-widest w-fit mx-auto text-amber-500 lg:text-2xl sm:text-white sm:absolute sm:left-[40px] sm:top-[25px]">
             How we work?
           </div>
 
@@ -181,10 +181,10 @@ function Ourstory() {
 
       <div className="sec5 mt-20 ml-6">
         <div className="mb-4 w-fit mx-auto p-4">
-          <div className="text-center text-emerald-800 text-2xl font-semibold font-['Mukta'] tracking-widest md:text-3xl">
+          <div className="text-center text-emerald-800 text-2xl font-semibold tracking-widest md:text-3xl">
             Our Values
           </div>
-          <div className="text-center text-stone-500 text-xl font-normal font-['Orienta'] leading-6 tracking-wide md:text-2xl">
+          <div className="text-center text-stone-500 text-xl font-normal leading-6 tracking-wide md:text-2xl">
             We are here only for you
           </div>
         </div>
@@ -337,10 +337,10 @@ function Ourstory() {
       <div className="sec8 mt-12">
         <div className="bg-white rounded-2xl shadow py-4 sm:flex sm:pb-6">
           <div>
-            <div className="text-emerald-800 text-xl font-semibold font-['Palanquin Dark'] leading-5 tracking-widest mt-4 w-fit mx-auto px-16 sm:mt-4 sm:text-2xl lg:text-3xl sm:px-16">
+            <div className="text-emerald-800 text-xl font-semibold leading-5 tracking-widest mt-4 w-fit mx-auto px-16 sm:mt-4 sm:text-2xl lg:text-3xl sm:px-16">
               Start your journey with us
             </div>
-            <div className="text-stone-500 text-lg font-normal font-['Orienta'] leading-normal tracking-wide w-4/5 mx-auto mt-4 px-8">
+            <div className="text-stone-500 text-lg font-normal leading-normal tracking-wide w-4/5 mx-auto mt-4 px-8">
               Explore our course and get in touch to begin your entrepreneurial
               journey today!
             </div>
@@ -351,7 +351,7 @@ function Ourstory() {
               </Button>
 
               <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-0">
-                <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-4 py-2">
+                <button className="text-emerald-800 text-base font-normal px-4 py-2">
                   Get in touch
                 </button>
               </div>
@@ -366,10 +366,10 @@ function Ourstory() {
 
       <div className="sec9 mt-12 lg:ml-0">
         <div className="relative">
-          <div className="text-emerald-800 text-xl font-semibold font-['Mukta'] tracking-widest w-fit mx-auto sm:absolute sm:top-[0px] sm:left-[25px]">
+          <div className="text-emerald-800 text-xl font-semibold tracking-widest w-fit mx-auto sm:absolute sm:top-[0px] sm:left-[25px]">
             Latest Blogs & posts
           </div>
-          <div className="hidden sm:block text-sky-700 text-base font-normal font-['Mukta'] underline leading-none tracking-wide w-fit absolute top-[0px] right-[25px]">
+          <div className="hidden sm:block text-sky-700 text-base font-normal underline leading-none tracking-wide w-fit absolute top-[0px] right-[25px]">
             View all
           </div>
         </div>
@@ -385,10 +385,10 @@ function Ourstory() {
                     alt="blog"
                   />
                   <div className="p-6">
-                    <h1 className="text-black text-sm font-semibold font-['Mukta'] tracking-wide mb-3">
+                    <h1 className="text-black text-sm font-semibold tracking-wide mb-3">
                       How to do Rapid Prototyping?
                     </h1>
-                    <p className="text-sm font-normal font-['Orienta'] leading-5 tracking-wide mb-3">
+                    <p className="text-sm font-normal leading-5 tracking-wide mb-3">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the.....
@@ -396,7 +396,7 @@ function Ourstory() {
 
                     <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4">
                       {" "}
-                      <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-2 py-2">
+                      <button className="text-emerald-800 text-base font-normal px-2 py-2">
                         Read more
                       </button>
                     </div>
@@ -412,10 +412,10 @@ function Ourstory() {
                     alt="blog"
                   />
                   <div className="p-6">
-                    <h1 className="text-black text-sm font-semibold font-['Mukta'] tracking-wide mb-3">
+                    <h1 className="text-black text-sm font-semibold tracking-wide mb-3">
                       How to do Rapid Prototyping?
                     </h1>
-                    <p className="text-sm font-normal font-['Orienta'] leading-5 tracking-wide mb-3">
+                    <p className="text-sm font-normal leading-5 tracking-wide mb-3">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the.....
@@ -423,7 +423,7 @@ function Ourstory() {
 
                     <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4">
                       {" "}
-                      <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-2 py-2">
+                      <button className="text-emerald-800 text-base font-normal px-2 py-2">
                         Read more
                       </button>
                     </div>
@@ -439,10 +439,10 @@ function Ourstory() {
                     alt="blog"
                   />
                   <div className="p-6">
-                    <h1 className="text-black text-sm font-semibold font-['Mukta'] tracking-wide mb-3">
+                    <h1 className="text-black text-sm font-semibold tracking-wide mb-3">
                       How to do Rapid Prototyping?
                     </h1>
-                    <p className="text-sm font-normal font-['Orienta'] leading-5 tracking-wide mb-3">
+                    <p className="text-sm font-normal leading-5 tracking-wide mb-3">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the.....
@@ -450,7 +450,7 @@ function Ourstory() {
 
                     <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-4">
                       {" "}
-                      <button className="text-emerald-800 text-base font-normal font-['Roboto'] px-2 py-2">
+                      <button className="text-emerald-800 text-base font-normal px-2 py-2">
                         Read more
                       </button>
                     </div>
@@ -458,7 +458,7 @@ function Ourstory() {
                 </div>
               </div>
             </div>
-            <div className="sm:hidden text-sky-700 text-base font-normal font-['Mukta'] underline leading-none tracking-wide w-fit mx-auto mt-4">
+            <div className="sm:hidden text-sky-700 text-base font-normal underline leading-none tracking-wide w-fit mx-auto mt-4">
               View all
             </div>
           </div>
@@ -466,7 +466,7 @@ function Ourstory() {
       </div>
 
       <div className="sec10 relative">
-        <div className="text-black opacity-70 text-xl font-semibold font-['Mukta'] tracking-widest w-fit mx-auto">
+        <div className="text-black opacity-70 text-xl font-semibold tracking-widest w-fit mx-auto">
           {" "}
           Success stories{" "}
         </div>
@@ -588,25 +588,3 @@ function Ourstory() {
 }
 
 export default Ourstory;
-
-{
-  /* 
-
-<div className="w-[1449px] h-[565px] relative">
-  <img className="w-[1449px] h-[562.94px] left-0 top-[2px] absolute" src="https://via.placeholder.com/1449x563" />
-  <div className="w-[1440px] h-[565px] left-[2px] top-0 absolute bg-black/opacity-75" />
-  <div className="w-[1001px] h-[268px] left-[222px] top-[149px] absolute justify-start items-center gap-24 inline-flex">
-    <div className="w-[497px] h-[250px] relative">
-      <div className="w-[442px] left-[55px] top-[55px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">At LIST Training Academy, we believe in the power of community. Our global network of entrepreneurs, mentors, and industry experts offers invaluable support and networking opportunities. By joining LIST, you become part of a vibrant community that encourages collaboration, innovation, and growth. </div>
-      <div className="left-0 top-0 absolute text-white text-8xl font-normal font-['Inter']">“</div>
-      <div className="w-[183px] h-[30px] left-[65px] top-[220px] absolute">
-        <div className="left-[44px] top-[9px] absolute text-white text-lg font-normal font-['Orienta'] leading-normal tracking-wide">– Abhishek Rai</div>
-        <img className="w-[30px] h-[30px] left-0 top-0 absolute rounded-full" src="https://via.placeholder.com/30x30" />
-      </div>
-    </div>
-    <img className="w-[408px] h-[268px]" src="https://via.placeholder.com/408x268" />
-  </div>
-</div>
-
-        */
-}
