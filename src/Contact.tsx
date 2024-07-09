@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Button } from "@mui/material";
 
 function Contact() {
@@ -189,3 +190,12 @@ function Contact() {
 }
 
 export default Contact;
+=======
+function Contact() {
+  return (
+    <div>Under Construction </div>
+  )
+}
+
+export default Contact
+>>>>>>> sohail

@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 import Layout from "./Layout.tsx";
 import Home from "./Home.tsx";
 import Contact from "./Contact.tsx";
 import NotFound from "./NotFound.tsx";
 import About from "./About.tsx";
-import Newsletter from "./newsletter.tsx";
-import Footer from "./Footer.tsx";
 import Ourstory from "./Ourstory.tsx";
+import Coaches from "./ourcoaches.tsx";
+import Team from "./Team.tsx";
+
 
 function App() {
   return (
@@ -18,14 +20,14 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="Newsletter" element={<Newsletter />} />
-          <Route path="Footer" element={<Footer />} />
+          <Route path="ourCoaches" element={<Coaches />} />
           <Route path="Ourstory" element={<Ourstory/>} />
+          <Route path="Team" element={<Team/>} />
         </Route>
       </Routes>
     </BrowserRouter>
 
-    {/* <Newsletter/> */}
+    
     </>
   );
 }

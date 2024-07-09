@@ -2,11 +2,15 @@ import { useRef, useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, Container } from "@mui/material";
+import Newsletter from "./newsletter.tsx";
+import Footer from "./Footer.tsx";
+
 
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Contact", link: "/contact" },
+  { name: "Our Coaches", link: "/ourCoaches" },
 ];
 
 const Layout = () => {
@@ -52,6 +56,8 @@ const Layout = () => {
       </nav>
       <Box className="m-1 md:m-5 p-1 md:p-2">
         <Outlet />
+        <Newsletter/>
+        <Footer/>
       </Box>
     </Container>
   );
