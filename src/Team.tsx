@@ -74,7 +74,7 @@ function Team() {
 
 <div className='bg-gradient-to-r from-emerald-800 to-zinc-300 p-4'>
 
-      <h1 className="text-white text-xl font-semibold tracking-widest w-fit mx-auto mb-6 mt-6">ARCHITECTS <span className='border-b-2 border-amber-500'>AND STORY</span>TELLERS</h1>
+      <h1 className="text-white text-xl font-semibold tracking-widest w-fit text-center mb-6 mt-6 xmd:w-fit xmd:mx-auto">ARCHITECTS <span className='border-b-2 border-amber-500'>AND</span> <span className='text-center'>STORYTELLERS</span> </h1>
 
       <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
 
@@ -261,7 +261,7 @@ function Team() {
       
       <div className="sec5 bg-[url('/team/Colorpalette.png')] mt-12" >
 
-<h1 className="text-emerald-800 text-xl font-semibold tracking-widest border-b-2 border-amber-500 w-fit mx-auto mb-6">VIDEO PRODUCTION & EDITING</h1>
+<h1 className="text-emerald-800 text-xl font-semibold tracking-widest xmd:w-fit xmd:mx-auto mb-6 text-center">VIDEO <span className='border-b-2 border-amber-500'>PRODUCTION </span>& EDITING</h1>
 
 <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
 
