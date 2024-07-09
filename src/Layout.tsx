@@ -3,6 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, Container } from "@mui/material";
 import Newsletter from "./newsletter.tsx";
+import Footer from "./Footer.tsx";
 
 
 const navItems = [
@@ -56,6 +57,7 @@ const Layout = () => {
       <Box className="m-1 md:m-5 p-1 md:p-2">
         <Outlet />
         <Newsletter/>
+        <Footer/>
       </Box>
     </Container>
   );
