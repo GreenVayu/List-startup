@@ -4,6 +4,7 @@ import RocketIcon from "@mui/icons-material/Rocket";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
 
+
 interface Section2PicProps {
   alt: string;
   src: string;
