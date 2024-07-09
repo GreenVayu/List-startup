@@ -79,6 +79,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="text-gray-600 body-font py-10">
         <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#005D3E] mb-4">
           What is LIST?
@@ -126,8 +127,84 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <div className="sec3">
+
+      <div className="p-8 bg-gradient-to-br from-emerald-900 via-emerald-900 to-neutral-400">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+              <div className="p-6">
+                <h3 className="text-2xl leading-7 font-bold text-white mb-2 text-center lg:text-3xl">
+                500+
+                </h3>
+                <p className="text-xl leading-6 text-extrawhite text-center">
+                Start - up ideas
+                </p>
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
+                1500+
+                </h3>
+                <p className="text-xl leading-6 text-white text-center">
+                Subscribers joined our program and became self employed
+                </p>
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
+                25+
+                </h3>
+                <p className="text-xl leading-6 text-white text-center">
+                The Ratio of theory and  practice in each course
+                </p>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
+                99%
+                </h3>
+                <p className="text-xl leading-6 text-white text-center">
+                Discover the various funding options available for your startup
+                </p>
+              </div>
+            </div>
+
+      </div>
+
+      </div>
+
     </>
   );
 };
 
 export default Home;
+
+
+{/* <div className="w-[1440px] h-[381px] relative">
+  <div className="w-[1440px] h-[381px] left-0 top-0 absolute">
+    <img className="w-[1440px] h-[380.85px] left-0 top-0 absolute" src="https://via.placeholder.com/1440x381" />
+    <div className="w-[1440px] h-[380.39px] left-0 top-[0.61px] absolute bg-gradient-to-br from-emerald-900 via-emerald-900 to-neutral-400" />
+  </div>
+  <div className="w-[1052px] h-[202px] left-[194px] top-[79px] absolute">
+    <div className="w-[196px] h-[154px] left-0 top-0 absolute">
+      <div className="left-0 top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">500+</div>
+      <div className="left-[33px] top-[143px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Start - up ideas</div>
+    </div>
+    <div className="w-[236px] h-[202px] left-[268px] top-0 absolute">
+      <div className="left-0 top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">1500+</div>
+      <div className="w-[230px] left-[3px] top-[143px] absolute text-center text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Subscribers joined our program and became self employed</div>
+    </div>
+    <div className="w-[172px] h-[202px] left-[576px] top-0 absolute">
+      <div className="left-[21px] top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">25+</div>
+      <div className="w-[172px] left-0 top-[143px] absolute text-center text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">The Ratio of theory and  practice in each course</div>
+    </div>
+    <div className="w-[232px] h-[202px] left-[820px] top-0 absolute">
+      <div className="left-[29px] top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">99%</div>
+      <div className="w-[232px] left-0 top-[143px] absolute text-center text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Discover the various funding options available for your startup</div>
+    </div>
+  </div>
+</div> */}

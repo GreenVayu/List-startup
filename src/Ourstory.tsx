@@ -243,6 +243,7 @@ function Ourstory() {
       </div>
 
       <div className="sec6 mt-20 mb-8 lg:mr-8">
+
         <div className="bg-gradient-to-b from-emerald-100 py-12 md:ml-3 lg:ml-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -317,21 +318,56 @@ function Ourstory() {
             </div>
           </div>
         </div>
+
       </div>
 
-      <div className="sec7 mt-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mx-6 w-fit">
-          {cardData.map((card, index) => (
-            <div key={index} className="bg-white p-6">
-              <h3 className="text-3xl leading-7 mb-2 w-fit text-emerald-800 font-bold tracking-wide mx-auto">
-                {card.title}
-              </h3>
-              <p className=" text-stone-500 text-lg font-normal leading-normal tracking-wide w-fit px-4">
-                {card.description}
-              </p>
+      <div className="sec7">
+
+      <div className="p-8 bg-white">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+              <div className="p-6">
+                <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
+                500+
+                </h3>
+                <p className="text-xl leading-6 text-stone-500 text-center">
+                Start - up ideas
+                </p>
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
+                1500+
+                </h3>
+                <p className="text-xl leading-6 text-stone-500 text-center">
+                Subscribers joined our program and became self employed
+                </p>
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl leading-7 font-extarbold text-emerald-800 mb-2 text-center md:text-3xl">
+                25+
+                </h3>
+                <p className="text-xl leading-6 text-stone-500 text-center">
+                The Ratio of theory and  practice in each course
+                </p>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
+                99%
+                </h3>
+                <p className="text-xl leading-6 text-stone-500 text-center">
+                Discover the various funding options available for your startup
+                </p>
+              </div>
             </div>
-          ))}
-        </div>
+
+      </div>
+
       </div>
 
       <div className="sec8 mt-12">

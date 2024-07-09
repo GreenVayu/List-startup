@@ -216,7 +216,6 @@ function Coaches() {
 
       </div>
 
-      <hr className="border-t-2 border-gray-500 my-4" />
 
       <div className="sec3 mt-16 lg:w-[70vw] lg:mx-auto lg:flex lg:space-x-20">
         <img
