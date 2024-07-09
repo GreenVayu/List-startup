@@ -2,28 +2,10 @@ import StarIcon from "@mui/icons-material/Star";
 import { Button } from "@mui/material";
 
 function Ourstory() {
-  const cardData = [
-    {
-      title: "500+",
-      description: "Start - up ideas",
-    },
-    {
-      title: "1500+",
-      description: "Subscribers joined our program and became self employed",
-    },
-    {
-      title: "25+",
-      description: "The Ratio of theory and  practice in each course",
-    },
-    {
-      title: "99%",
-      description:
-        "Discover the various funding options available for your startup",
-    },
-  ];
 
   return (
     <div className="container w-fit mx-auto">
+      
       <div className="sec1">
         <div className="text-center mt-6">
           <div className="w-fit mx-auto">

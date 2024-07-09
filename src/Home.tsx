@@ -4,7 +4,6 @@ import RocketIcon from "@mui/icons-material/Rocket";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
 
-
 interface Section2PicProps {
   alt: string;
   src: string;
@@ -207,6 +206,117 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="sec mt-6">
+        <div>
+          <h1 className="text-emerald-800 text-xl font-semibold tracking-widest text-center">
+            Popular course/videos
+          </h1>
+          <p className="text-stone-500 text-base font-normal leading-normal tracking-wide text-center">
+            Ready to Launch? Discover the secrets to startup success with our
+            most popular courses.
+          </p>
+
+          <div className="flex justify-between md:hidden">
+            <h1 className="text-center text-stone-500 text-sm font-semibold leading-normal tracking-wide">
+              Categories
+            </h1>
+
+            <select
+              name=""
+              id=""
+              className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide p-2 mr-2 bg-white"
+            >
+              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
+                Mindset
+              </option>
+              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
+                Legal
+              </option>
+              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
+                Idea
+              </option>
+              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
+                Finance
+              </option>
+            </select>
+          </div>
+
+          <div className="md:hidden mt-6">
+            <div className="flex overflow-x-scroll no-scrollbar space-x-6 px-4 ">
+              <video className="w-60 rounded-xl" controls>
+                <source src="/img/vide01.mp4" type="video/mp4" />
+              </video>
+
+              <video className="w-60 rounded-xl" controls>
+                <source src="/img/vide01.mp4" type="video/mp4" />
+              </video>
+
+              <video className="w-60 rounded-xl" controls>
+                <source src="/img/vide01.mp4" type="video/mp4" />
+              </video>
+
+              <video className="w-60 rounded-xl" controls>
+                <source src="/img/vide01.mp4" type="video/mp4" />
+              </video>
+              
+            </div>
+          </div>
+
+          <div className="mt-4 hidden md:block mx-6">
+          <ul className="border-2 border-slate-200 flex justify-between p-2 px-4 rounded-lg">
+            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide border-b-2 border-amber-500">Mindset</li>
+            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide">Idea</li>
+            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide">Legal</li>
+            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide">Finance</li>
+
+          </ul>
+          </div>
+
+<div className="container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 lg:mx-4 my-4 md:mx-10">
+        
+      <div className="overflow-hidden h-[330px] rounded-lg">
+            <video
+              className="w-full h-full object-cover border-none outline-none"
+              controls
+            >
+              <source src="/img/vide01.mp4" type="video/mp4" />
+            </video>
+      </div>
+
+      <div className="overflow-hidden h-[330px] rounded-lg">
+            <video
+              className="w-full h-full object-cover border-none outline-none"
+              controls
+            >
+              <source src="/img/vide01.mp4" type="video/mp4" />
+            </video>
+      </div>
+
+      <div className="overflow-hidden h-[330px] rounded-lg">
+            <video
+              className="w-full h-full object-cover border-none outline-none"
+              controls
+            >
+              <source src="/img/vide01.mp4" type="video/mp4" />
+            </video>
+      </div>
+
+      <div className="overflow-hidden h-[330px] rounded-lg">
+            <video
+              className="w-full h-full object-cover border-none outline-none"
+              controls
+            >
+              <source src="/img/vide01.mp4" type="video/mp4" />
+            </video>
+      </div>
+
+</div>
+    </div>
+
+        </div>
+      </div>
+
       <div className="sec4 mt-12 md:mt-24 sm:relative">
         <div className="sm:absolute sm:top-[70px] sm:left-[10px] md:top-[130px] md:left-[30px] lg:top-[200px] lg:left-[100px] sm:space-y-3">
           <h1 className="text-emerald-800 sm:text-white sm:opacity-85 text-2xl font-bold tracking-widest text-center">
@@ -358,7 +468,10 @@ const Home = () => {
             </div>
           </div>
 
-          <img src="/img/img24.png" className="hidden xsm:block w-[45%] sm:w-[35%] md:w-[40%] "/>
+          <img
+            src="/img/img24.png"
+            className="hidden xsm:block w-[45%] sm:w-[35%] md:w-[40%] "
+          />
         </div>
       </div>
     </>
@@ -371,45 +484,74 @@ export default Home;
   /* 
 
 
-<div className="w-[1441px] h-[546px] relative">
-  <img className="w-[1441px] h-[546px] left-0 top-0 absolute" src="https://via.placeholder.com/1441x546" />
-  <div className="w-[1192px] h-[385px] left-[124px] top-[80.23px] absolute bg-white rounded-2xl shadow">
-    <div className="w-[1184px] h-[464px] left-[-1593px] top-[-3381px] absolute">
-      <div className="w-[360px] h-[360px] left-[396px] top-[102px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
-        <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
-        <div className="w-[278px] h-[19px] bg-zinc-300" />
+<div className="w-[1200px] h-[560px] relative">
+  <div className="w-[1199px] h-[435px] left-[1px] top-[125px] absolute">
+    <div className="w-[1106px] h-9 pr-[221.20px] left-0 top-0 absolute border border-slate-200 justify-start items-start inline-flex">
+      <div className="w-[221.20px] h-[34px] border-b border-amber-500 justify-center items-center inline-flex">
+        <div className="text-center text-emerald-800 text-sm font-bold font-['Mukta'] leading-normal tracking-wide">Mindset</div>
       </div>
-      <div className="w-[197px] h-12 px-[26px] pt-3.5 pb-[15px] left-[753px] top-[7px] absolute rounded-2xl border border-neutral-500 justify-center items-center inline-flex">
-        <div className="text-center text-neutral-500 text-base font-normal font-['Inter']">Click to know more</div>
+      <div className="w-[221.20px] h-9 pt-3 pb-[15px] border-b border-slate-200 justify-center items-center inline-flex">
+        <div className="text-center text-emerald-800 text-sm font-medium font-['Mukta'] leading-[14px] tracking-wide">Idea</div>
       </div>
-      <div className="w-[360px] h-[360px] left-0 top-[104px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
-        <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
-        <div className="w-[278px] h-[19px] bg-zinc-300" />
+      <div className="w-[221.20px] h-9 pt-3 pb-[15px] border-b border-slate-200 justify-center items-center inline-flex">
+        <div className="text-center text-emerald-800 text-sm font-medium font-['Mukta'] leading-[14px] tracking-wide">Legal</div>
       </div>
-      <div className="w-[360px] h-[360px] left-[798px] top-[102px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
-        <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
-        <div className="w-[278px] h-[19px] bg-zinc-300" />
-      </div>
-      <div className="w-[46px] h-[46px] left-[1138px] top-[259px] absolute">
-        <div className="w-[46px] h-[46px] left-0 top-0 absolute bg-white rounded-full shadow" />
-      </div>
-      <div className="left-0 top-0 absolute text-black/opacity-70 text-[38px] font-semibold font-['Mukta'] tracking-widest">Our coaches</div>
-    </div>
-    <div className="left-[72px] top-[175px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Learn the fundamentals of starting a business with List.</div>
-    <div className="w-[484px] h-[152.62px] left-[74px] top-[64px] absolute">
-      <div className="w-[470px] h-[102.03px] left-0 top-0 absolute"><span style="text-emerald-800 text-5xl font-semibold font-['Palanquin Dark'] leading-[48px]">Discover the key to </span><span style="text-emerald-800 text-5xl font-semibold font-['Palanquin Dark'] leading-[48px]">start</span><span style="text-emerald-800 text-5xl font-semibold font-['Palanquin Dark'] leading-[48px]"> your business</span></div>
-      <div className="w-[484px] left-0 top-[115.62px] absolute text-stone-500 text-lg font-normal font-['Orienta'] leading-normal tracking-wide">Learn the fundamentals of starting a business with List.</div>
-    </div>
-    <div className="w-[382px] h-12 left-[74px] top-[254.55px] absolute">
-      <div className="w-[179px] h-12 px-7 py-3 left-[203px] top-0 absolute bg-white rounded-lg shadow border border-emerald-800 justify-center items-center gap-4 inline-flex">
-        <div className="text-emerald-800 text-base font-normal font-['Roboto'] leading-none">Learn more</div>
-      </div>
-      <div className="w-[179px] h-12 px-7 py-3 left-0 top-0 absolute bg-emerald-800 rounded-lg shadow justify-center items-center gap-4 inline-flex">
-        <div className="text-white text-base font-normal font-['Roboto'] leading-none">Get in touch</div>
-        <div className="w-3 h-3 opacity-0 bg-white rounded-full" />
+      <div className="w-[221.20px] h-9 pl-[76.10px] pr-[77.10px] pt-3 pb-[15px] border-b border-slate-200 justify-center items-center inline-flex">
+        <div className="w-[68px] text-center text-emerald-800 text-sm font-medium font-['Mukta'] leading-[14px] tracking-wide">Finance</div>
       </div>
     </div>
-    <img className="w-[524px] h-[385px] left-[668px] top-0 absolute rounded-tr-2xl rounded-br-2xl" src="https://via.placeholder.com/524x385" />
+    <div className="w-[1198px] h-[347px] left-[1px] top-[88px] absolute">
+      <div className="w-[280px] h-[346px] left-[609px] top-0 absolute bg-gradient-to-b from-neutral-500 to-zinc-300 rounded-lg border">
+        <div className="w-[280px] h-[348px] left-0 top-0 absolute rounded-lg" />
+        <div className="w-[280px] h-[347px] left-0 top-0 absolute bg-black/opacity-50 rounded-lg" />
+        <div className="w-[202px] left-[27px] top-[59px] absolute text-white text-2xl font-normal font-['Orienta'] leading-normal tracking-wide">Apple’s Mindset</div>
+        <div className="left-[27px] top-[36px] absolute text-white text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">FREE</div>
+        <div className="w-[55.15px] h-[52px] left-[112px] top-[183px] absolute">
+          <div className="w-[55.15px] h-[52px] left-[55.15px] top-0 absolute origin-top-left rotate-180 bg-gray-400 rounded-full" />
+        </div>
+        <div className="w-6 h-6 left-[247px] top-[12px] absolute" />
+      </div>
+      <div className="w-[280px] h-[346px] left-[304px] top-0 absolute">
+        <div className="w-[280px] h-[346px] left-0 top-0 absolute bg-gradient-to-b from-neutral-500 to-zinc-300 rounded-lg border">
+          <div className="w-[280.10px] h-[348px] left-0 top-0 absolute">
+            <div className="w-[280px] h-[348px] left-[0.10px] top-0 absolute rounded-lg" />
+            <div className="w-[280px] h-[347px] left-0 top-0 absolute bg-black/opacity-50 rounded-lg" />
+          </div>
+          <div className="w-[55.15px] h-[52px] left-[112px] top-[186px] absolute">
+            <div className="w-[55.15px] h-[52px] left-[55.15px] top-0 absolute origin-top-left rotate-180 bg-gray-400 rounded-full" />
+          </div>
+        </div>
+        <div className="w-[224.44px] left-[30px] top-[59px] absolute text-white text-2xl font-normal font-['Orienta'] leading-normal tracking-wide">Apple’s Mindset</div>
+        <div className="w-[33.33px] left-[30px] top-[36px] absolute text-white text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">FREE</div>
+        <div className="w-6 h-6 left-[247px] top-[11px] absolute" />
+      </div>
+      <div className="w-[280px] h-[347px] left-0 top-0 absolute">
+        <div className="w-[267.27px] h-[346px] left-[8.48px] top-[1px] absolute rounded-lg border" />
+        <div className="w-[280px] h-[346px] left-0 top-[1px] absolute rounded-lg" />
+        <div className="w-[280px] h-[347px] left-0 top-0 absolute bg-black/opacity-50 rounded-lg" />
+        <div className="w-[55.15px] h-[52px] left-[114.55px] top-[186px] absolute">
+          <div className="w-[55.15px] h-[52px] left-[55.15px] top-0 absolute origin-top-left rotate-180 bg-gray-400 rounded-full" />
+        </div>
+        <div className="w-[43px] left-[39px] top-[38px] absolute text-white text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">FREE</div>
+        <div className="w-[214.24px] left-[37.12px] top-[59px] absolute text-white text-2xl font-normal font-['Orienta'] leading-normal tracking-wide">Apple’s Mindset</div>
+        <div className="w-6 h-6 left-[249px] top-[11px] absolute" />
+      </div>
+      <div className="w-[280px] h-[347px] left-[918px] top-0 absolute">
+        <div className="w-[267.27px] h-[346px] left-[8.48px] top-[1px] absolute rounded-lg border" />
+        <div className="w-[280px] h-[346px] left-0 top-[1px] absolute rounded-lg" />
+        <div className="w-[280px] h-[347px] left-0 top-0 absolute bg-black/opacity-50 rounded-lg" />
+        <div className="w-[55.15px] h-[52px] left-[114.55px] top-[184px] absolute">
+          <div className="w-[55.15px] h-[52px] left-[55.15px] top-0 absolute origin-top-left rotate-180 bg-gray-400 rounded-full" />
+        </div>
+        <div className="w-[55px] left-[37px] top-[36px] absolute text-white text-sm font-normal font-['Orienta'] leading-[18px] tracking-wide">FREE</div>
+        <div className="w-[214.24px] left-[37.12px] top-[60px] absolute text-white text-2xl font-normal font-['Orienta'] leading-normal tracking-wide">Apple’s Mindset</div>
+        <div className="w-6 h-6 left-[249px] top-[11px] absolute" />
+      </div>
+    </div>
+  </div>
+  <div className="w-[969px] h-[75px] left-0 top-0 absolute">
+    <div className="left-0 top-0 absolute text-emerald-800 text-[38px] font-semibold font-['Mukta'] tracking-widest">Popular course/videos</div>
+    <div className="w-[968px] left-[1px] top-[64px] absolute text-stone-500 text-base font-normal font-['Orienta'] leading-normal tracking-wide">Ready to Launch? Discover the secrets to startup success with our most popular courses.</div>
   </div>
 </div>
 
