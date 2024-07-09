@@ -128,55 +128,62 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="sec3">
-
-      <div className="p-8 bg-gradient-to-br from-emerald-900 via-emerald-900 to-neutral-400">
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-              <div className="p-6">
-                <h3 className="text-2xl leading-7 font-bold text-white mb-2 text-center lg:text-3xl">
+      <div className="sec3 mt-6">
+        <div className="p-8 bg-gradient-to-br from-emerald-900 via-emerald-900 to-neutral-400">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="p-6">
+              <h3 className="text-2xl leading-7 font-bold text-white mb-2 text-center lg:text-3xl">
                 500+
-                </h3>
-                <p className="text-xl leading-6 text-extrawhite text-center">
+              </h3>
+              <p className="text-xl leading-6 text-extra text-white text-center">
                 Start - up ideas
-                </p>
-              </div>
-
-              <div className="p-6">
-
-                <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
-                1500+
-                </h3>
-                <p className="text-xl leading-6 text-white text-center">
-                Subscribers joined our program and became self employed
-                </p>
-              </div>
-
-              <div className="p-6">
-
-                <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
-                25+
-                </h3>
-                <p className="text-xl leading-6 text-white text-center">
-                The Ratio of theory and  practice in each course
-                </p>
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
-                99%
-                </h3>
-                <p className="text-xl leading-6 text-white text-center">
-                Discover the various funding options available for your startup
-                </p>
-              </div>
+              </p>
             </div>
 
+            <div className="p-6">
+              <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
+                1500+
+              </h3>
+              <p className="text-xl leading-6 text-white text-center">
+                Subscribers joined our program and became self employed
+              </p>
+            </div>
+
+            <div className="p-6">
+              <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
+                25+
+              </h3>
+              <p className="text-xl leading-6 text-white text-center">
+                The Ratio of theory and practice in each course
+              </p>
+            </div>
+
+            <div className="p-6">
+              <h3 className="text-2xl leading-7 font-extrabold text-white mb-2 text-center lg:text-3xl">
+                99%
+              </h3>
+              <p className="text-xl leading-6 text-white text-center">
+                Discover the various funding options available for your startup
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      </div>
+      <div className="sec4 mt-12 md:mt-24 sm:relative">
 
+        <div className="sm:absolute sm:top-[70px] sm:left-[10px] md:top-[130px] md:left-[30px] lg:top-[200px] lg:left-[100px] sm:space-y-3">
+          <h1 className="text-emerald-800 sm:text-white sm:opacity-85 text-2xl font-bold tracking-widest text-center">Why LIST?</h1>
+          <p className="text-stone-500 text-base sm:text-white md:text-xl font-normal leading-normal tracking-wide mx-auto text-center mb-4 sm:mb-0">Unleash your startup dream. List empowers beginners with the skills and knowledge to launch <br/>and grow their business - all in one place.</p>
+        </div>
+
+        <div>
+          <video className="w-full h-2/5 rounded-xl" controls>
+            <source src="/img/vide01.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+      </div>
     </>
   );
 };
@@ -184,27 +191,16 @@ const Home = () => {
 export default Home;
 
 
-{/* <div className="w-[1440px] h-[381px] relative">
-  <div className="w-[1440px] h-[381px] left-0 top-0 absolute">
-    <img className="w-[1440px] h-[380.85px] left-0 top-0 absolute" src="https://via.placeholder.com/1440x381" />
-    <div className="w-[1440px] h-[380.39px] left-0 top-[0.61px] absolute bg-gradient-to-br from-emerald-900 via-emerald-900 to-neutral-400" />
-  </div>
-  <div className="w-[1052px] h-[202px] left-[194px] top-[79px] absolute">
-    <div className="w-[196px] h-[154px] left-0 top-0 absolute">
-      <div className="left-0 top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">500+</div>
-      <div className="left-[33px] top-[143px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Start - up ideas</div>
-    </div>
-    <div className="w-[236px] h-[202px] left-[268px] top-0 absolute">
-      <div className="left-0 top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">1500+</div>
-      <div className="w-[230px] left-[3px] top-[143px] absolute text-center text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Subscribers joined our program and became self employed</div>
-    </div>
-    <div className="w-[172px] h-[202px] left-[576px] top-0 absolute">
-      <div className="left-[21px] top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">25+</div>
-      <div className="w-[172px] left-0 top-[143px] absolute text-center text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">The Ratio of theory and  practice in each course</div>
-    </div>
-    <div className="w-[232px] h-[202px] left-[820px] top-0 absolute">
-      <div className="left-[29px] top-0 absolute text-white text-[75px] font-bold font-['Palanquin Dark'] tracking-[3.75px]">99%</div>
-      <div className="w-[232px] left-0 top-[143px] absolute text-center text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Discover the various funding options available for your startup</div>
-    </div>
-  </div>
-</div> */}
+// <div className="w-[1440px] h-[754px] relative">
+//   <div className="w-[1440px] h-[754px] left-0 top-0 absolute">
+//     <div className="w-[1440px] h-[754px] left-0 top-0 absolute" />
+//     <div className="w-[1440px] h-[754px] left-0 top-0 absolute bg-black/opacity-30" />
+//   </div>
+//   <div className="w-[930px] h-[237px] left-[284px] top-[304px] absolute">
+//     <div className="w-[930px] left-0 top-[189px] absolute text-center text-white text-lg font-normal font-['Orienta'] leading-normal tracking-wide">Unleash your startup dream. List empowers beginners with the skills and knowledge to launch and grow their business - all in one place.</div>
+//     <div className="w-[183.02px] h-[146px] left-[344px] top-0 absolute">
+//       <div className="w-[183.02px] left-0 top-[83px] absolute text-white/opacity-70 text-[38px] font-semibold font-['Mukta'] tracking-widest">Why LIST?</div>
+//       <div className="w-[65.76px] h-[62px] left-[118px] top-0 absolute origin-top-left rotate-180 bg-gray-400 rounded-full" />
+//     </div>
+//   </div>
+// </div>
