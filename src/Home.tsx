@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@mui/material";
 import RocketIcon from "@mui/icons-material/Rocket";
 import PsychologyIcon from "@mui/icons-material/Psychology";
@@ -41,6 +42,42 @@ const Section2Text: React.FC<{
 };
 
 const Home = () => {
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const coaches = [
+    {
+      name: 'ABHISHEK RAI',
+      title: 'Start-up Coach, Entrepreneur',
+      description: 'Founder GreenVayu, LIST',
+      imageSrc: '/ourcoaches/abhi.jpg',
+    },
+    {
+      name: 'Rohit Gupta',
+      title: 'Start-up Coach, Entrepreneur',
+      description: 'Founder GreenVayu, LIST',
+      imageSrc: '/ourcoaches/rohit.png',
+    },
+    {
+      name: 'RICHA RAI',
+      title: 'Start-up Coach, Entrepreneur',
+      description: 'Founder GreenVayu, LIST',
+      imageSrc: '/ourcoaches/richa.png',
+    },
+  ];
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? coaches.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === coaches.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <>
       <section className="text-gray-600 body-font">
@@ -171,10 +208,15 @@ const Home = () => {
       </div>
 
       <div className="sec4 mt-12 md:mt-24 sm:relative">
-
         <div className="sm:absolute sm:top-[70px] sm:left-[10px] md:top-[130px] md:left-[30px] lg:top-[200px] lg:left-[100px] sm:space-y-3">
-          <h1 className="text-emerald-800 sm:text-white sm:opacity-85 text-2xl font-bold tracking-widest text-center">Why LIST?</h1>
-          <p className="text-stone-500 text-base sm:text-white md:text-xl font-normal leading-normal tracking-wide mx-auto text-center mb-4 sm:mb-0">Unleash your startup dream. List empowers beginners with the skills and knowledge to launch <br/>and grow their business - all in one place.</p>
+          <h1 className="text-emerald-800 sm:text-white sm:opacity-85 text-2xl font-bold tracking-widest text-center">
+            Why LIST?
+          </h1>
+          <p className="text-stone-500 text-base sm:text-white md:text-xl font-normal leading-normal tracking-wide mx-auto text-center mb-4 sm:mb-0">
+            Unleash your startup dream. List empowers beginners with the skills
+            and knowledge to launch <br />
+            and grow their business - all in one place.
+          </p>
         </div>
 
         <div>
@@ -182,25 +224,117 @@ const Home = () => {
             <source src="/img/vide01.mp4" type="video/mp4" />
           </video>
         </div>
-
       </div>
+
+      <div className="sec5 mt-12">
+
+        <h1 className="text-emerald-800 text-2xl font-semibold leading-relaxed tracking-wide mb-4 text-center md:text-start">Our Coaches</h1>
+
+      <div className="flex flex-col items-center space-y-4 md:hidden">
+
+      <div className="md:hidden flex items-center">
+        <button
+          className="p-2 rounded-full bg-gray-300 mr-4"
+          onClick={handlePrev}
+        >
+          &lt;
+        </button>
+        <div className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-500">
+          <div className="relative">
+            <img
+              className="w-full h-full object-cover"
+              src={coaches[currentIndex].imageSrc}
+              alt="Profile Image"
+            />
+          </div>
+          <div className="px-6 py-4">
+            <div className="text-emerald-800 text-xl font-semibold text-center leading-3 tracking-wide">
+              {coaches[currentIndex].name}
+            </div>
+            <p className="text-center text-emerald-800 text-base font-normal leading-5 tracking-tight mt-2">
+              {coaches[currentIndex].title}, <br />
+              {coaches[currentIndex].description}
+            </p>
+          </div>
+        </div>
+        <button
+          className="p-2 rounded-full bg-gray-300 ml-4"
+          onClick={handleNext}
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+
+        <div className="hidden md:flex md:justify-around gap-10">
+
+          <div className="max-w-80 mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-500">
+            <div className="relative">
+              <img
+                className="w-full h-full lg:h-80 object-cover"
+                src="/ourcoaches/abhi.jpg"
+                alt="Profile Image"
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="text-xl text-emerald-800 font-semibold text-center leading-3 tracking-wide">
+                ABHISHEK RAI
+              </div>
+              <p className="text-center text-emerald-800 text-lg font-normal leading-5 tracking-tight mt-4">
+                Start-up Coach, Entrepreneur, <br />
+                Founder GreenVayu, LIST
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-500">
+            <div className="relative">
+              <img
+                className="w-full h-full object-cover"
+                src="/ourcoaches/rohit.png"
+                alt="Profile Image"
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="text-xl text-emerald-800 font-semibold text-center leading-3 tracking-wide">
+                Rohit Gupta
+              </div>
+              <p className="text-center text-emerald-800 text-lg font-normal leading-5 tracking-tight mt-4">
+                Start-up Coach, Entrepreneur, <br />
+                Founder GreenVayu, LIST
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-500">
+            <div className="relative">
+              <img
+                className="w-full h-full object-cover"
+                src="/ourcoaches/richa.png"
+                alt="Profile Image"
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="text-xl text-emerald-800 font-semibold text-center leading-3 tracking-wide">
+                RICHA RAI
+              </div>
+              <p className="text-center text-emerald-800 text-lg font-normal leading-5 tracking-tight mt-4">
+                Start-up Coach, Entrepreneur, <br />
+                Founder GreenVayu, LIST
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </>
   );
 };
 
 export default Home;
 
-
-// <div className="w-[1440px] h-[754px] relative">
-//   <div className="w-[1440px] h-[754px] left-0 top-0 absolute">
-//     <div className="w-[1440px] h-[754px] left-0 top-0 absolute" />
-//     <div className="w-[1440px] h-[754px] left-0 top-0 absolute bg-black/opacity-30" />
-//   </div>
-//   <div className="w-[930px] h-[237px] left-[284px] top-[304px] absolute">
-//     <div className="w-[930px] left-0 top-[189px] absolute text-center text-white text-lg font-normal font-['Orienta'] leading-normal tracking-wide">Unleash your startup dream. List empowers beginners with the skills and knowledge to launch and grow their business - all in one place.</div>
-//     <div className="w-[183.02px] h-[146px] left-[344px] top-0 absolute">
-//       <div className="w-[183.02px] left-0 top-[83px] absolute text-white/opacity-70 text-[38px] font-semibold font-['Mukta'] tracking-widest">Why LIST?</div>
-//       <div className="w-[65.76px] h-[62px] left-[118px] top-0 absolute origin-top-left rotate-180 bg-gray-400 rounded-full" />
-//     </div>
-//   </div>
-// </div>
+{/* <div className="w-[132px] h-[30px] relative">
+  <div className="w-[132px] left-0 top-[16px] absolute text-center text-emerald-800 text-[8px] font-normal font-['Orienta'] leading-[8px] tracking-tight">Start-up Coach, Entrepreneur, Founder GreenVayu, LIST</div>
+  <div className="left-[26px] top-0 absolute text-emerald-800 text-xs font-semibold font-['Mukta'] leading-3 tracking-wide">ABHISHEK RAI</div>
+</div> */}
