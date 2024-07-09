@@ -7,7 +7,7 @@ import NotFound from "./NotFound.tsx";
 import About from "./About.tsx";
 import Ourstory from "./Ourstory.tsx";
 import Coaches from "./ourcoaches.tsx";
-import Testimonials from "./Testimonials.tsx";
+import Team from "./Team.tsx";
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="ourCoaches" element={<Coaches />} />
           <Route path="Ourstory" element={<Ourstory/>} />
-          <Route path="Testimonials" element={<Testimonials/>} />
+          <Route path="Team" element={<Team/>} />
         </Route>
       </Routes>
     </BrowserRouter>
