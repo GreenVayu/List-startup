@@ -42,27 +42,26 @@ const Section2Text: React.FC<{
 };
 
 const Home = () => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const coaches = [
     {
-      name: 'ABHISHEK RAI',
-      title: 'Start-up Coach, Entrepreneur',
-      description: 'Founder GreenVayu, LIST',
-      imageSrc: '/ourcoaches/abhi.jpg',
+      name: "ABHISHEK RAI",
+      title: "Start-up Coach, Entrepreneur",
+      description: "Founder GreenVayu, LIST",
+      imageSrc: "/ourcoaches/abhi.jpg",
     },
     {
-      name: 'Rohit Gupta',
-      title: 'Start-up Coach, Entrepreneur',
-      description: 'Founder GreenVayu, LIST',
-      imageSrc: '/ourcoaches/rohit.png',
+      name: "Rohit Gupta",
+      title: "Start-up Coach, Entrepreneur",
+      description: "Founder GreenVayu, LIST",
+      imageSrc: "/ourcoaches/rohit.png",
     },
     {
-      name: 'RICHA RAI',
-      title: 'Start-up Coach, Entrepreneur',
-      description: 'Founder GreenVayu, LIST',
-      imageSrc: '/ourcoaches/richa.png',
+      name: "RICHA RAI",
+      title: "Start-up Coach, Entrepreneur",
+      description: "Founder GreenVayu, LIST",
+      imageSrc: "/ourcoaches/richa.png",
     },
   ];
 
@@ -227,47 +226,46 @@ const Home = () => {
       </div>
 
       <div className="sec5 mt-12">
+        <h1 className="text-emerald-800 text-2xl font-semibold leading-relaxed tracking-wide mb-4 text-center md:text-start">
+          Our Coaches
+        </h1>
 
-        <h1 className="text-emerald-800 text-2xl font-semibold leading-relaxed tracking-wide mb-4 text-center md:text-start">Our Coaches</h1>
-
-      <div className="flex flex-col items-center space-y-4 md:hidden">
-
-      <div className="md:hidden flex items-center">
-        <button
-          className="p-2 rounded-full bg-gray-300 mr-4"
-          onClick={handlePrev}
-        >
-          &lt;
-        </button>
-        <div className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-500">
-          <div className="relative">
-            <img
-              className="w-full h-full object-cover"
-              src={coaches[currentIndex].imageSrc}
-              alt="Profile Image"
-            />
-          </div>
-          <div className="px-6 py-4">
-            <div className="text-emerald-800 text-xl font-semibold text-center leading-3 tracking-wide">
-              {coaches[currentIndex].name}
+        <div className="flex flex-col items-center space-y-4 md:hidden">
+          <div className="md:hidden flex items-center">
+            <button
+              className="p-2 rounded-full bg-gray-300 mr-4"
+              onClick={handlePrev}
+            >
+              &lt;
+            </button>
+            <div className="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-500">
+              <div className="relative">
+                <img
+                  className="w-full h-full object-cover"
+                  src={coaches[currentIndex].imageSrc}
+                  alt="Profile Image"
+                />
+              </div>
+              <div className="px-6 py-4">
+                <div className="text-emerald-800 text-xl font-semibold text-center leading-3 tracking-wide">
+                  {coaches[currentIndex].name}
+                </div>
+                <p className="text-center text-emerald-800 text-base font-normal leading-5 tracking-tight mt-2">
+                  {coaches[currentIndex].title}, <br />
+                  {coaches[currentIndex].description}
+                </p>
+              </div>
             </div>
-            <p className="text-center text-emerald-800 text-base font-normal leading-5 tracking-tight mt-2">
-              {coaches[currentIndex].title}, <br />
-              {coaches[currentIndex].description}
-            </p>
+            <button
+              className="p-2 rounded-full bg-gray-300 ml-4"
+              onClick={handleNext}
+            >
+              &gt;
+            </button>
           </div>
         </div>
-        <button
-          className="p-2 rounded-full bg-gray-300 ml-4"
-          onClick={handleNext}
-        >
-          &gt;
-        </button>
-      </div>
-    </div>
 
         <div className="hidden md:flex md:justify-around gap-10">
-
           <div className="max-w-80 mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-gray-500">
             <div className="relative">
               <img
@@ -324,17 +322,95 @@ const Home = () => {
               </p>
             </div>
           </div>
-
         </div>
       </div>
 
+      <div className="sec6 mt-12">
+        <div className="flex justify-around p-4 bg-white rounded-2xl shadow min-h-40">
+          <div className="p-2 w-full xsm:w-1/2 sm:ml-12 h-fit my-auto">
+            <h1 className="text-center text-emerald-800 text-lg xsm:text-2xl font-bold leading-none md:text-3xl sm:text-start">
+              Discover the key to <br />
+              start your business
+            </h1>
+            <p className="text-center text-stone-500 text-base font-normal leading-5 tracking-wide pt-4 pb-4 xsm:text-xl md:text-xl sm:text-start">
+              Learn the fundamentals{" "}
+              <span className="sm:hidden">
+                <br />
+              </span>
+              of starting a business
+              <br /> with List.
+            </p>
+            <div className="mt-2 w-fit mx-auto sm:hidden">
+              <Button variant="outlined" color="secondary">
+                Get in touch
+              </Button>
+            </div>
+
+            <div className="hidden sm:flex items-center space-x-4 mt-4">
+              <Button variant="contained" color="success">
+                Get in touch
+              </Button>
+
+              <Button variant="outlined" color="secondary">
+                Learn more
+              </Button>
+            </div>
+          </div>
+
+          <img src="/img/img24.png" className="hidden xsm:block w-[45%] sm:w-[35%] md:w-[40%] "/>
+        </div>
+      </div>
     </>
   );
 };
 
 export default Home;
 
-{/* <div className="w-[132px] h-[30px] relative">
-  <div className="w-[132px] left-0 top-[16px] absolute text-center text-emerald-800 text-[8px] font-normal font-['Orienta'] leading-[8px] tracking-tight">Start-up Coach, Entrepreneur, Founder GreenVayu, LIST</div>
-  <div className="left-[26px] top-0 absolute text-emerald-800 text-xs font-semibold font-['Mukta'] leading-3 tracking-wide">ABHISHEK RAI</div>
-</div> */}
+{
+  /* 
+
+
+<div className="w-[1441px] h-[546px] relative">
+  <img className="w-[1441px] h-[546px] left-0 top-0 absolute" src="https://via.placeholder.com/1441x546" />
+  <div className="w-[1192px] h-[385px] left-[124px] top-[80.23px] absolute bg-white rounded-2xl shadow">
+    <div className="w-[1184px] h-[464px] left-[-1593px] top-[-3381px] absolute">
+      <div className="w-[360px] h-[360px] left-[396px] top-[102px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
+        <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
+        <div className="w-[278px] h-[19px] bg-zinc-300" />
+      </div>
+      <div className="w-[197px] h-12 px-[26px] pt-3.5 pb-[15px] left-[753px] top-[7px] absolute rounded-2xl border border-neutral-500 justify-center items-center inline-flex">
+        <div className="text-center text-neutral-500 text-base font-normal font-['Inter']">Click to know more</div>
+      </div>
+      <div className="w-[360px] h-[360px] left-0 top-[104px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
+        <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
+        <div className="w-[278px] h-[19px] bg-zinc-300" />
+      </div>
+      <div className="w-[360px] h-[360px] left-[798px] top-[102px] absolute bg-zinc-300 rounded-2xl flex-col justify-start items-start inline-flex">
+        <div className="w-[360px] h-[65px] bg-zinc-400 rounded-bl-2xl rounded-br-2xl" />
+        <div className="w-[278px] h-[19px] bg-zinc-300" />
+      </div>
+      <div className="w-[46px] h-[46px] left-[1138px] top-[259px] absolute">
+        <div className="w-[46px] h-[46px] left-0 top-0 absolute bg-white rounded-full shadow" />
+      </div>
+      <div className="left-0 top-0 absolute text-black/opacity-70 text-[38px] font-semibold font-['Mukta'] tracking-widest">Our coaches</div>
+    </div>
+    <div className="left-[72px] top-[175px] absolute text-white text-base font-normal font-['Orienta'] leading-normal tracking-wide">Learn the fundamentals of starting a business with List.</div>
+    <div className="w-[484px] h-[152.62px] left-[74px] top-[64px] absolute">
+      <div className="w-[470px] h-[102.03px] left-0 top-0 absolute"><span style="text-emerald-800 text-5xl font-semibold font-['Palanquin Dark'] leading-[48px]">Discover the key to </span><span style="text-emerald-800 text-5xl font-semibold font-['Palanquin Dark'] leading-[48px]">start</span><span style="text-emerald-800 text-5xl font-semibold font-['Palanquin Dark'] leading-[48px]"> your business</span></div>
+      <div className="w-[484px] left-0 top-[115.62px] absolute text-stone-500 text-lg font-normal font-['Orienta'] leading-normal tracking-wide">Learn the fundamentals of starting a business with List.</div>
+    </div>
+    <div className="w-[382px] h-12 left-[74px] top-[254.55px] absolute">
+      <div className="w-[179px] h-12 px-7 py-3 left-[203px] top-0 absolute bg-white rounded-lg shadow border border-emerald-800 justify-center items-center gap-4 inline-flex">
+        <div className="text-emerald-800 text-base font-normal font-['Roboto'] leading-none">Learn more</div>
+      </div>
+      <div className="w-[179px] h-12 px-7 py-3 left-0 top-0 absolute bg-emerald-800 rounded-lg shadow justify-center items-center gap-4 inline-flex">
+        <div className="text-white text-base font-normal font-['Roboto'] leading-none">Get in touch</div>
+        <div className="w-3 h-3 opacity-0 bg-white rounded-full" />
+      </div>
+    </div>
+    <img className="w-[524px] h-[385px] left-[668px] top-0 absolute rounded-tr-2xl rounded-br-2xl" src="https://via.placeholder.com/524x385" />
+  </div>
+</div>
+
+*/
+}
