@@ -8,6 +8,7 @@ import About from "./About.tsx";
 import Ourstory from "./Ourstory.tsx";
 import Coaches from "./ourcoaches.tsx";
 import Team from "./Team.tsx";
+import FAQ from "./FAQ.tsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="ourCoaches" element={<Coaches />} />
           <Route path="Ourstory" element={<Ourstory/>} />
           <Route path="Team" element={<Team/>} />
+          <Route path="FAQ" element={<FAQ/>} />
         </Route>
       </Routes>
     </BrowserRouter>
