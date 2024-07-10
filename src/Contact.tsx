@@ -124,82 +124,182 @@ function Contact() {
         </div>
       </div>
 
-      <div className="sec4 mt-6" >
+      <div className="sec4 mt-6">
+        <h1 className="text-emerald-800 text-xl font-semibold leading-relaxed tracking-wide text-center">
+          Meet us Globally
+        </h1>
+        <p className="text-center text-stone-500 text-sm font-normal leading-6 tracking-wide">
+          Connect with our global offices and meet our team in person. We have a
+          presence in several major cities worldwide, ready to support you
+          wherever you are.
+        </p>
 
-        <h1 className="text-emerald-800 text-xl font-semibold leading-relaxed tracking-wide text-center">Meet us Globally</h1>
-        <p className="text-center text-stone-500 text-sm font-normal leading-6 tracking-wide">Connect with our global offices and meet our team in person. We have a presence in several major cities worldwide, ready to support you wherever you are.</p>
-
-      <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-4 md:hidden mx-4">
-
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+        <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-4 md:hidden mx-4">
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
 
-        </div>
-
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
-
-        </div>
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
 
-        </div>
-
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
-
-        </div>
         </div>
 
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8 w-fit mx-auto md:gap-x-20 mt-6">
-
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
 
-        </div>
-
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
 
-        </div>
-
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
 
-        </div>
-
-        <div className="my-4 w-[200px] bg-white rounded-lg shadow">
-          <div className="w-[200px] h-[140px] text-white">
-            <img src="/contact/global.png" className="w-full h-full"/>
+          <div className="my-4 w-[200px] bg-white rounded-lg shadow">
+            <div className="w-[200px] h-[140px] text-white">
+              <img src="/contact/global.png" className="w-full h-full" />
+            </div>
+            <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">
+              Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410
+            </p>
           </div>
-          <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide p-3">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</p>
-
         </div>
+      </div>
+
+      <div className="sec5">
+        <div className="max-w-screen-lg mx-auto p-3">
+
           
+
+          <form className="md:col-span-8 p-2 md:p-12">
+          <h1 className="text-emerald-800 text-sm font-bold tracking-widest mb-6 sm:text-xl sm:font-semibold">Contact Our Support Team</h1>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full md:w-1/2 px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-last-name"
+                >
+                  Name
+                </label>
+                <input
+                  className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mb-4"
+                  id="grid-last-name"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+
+              <div className="w-full md:w-1/2 px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-last-name"
+                >
+                  Email 
+                </label>
+                <input
+                  className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-last-name"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full md:w-1/2 px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-last-name"
+                >
+                  Phone
+                </label>
+                <input
+                  className="appearance-none block w-full  text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mb-4"
+                  id="grid-last-name"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+
+              <div className="w-full md:w-1/2 px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-last-name"
+                >
+                  Subject
+                </label>
+                <input
+                  className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-last-name"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-wrap -mx-3 mb-2">
+              <div className="w-full px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-password"
+                >
+                  Your Message
+                </label>
+                <textarea className="appearance-none block w-full h-28 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+              </div>
+            </div>
+
+            <div className="mx-auto w-fit">
+              <Button variant="contained" color="success">
+                Get a consultation
+              </Button>
+            </div>
+          </form>
         </div>
-
-
       </div>
     </div>
   );
@@ -210,25 +310,7 @@ export default Contact;
 {
   /*
 
-<div className="w-[421.63px] h-40 relative">
-  <div className="w-[130.32px] h-[158px] left-[291.32px] top-[2px] absolute">
-    <div className="w-[130.32px] h-[145px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-    <div className="w-[106px] h-[68px] left-[12.32px] top-[90px] absolute text-center text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</div>
-    <img className="w-[130.32px] h-[80.94px] left-0 top-0 absolute rounded-lg" src="https://via.placeholder.com/130x81" />
-  </div>
-  <div className="w-[275.63px] h-[158px] left-0 top-0 absolute">
-    <div className="w-[130.32px] h-[158px] left-0 top-0 absolute">
-      <div className="w-[130.32px] h-[145px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-      <div className="w-[106px] h-[68px] left-[12.32px] top-[90px] absolute text-center text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</div>
-      <img className="w-[130.32px] h-[80.94px] left-0 top-0 absolute rounded-lg" src="https://via.placeholder.com/130x81" />
-    </div>
-    <div className="w-[130.32px] h-[158px] left-[145.32px] top-0 absolute">
-      <div className="w-[130.32px] h-[145px] left-0 top-0 absolute bg-white rounded-lg shadow" />
-      <div className="w-[106px] h-[68px] left-[12.32px] top-[90px] absolute text-center text-stone-500 text-[10px] font-normal font-['Orienta'] leading-3 tracking-wide">Vadodara The Oakwood Rd C 2 Vasant Vihar, Vadodara 391410</div>
-      <img className="w-[130.32px] h-[80.94px] left-0 top-0 absolute rounded-lg" src="https://via.placeholder.com/130x81" />
-    </div>
-  </div>
-</div>
+
 
   */
 }
