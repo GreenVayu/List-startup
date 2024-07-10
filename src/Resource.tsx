@@ -22,11 +22,14 @@ function Resource() {
           Latest Blogs
         </h1>
 
-        <div className="p-4 mt-4">
+        <div className="">
 
-          <div className="bg-white rounded-xl shadow-md w-[220px]">
+        
+        <div className="flex overflow-x-scroll no-scrollbar space-x-4 my-2 xmd:hidden mx-4 p-2 mt-4">
+
+        <div className="bg-white rounded-xl shadow-md min-w-56">
             <img
-              className="h-full rounded-xl w-full object-cover object-center mb-6"
+              className="w-56 h-32 rounded-xl object-cover object-center mb-6"
               src="/ourstory/Rectangle1.jpg"
               alt="content"
             />
@@ -42,6 +45,67 @@ function Resource() {
                 Read more
               </Button></div>
           </div>
+
+          <div className="bg-white rounded-xl shadow-md min-w-56">
+            <img
+              className="w-56 h-32 rounded-xl object-cover object-center mb-6"
+              src="/ourstory/Rectangle1.jpg"
+              alt="content"
+            />
+            <h2 className="text-black text-sm font-semibold tracking-wide text-center">
+              How to do Rapid Prototyping?
+            </h2>
+            <p className="text-stone-500 text-base font-normal leading-5 tracking-wide py-3 text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the.....
+            </p>
+            <div className="text-center p-2"><Button variant="outlined" color="secondary">
+                Read more
+              </Button></div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-md min-w-56">
+            <img
+              className="w-56 h-32 rounded-xl object-cover object-center mb-6"
+              src="/ourstory/Rectangle1.jpg"
+              alt="content"
+            />
+            <h2 className="text-black text-sm font-semibold tracking-wide text-center">
+              How to do Rapid Prototyping?
+            </h2>
+            <p className="text-stone-500 text-base font-normal leading-5 tracking-wide py-3 text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the.....
+            </p>
+            <div className="text-center p-2"><Button variant="outlined" color="secondary">
+                Read more
+              </Button></div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-md min-w-56">
+            <img
+              className="w-56 h-32 rounded-xl object-cover object-center mb-6"
+              src="/ourstory/Rectangle1.jpg"
+              alt="content"
+            />
+            <h2 className="text-black text-sm font-semibold tracking-wide text-center">
+              How to do Rapid Prototyping?
+            </h2>
+            <p className="text-stone-500 text-base font-normal leading-5 tracking-wide py-3 text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the.....
+            </p>
+            <div className="text-center p-2"><Button variant="outlined" color="secondary">
+                Read more
+              </Button></div>
+          </div>
+
+            </div>
+
+          
 
         </div>
 
