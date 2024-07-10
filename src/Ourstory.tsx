@@ -237,7 +237,9 @@ function Ourstory() {
                 needs of entrepreneurs at every stage of their journey.
               </p>
             </div>
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
                   <img
@@ -254,6 +256,7 @@ function Ourstory() {
                   for real-world challenges.
                 </p>
               </div>
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
                   <img src="/ourstory/Vector3.png" alt="Icon" className="h-5" />
@@ -267,6 +270,7 @@ function Ourstory() {
                   content with techniques relevant to real-world work.
                 </p>
               </div>
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
                   <img src="/ourstory/Vector4.png" alt="Icon" className="h-6" />
@@ -280,6 +284,7 @@ function Ourstory() {
                   thinking and draw out ideas.
                 </p>
               </div>
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
                   <img
@@ -297,6 +302,7 @@ function Ourstory() {
                   and crisp videos, each under 10 minutes.
                 </p>
               </div>
+
             </div>
           </div>
         </div>
