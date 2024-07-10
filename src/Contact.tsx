@@ -213,8 +213,6 @@ function Contact() {
       <div className="sec5">
         <div className="max-w-screen-lg mx-auto p-3">
 
-          
-
           <form className="md:col-span-8 p-2 md:p-12">
           <h1 className="text-emerald-800 text-sm font-bold tracking-widest mb-6 sm:text-xl sm:font-semibold">Contact Our Support Team</h1>
             <div className="flex flex-wrap -mx-3 mb-6">
