@@ -10,8 +10,6 @@ import Coaches from "./ourcoaches.tsx";
 import Team from "./Team.tsx";
 import FAQ from "./FAQ.tsx";
 import Resource from "./Resource.tsx";
-import ProgressSteps from "./steps.tsx";
-
 
 function App() {
   return (
@@ -28,7 +26,6 @@ function App() {
           <Route path="Team" element={<Team/>} />
           <Route path="FAQ" element={<FAQ/>} />
           <Route path="Resource" element={<Resource/>} />
-          <Route path="ProgressSteps" element={<ProgressSteps/>} />
         </Route>
       </Routes>
     </BrowserRouter>

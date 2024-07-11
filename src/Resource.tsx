@@ -278,6 +278,14 @@ function Resource() {
         </div>
 
       </div>
+
+      <div className="sec4 mt-6">
+        <div className="bg-[url('/resources/Colorpalette.png')] bg-cover">
+          <div className="p-4">
+        <h1 className="text-amber-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold underline tracking-widest text-center z-10">Upcoming events</h1>
+        </div> 
+      </div>
+      </div>
     </div>
   );
 }
