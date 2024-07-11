@@ -1,8 +1,17 @@
 import { Button } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb,faCalendarMinus} from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb,faCalendarMinus,faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 function Resource() {
+
+  const newsItems = [
+    { title: 'Startup News & Updates', imgSrc: '/ourcoaches/purpose.jpg' },
+    { title: 'Business', imgSrc: '/ourcoaches/purpose.jpg' },
+    { title: 'Startup', imgSrc: '/ourcoaches/purpose.jpg'  },
+    { title: 'Finance', imgSrc: '/ourcoaches/purpose.jpg'  },
+    { title: 'Legal', imgSrc: '/ourcoaches/purpose.jpg' },
+  ];
+
   return (
     <div className="container w-full mx-auto">
       <div className="sec1 mt-6">
@@ -404,7 +413,7 @@ function Resource() {
         
         <div className="text-center mb-4 sm:hidden"><span className="text-purple-600 text-xl ">scroll to see more</span></div>
 
-        <div className="py-4 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 sm:gap-12 mt-12 mx-auto w-fit">
+        <div className="py-4 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 sm:gap-12 my-6 mx-auto w-fit">
 
         <div className="w-fit bg-white p-6 rounded-md ">
                 <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
@@ -522,6 +531,52 @@ function Resource() {
       
       </div>
       </div>
+
+      <div className="sec5 mt-12 min-w-full">
+
+      <div className="max-w-7xl mx-auto p-4">
+
+      <div className="text-center sm:text-start sm:ml-4">
+        <h1 className="text-emerald-800 text-2xl sm:text-3xl font-semibold tracking-widest">Latest news and updates</h1>
+        <p className="text-stone-500 text-lg font-normal sm:text-2xl leading-normal tracking-wide mt-2">Stay Updated With the Latest News & Articles!</p>
+      </div>
+
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="relative group row-span-2">
+          <img src={newsItems[0].imgSrc} alt={newsItems[0].title} className="w-full h-64 sm:h-full object-cover rounded-lg" />
+
+          <div className="bg-black w-full p-4 absolute bottom-0 opacity-70 flex">
+            <p className="text-white text-sm sm:text-xl">{newsItems[0].title}</p>
+            <div className="bg-white rounded-full absolute right-4 bottom-2 z-10"><FontAwesomeIcon
+                  icon={faChevronRight}
+                  className="text-black text-xl m-2"
+                /></div>
+
+            </div>
+
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 h-fit sm:mt-4">
+          {newsItems.slice(1).map((item, index) => (
+            <div key={index} className="relative group">
+              <img src={item.imgSrc} alt={item.title} className="w-full h-64 object-cover rounded-lg" />
+
+              <div className="bg-black w-full p-4 absolute bottom-0 opacity-70 flex">
+            <p className="text-white text-xl">{item.title}</p>
+            <div className="bg-white rounded-full absolute right-4 bottom-2 z-10"><FontAwesomeIcon
+                  icon={faChevronRight}
+                  className="text-black text-xl m-2"
+                /></div>
+
+            </div>
+
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+      </div>
+    
     </div>
   );
 }
