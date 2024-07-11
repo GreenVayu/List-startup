@@ -207,6 +207,7 @@ function Resource() {
       </div>
 
       <div className="sec3 mt-6">
+        <div className="text-center md:text-start md:ml-14">
         <h1 className="text-emerald-800 text-lg font-semibold tracking-widest p-2 xsm:text-2xl">
           Step - by - Step Guide to Start your Startup
         </h1>
@@ -214,6 +215,7 @@ function Resource() {
           At LIST, we've crafted a detailed, step-by-step guide to help you
           navigate the process with confidence and clarity.
         </p>
+        </div>
 
         <div className="mx-4 lg:mx-20">
           <div className="relative flex flex-col items-start md:items-center space-y-8 md:space-y-0 md:flex-row md:justify-between mt-8">
