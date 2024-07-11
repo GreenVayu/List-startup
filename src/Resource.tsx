@@ -4,7 +4,7 @@ import { faLightbulb,faCalendarMinus} from "@fortawesome/free-solid-svg-icons";
 
 function Resource() {
   return (
-    <div className="container">
+    <div className="container w-full mx-auto">
       <div className="sec1 mt-6">
         <h1 className="text-emerald-800 text-2xl font-semibold leading-5 tracking-wider border-b-2 border-amber-400 w-fit mx-auto p-2 sm:text-3xl">
           Resources
@@ -211,7 +211,6 @@ function Resource() {
 
             <div className="hidden md:block absolute top-[20px] left-0 right-0 h-0.5 mx-4 bg-green-500 "></div>
 
-            {/* Vertical line for below md */}
             <div className="block md:hidden absolute top-0 bottom-0 left-[18px] w-0.5 bg-green-500 "></div>
 
             <div className="flex md:flex-col md:w-16 z-10 md:-translate-y-2">
@@ -279,11 +278,248 @@ function Resource() {
 
       </div>
 
-      <div className="sec4 mt-6">
-        <div className="bg-[url('/resources/Colorpalette.png')] bg-cover">
+      <div className="sec4 mt-20 mx-auto w-full">
+        <div className="bg-[url('/resources/Colorpalette.png')] bg-cover p-4 min-w-full">
           <div className="p-4">
         <h1 className="text-amber-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold underline tracking-widest text-center z-10">Upcoming events</h1>
         </div> 
+
+        <div className="flex overflow-x-scroll no-scrollbar space-x-4 my-4 py-5 mx-4 sm:hidden">
+
+        <div className="min-w-[250px] bg-white p-6 rounded-md h-fit">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>     
+
+            <div className="min-w-[250px] bg-white p-6 rounded-md h-fit">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>    
+
+
+            <div className="min-w-[250px] bg-white p-6 rounded-md h-fit">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>    
+
+
+            <div className="min-w-[250px] bg-white p-6 rounded-md h-fit">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>                 
+
+        </div>
+        
+        <div className="text-center mb-4 sm:hidden"><span className="text-purple-600 text-xl ">scroll to see more</span></div>
+
+        <div className="py-4 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 sm:gap-12 mt-12 mx-auto w-fit">
+
+        <div className="w-fit bg-white p-6 rounded-md ">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>
+
+            <div className="w-fit bg-white p-6 rounded-md ">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>
+
+            <div className="w-fit bg-white p-6 rounded-md ">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>
+
+            <div className="w-fit bg-white p-6 rounded-md ">
+                <div className="bg-emerald-800 w-14 h-14 mx-auto flex justify-center items-center rounded-full -translate-y-3/4">
+                <FontAwesomeIcon
+                  icon={faCalendarMinus}
+                  className="text-white text-xl md:text-3xl"
+                />
+                </div>
+
+                <div className="flex space-x-4 -mt-5">
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">07 Aug, 2024</h1>
+                  <h1 className="text-stone-500 text-sm font-normal leading-5 text-center tracking-tight border border-stone-500 p-2 rounded-lg">10:00am IST</h1>
+                </div>
+
+                <div className="rounded-lg border border-stone-500 border-opacity-20 p-2 mt-4">
+                  <h1 className="text-stone-500 text-sm font-normal underline leading-5 tracking-tight">Topic</h1>
+                  <p className="text-black text-xs font-semibold leading-5 tracking-wide mt-2">How to use Digital Tools?</p>
+
+                  <hr className="mt-4"/>
+                  <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide text-right mt-3">-Boot Camp by Harshith</p>        
+                </div>
+
+                <div className="text-center mt-4">
+                <Button variant="outlined" color="secondary">
+                know more
+              </Button>
+                </div>
+            </div>
+
+        </div>
+      
       </div>
       </div>
     </div>
@@ -291,3 +527,5 @@ function Resource() {
 }
 
 export default Resource;
+
+
