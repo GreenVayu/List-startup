@@ -10,6 +10,7 @@ import Coaches from "./ourcoaches.tsx";
 import Team from "./Team.tsx";
 import FAQ from "./FAQ.tsx";
 import Resource from "./Resource.tsx";
+import Blog from "./Blog.tsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="Team" element={<Team/>} />
           <Route path="FAQ" element={<FAQ/>} />
           <Route path="Resource" element={<Resource/>} />
+          <Route path="Blog" element={<Blog/>} />
         </Route>
       </Routes>
     </BrowserRouter>
