@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Button } from "@mui/material";
 import { Outlet, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, Container } from "@mui/material";
@@ -9,13 +10,12 @@ import Footer from "./Footer.tsx";
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Contact", link: "/contact" },
-  { name: "Our Coaches", link: "/ourCoaches" },
+  { name: "Resources", link: "/Resource" },
+  { name: "Contact Us", link: "/Contact" },
 ];
 
 const Layout = () => {
   const mobileMenu = useRef(null);
-  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -51,6 +51,15 @@ const Layout = () => {
                 {item.name}
               </Link>
             ))}
+
+            <div className="flex flex-col md:flex-row  md:space-y-0 md:mx-0 md:mt-0 md:space-x-4 mx-4 mt-4 space-y-3">
+            <Button variant="outlined" color="secondary">
+                Log in
+              </Button>
+            <Button variant="contained" color="success">
+                Sign up
+              </Button>
+              </div>
           </Box>
         </Box>
       </nav>
