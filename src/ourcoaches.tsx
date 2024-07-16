@@ -116,13 +116,13 @@ function Coaches() {
           <div className="w-56 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/abhi.jpg"
+                  src="/ourcoaches/Aparna.jpg"
                   alt="blog"
                 />
           </div>
           <div className="p-2">
                   <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                    ABHISHEK RAI
+                  APARNA
                   </h1>
                   <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
                     Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
@@ -228,13 +228,13 @@ function Coaches() {
           <div className="w-56 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/abhi.jpg"
+                  src="/ourcoaches/Aparna.jpg"
                   alt="blog"
                 />
           </div>
           <div className="p-2">
                   <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                    ABHISHEK RAI
+                  APARNA
                   </h1>
                   <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
                     Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
