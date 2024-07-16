@@ -244,7 +244,7 @@ function Coaches() {
 
         </div>
 
-        <div className="sm:hidden text-center mt-6 "><span className="text-emerald-800 mb-4">Swipe to See all</span></div>
+        <div className="sm:hidden text-center mt-6 "><span className="text-emerald-800 mb-4">Scroll to See all Coaches</span></div>
         
       </div>
 
