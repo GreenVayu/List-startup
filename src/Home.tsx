@@ -3,10 +3,18 @@ import { Button } from "@mui/material";
 import RocketIcon from "@mui/icons-material/Rocket";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
+import Testimonials from "./Testimonials";
 
 interface Section2PicProps {
   alt: string;
   src: string;
+}
+
+interface Videos {
+  Mindset: string[];
+  Idea: string[];
+  Legal: string[];
+  Finance: string[];
 }
 
 const Section2Pic: React.FC<Section2PicProps> = ({ alt, src }) => {
@@ -42,39 +50,33 @@ const Section2Text: React.FC<{
 };
 
 const Home = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedTab, setSelectedTab] = useState<'Mindset' | 'Idea' | 'Legal' | 'Finance'>('Mindset');
 
-  const coaches = [
-    {
-      name: "ABHISHEK RAI",
-      title: "Start-up Coach, Entrepreneur",
-      description: "Founder GreenVayu, LIST",
-      imageSrc: "/ourcoaches/abhi.jpg",
-    },
-    {
-      name: "Rohit Gupta",
-      title: "Start-up Coach, Entrepreneur",
-      description: "Founder GreenVayu, LIST",
-      imageSrc: "/ourcoaches/rohit.png",
-    },
-    {
-      name: "RICHA RAI",
-      title: "Start-up Coach, Entrepreneur",
-      description: "Founder GreenVayu, LIST",
-      imageSrc: "/ourcoaches/richa.png",
-    },
-  ];
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? coaches.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === coaches.length - 1 ? 0 : prevIndex + 1
-    );
+  const videos: Videos = {
+    Mindset: [
+      '/img/vide01.mp4',
+      '/img/vide01.mp4',
+      '/img/vide02.mp4',
+      '/img/vide03.mp4',
+    ],
+    Idea: [
+      '/img/vide01.mp4',
+      '/img/vide02.mp4',
+      '/img/vide01.mp4',
+      '/img/vide02.mp4',
+    ],
+    Legal: [
+      '/img/vide02.mp4',
+      '/img/vide01.mp4',
+      '/img/vide02.mp4',
+      '/img/vide01.mp4',
+    ],
+    Finance: [
+      '/img/vide03.mp4',
+      '/img/vide02.mp4',
+      '/img/vide01.mp4',
+      '/img/vide02.mp4',
+    ],
   };
 
   return (
@@ -206,7 +208,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="sec mt-16">
+      <div className="sec4 mt-16">
         <div>
           <h1 className="text-emerald-800 text-xl font-semibold tracking-widest text-center">
             Popular course/videos
@@ -216,108 +218,77 @@ const Home = () => {
             most popular courses.
           </p>
 
-          <div className="border-2 border-gray-500 rounded-lg flex justify-between md:hidden px-2 mt-6">
-            <h1 className="text-center text-stone-500 text-sm font-semibold leading-normal tracking-wide h-fit my-auto">
-              Categories
-            </h1>
+          <div>
+      <div className="border-2 border-gray-500 rounded-lg flex justify-between md:hidden px-2 mt-6">
+        <h1 className="text-center text-stone-500 text-sm font-semibold leading-normal tracking-wide h-fit my-auto">
+          Categories
+        </h1>
 
-            <select
-              name=""
-              id=""
-              className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide p-2 mr-2 bg-white "
+        <select
+          name="category"
+          id="category"
+          className="text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide p-2 mr-2 bg-white"
+          onChange={(e) => setSelectedTab(e.target.value as 'Mindset' | 'Idea' | 'Legal' | 'Finance')}
+          value={selectedTab}
+        >
+          <option value="Mindset">Mindset</option>
+          <option value="Legal">Legal</option>
+          <option value="Idea">Idea</option>
+          <option value="Finance">Finance</option>
+        </select>
+      </div>
+
+      <div className="md:hidden mt-6">
+        <div
+          key={selectedTab} 
+          className="flex overflow-x-scroll no-scrollbar space-x-6 px-4"
+        >
+          {videos[selectedTab].map((video, index) => (
+            <video key={index} className="w-60 rounded-xl" controls>
+              <source src={video} type="video/mp4" />
+            </video>
+          ))}
+        </div>
+      </div>
+    </div>
+
+          <div className="fortab&laptop">
+      <div className="mt-8 hidden md:block w-fit mx-auto lg:w-full">
+        <ul className="border-2 border-slate-200 flex justify-between p-2 px-16 rounded-lg space-x-32 lg:space-x-0">
+          {['Mindset', 'Idea', 'Legal', 'Finance'].map((tab) => (
+            <li
+              key={tab}
+              className={`text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide cursor-pointer ${
+                selectedTab === tab ? 'border-b-2 border-amber-500' : ''
+              }`}
+              onClick={() => setSelectedTab(tab as 'Mindset' | 'Idea' | 'Legal' | 'Finance')}
             >
-              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
-                Mindset
-              </option>
-              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
-                Legal
-              </option>
-              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
-                Idea
-              </option>
-              <option className=" text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide">
-                Finance
-              </option>
-            </select>
-          </div>
+              {tab}
+            </li>
+          ))}
+        </ul>
+      </div>
 
-          <div className="md:hidden mt-6">
-            <div className="flex overflow-x-scroll no-scrollbar space-x-6 px-4 ">
-              <video className="w-60 rounded-xl" controls>
-                <source src="/img/vide01.mp4" type="video/mp4" />
+      <div className="hidden md:block container w-fit mx-auto">
+        <div
+          key={selectedTab} 
+          className="md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-x-6 md:gap-x-20 md:gap-y-12 lg:mx-4 my-4 md:mx-10"
+        >
+          {videos[selectedTab].map((video, index) => (
+            <div key={index} className="overflow-hidden h-[330px] w-[240px] rounded-lg">
+              <video className="w-full h-full object-cover border-none outline-none" controls>
+                <source src={video} type="video/mp4" />
               </video>
-
-              <video className="w-60 rounded-xl" controls>
-                <source src="/img/vide01.mp4" type="video/mp4" />
-              </video>
-
-              <video className="w-60 rounded-xl" controls>
-                <source src="/img/vide01.mp4" type="video/mp4" />
-              </video>
-
-              <video className="w-60 rounded-xl" controls>
-                <source src="/img/vide01.mp4" type="video/mp4" />
-              </video>
-              
             </div>
-          </div>
-
-          <div className="mt-8 hidden md:block w-fit mx-auto lg:w-full ">
-          <ul className="border-2 border-slate-200 flex justify-between p-2 px-16 rounded-lg space-x-32 lg:space-x-0">
-            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide border-b-2 border-amber-500">Mindset</li>
-            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide">Idea</li>
-            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide">Legal</li>
-            <li className="text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide">Finance</li>
-
-          </ul>
-          </div>
-
-<div className="hidden md:block container w-fit mx-auto">
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-x-6 md:gap-x-20 md:gap-y-12 lg:mx-4 my-4 md:mx-10">
-        
-      <div className="overflow-hidden h-[330px] w-[240px] rounded-lg">
-            <video
-              className="w-full h-full object-cover border-none outline-none"
-              controls
-            >
-              <source src="/img/vide01.mp4" type="video/mp4" />
-            </video>
+          ))}
+        </div>
       </div>
-
-      <div className="overflow-hidden h-[330px] w-[240px] rounded-lg">
-            <video
-              className="w-full h-full object-cover border-none outline-none"
-              controls
-            >
-              <source src="/img/vide01.mp4" type="video/mp4" />
-            </video>
-      </div>
-
-      <div className="overflow-hidden h-[330px] w-[240px] rounded-lg">
-            <video
-              className="w-full h-full object-cover border-none outline-none"
-              controls
-            >
-              <source src="/img/vide01.mp4" type="video/mp4" />
-            </video>
-      </div>
-
-      <div className="overflow-hidden h-[330px] w-[240px] rounded-lg">
-            <video
-              className="w-full h-full object-cover border-none outline-none"
-              controls
-            >
-              <source src="/img/vide01.mp4" type="video/mp4" />
-            </video>
-      </div>
-
-</div>
     </div>
 
         </div>
       </div>
 
-      <div className="sec4 mt-12 md:mt-24 sm:relative">
+      <div className="sec5 mt-12 md:mt-24 sm:relative">
         <div className="sm:absolute sm:top-[70px] sm:left-[10px] md:top-[130px] md:left-[30px] lg:top-[200px] lg:left-[100px] sm:space-y-3">
           <h1 className="text-emerald-800 sm:text-white sm:opacity-85 text-2xl font-bold tracking-widest text-center">
             Why LIST?
@@ -336,239 +307,239 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="sec5 mt-10">
-      <h1 className="text-emerald-800 text-xl font-semibold tracking-widest text-center mb-4 md:mb-12 md:text-2xl">Our coaches</h1>
+      <div className="sec6 mt-10">
+        <h1 className="text-emerald-800 text-xl font-semibold tracking-widest text-center mb-4 md:mb-12 md:text-2xl">
+          Our coaches
+        </h1>
 
         <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-16 lg:gap-x-24 gap-y-10 w-fit mx-auto">
-        
-
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/abhi.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-52 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/abhi.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                ABHISHEK RAI
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                    ABHISHEK RAI
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/rohit.png"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-52 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/rohit.png"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                ROHIT GUPTA
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  ROHIT GUPTA
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/richa.png"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-52 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/richa.png"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                RICHA KHARE
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  RICHA KHARE
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/niraj.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-52 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/niraj.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                NIRAJ SHRIVASTAVA
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  NIRAJ SHRIVASTAVA
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/sudeep.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-52 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/sudeep.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                SUDEEP SHRIVASTAVA
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                    SUDEEP SHRIVASTAVA
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/Aparna.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-52 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/Aparna.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                APARNA DAS
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  APARNA
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
-
         </div>
 
         <div className="sm:hidden flex overflow-x-scroll no-scrollbar space-x-4 mt-2 mx-4">
-
-      <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/abhi.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-56 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/abhi.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                ABHISHEK RAI
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                    ABHISHEK RAI
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/rohit.png"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-56 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/rohit.png"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                ROHIT GUPTA
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  ROHIT GUPTA
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/richa.png"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-56 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/richa.png"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                RICHA KHARE
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  RICHA KHARE
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/niraj.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-56 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/niraj.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                NIRAJ SHRIVASTAVA
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  NIRAJ SHRIVASTAVA
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/sudeep.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-56 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/sudeep.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                SUDEEP SHRIVASTAVA
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                    SUDEEP SHRIVASTAVA
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
-        </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
-          <img
-                  className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
-                  src="/ourcoaches/Aparna.jpg"
-                  alt="blog"
-                />
+          <div className="w-56 rounded-lg">
+            <div className="w-56 h-48 ">
+              <img
+                className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
+                src="/ourcoaches/Aparna.jpg"
+                alt="blog"
+              />
+            </div>
+            <div className="p-2">
+              <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
+                APARNA DAS
+              </h1>
+              <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
+                Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
+              </p>
+            </div>
           </div>
-          <div className="p-2">
-                  <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  APARNA DAS
-                  </h1>
-                  <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
-                    Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
-                  </p>
-                </div>
         </div>
 
+        <div className="sm:hidden text-center mt-6 ">
+          <span className="text-emerald-800 mb-4">
+            Scroll to See all Coaches
+          </span>
         </div>
-
-        <div className="sm:hidden text-center mt-6 "><span className="text-emerald-800 mb-4">Scroll to See all Coaches</span></div>
-        
       </div>
 
-      <div className="sec6 mt-12">
+      <div className="sec7 mt-12">
         <div className="flex justify-around p-4 bg-white rounded-2xl shadow min-h-40">
           <div className="p-2 w-full xsm:w-1/2 sm:ml-12 h-fit my-auto">
             <h1 className="text-center text-emerald-800 text-lg xsm:text-2xl font-bold leading-none md:text-3xl sm:text-start">
@@ -606,9 +577,12 @@ const Home = () => {
           />
         </div>
       </div>
+
+      <div className="sec8 -mt-2">
+        <Testimonials/>
+      </div>
     </>
   );
 };
 
 export default Home;
-
