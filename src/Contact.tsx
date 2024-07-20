@@ -45,7 +45,7 @@ function Contact() {
       <p className="text-emerald-800 text-xl font-semibold tracking-widest text-center">Contact us</p>
       <h1 className="text-center text-stone-500 text-base font-normal leading-normal tracking-wide mt-2">Reach out to us using any of the methods below, and our dedicated team will get  <br className="hidden sm:block"/>back to you promptly.</h1>
 
-      <div className="main mt-4 grid grid-cols-1 gap-y-6 mdx:grid-cols-3 mdx:gap-x-8 w-fit mx-auto">
+      <div className="main mt-4 md:mt-8 grid grid-cols-1 gap-y-6 mdx:grid-cols-3 mdx:gap-x-8 w-fit mx-auto">
 
         <div className="1st flex">
           <div className="bg-gradient-to-b from-amber-500 to-yellow-600 p-3 w-fit h-fit">
@@ -59,7 +59,7 @@ function Contact() {
 
         <div className="2nd flex">
           <div className="bg-gradient-to-b from-amber-500 to-yellow-600 p-3 w-fit h-fit">
-            <FaPhone className="text-3xl text-white"/>
+            <FaEnvelope className="text-3xl text-white"/>
           </div>
           <div className="translate-x-6 mdx:translate-x-2">
             <p className="text-stone-500 text-xl mdx:text-lg font-semibold leading-normal tracking-wide">Email address</p>
@@ -69,7 +69,7 @@ function Contact() {
 
         <div className="3rd flex">
           <div className="bg-gradient-to-b from-amber-500 to-yellow-600 p-3 w-fit h-fit ">
-            <FaPhone className="text-3xl text-white"/>
+            <FaMapMarkerAlt className="text-3xl text-white"/>
           </div>
           <div className="translate-x-6 mdx:translate-x-2 -translate-y-2">
             <p className="text-stone-500 text-xl mdx:text-lg font-semibold leading-normal tracking-wide">Reach Us</p>
@@ -79,36 +79,17 @@ function Contact() {
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="sec4 mt-6">
         <h1 className="text-emerald-800 text-xl font-semibold leading-relaxed tracking-wide text-center">
           Meet us Globally
         </h1>
-        <p className="text-center text-stone-500 text-sm font-normal leading-6 tracking-wide">
+        <p className="text-center text-stone-500 text-sm font-normal leading-6 tracking-wide sm:px-8">
           Connect with our global offices and meet our team in person. We have a
-          presence in several major cities worldwide, ready to support you
+          presence in several major cities worldwide,<br className="hidden lg:block"/> ready to support you
           wherever you are.
         </p>
 
-        <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-4 md:hidden mx-4">
+        <div className="flex overflow-x-scroll no-scrollbar space-x-4 my-4 md:hidden mx-4">
           <div className="my-4 w-[200px] bg-white rounded-lg shadow">
             <div className="w-[200px] h-[140px] text-white">
               <img src="/contact/global.png" className="w-full h-full" />
@@ -182,6 +163,8 @@ function Contact() {
             </p>
           </div>
         </div>
+
+        <div className="text-center -mt-4 md:hidden"><span className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide ">Scroll to see All</span></div>
       </div>
 
       <div className="sec5">
