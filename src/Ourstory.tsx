@@ -5,6 +5,7 @@ import CardApp from "./Cards.tsx";
 function Ourstory() {
   return (
     <div className="container w-fit mx-auto">
+      
       <div className="sec1">
         <div className="text-center mt-6">
           <div className="w-fit mx-auto">

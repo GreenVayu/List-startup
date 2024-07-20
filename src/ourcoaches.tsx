@@ -22,8 +22,8 @@ function Coaches() {
 
         <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-16 lg:gap-x-24 gap-y-10 w-fit mx-auto">
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/abhi.jpg"
@@ -40,8 +40,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/rohit.png"
@@ -58,8 +58,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/richa.png"
@@ -76,8 +76,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/niraj.jpg"
@@ -94,8 +94,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/sudeep.jpg"
@@ -112,8 +112,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/Aparna.jpg"
@@ -134,8 +134,8 @@ function Coaches() {
 
         <div className="sm:hidden flex overflow-x-scroll no-scrollbar space-x-4 mt-2 mx-4">
 
-      <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+      <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/abhi.jpg"
@@ -152,8 +152,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/rohit.png"
@@ -170,8 +170,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/richa.png"
@@ -188,8 +188,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/niraj.jpg"
@@ -206,8 +206,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/sudeep.jpg"
@@ -224,8 +224,8 @@ function Coaches() {
                 </div>
         </div>
 
-        <div className="w-56 rounded-lg">
-          <div className="w-56 h-48 ">
+        <div className="w-52 rounded-lg">
+          <div className="w-52 h-48 ">
           <img
                   className="w-full h-full border-2 border-gray-200 border-opacity-20 rounded-2xl"
                   src="/ourcoaches/Aparna.jpg"
@@ -234,7 +234,7 @@ function Coaches() {
           </div>
           <div className="p-2">
                   <h1 className="text-emerald-800 text-lg font-semibold leading-relaxed tracking-wide text-center">
-                  APARNA
+                  APARNA DAS
                   </h1>
                   <p className="font-normal leading-5 tracking-wide text-center text-emerald-800 text-xs">
                     Start-up Coach, Entrepreneur, Founder GreenVayu, LIST
@@ -250,57 +250,66 @@ function Coaches() {
 
       <hr className="border-t-2 border-gray-500 my-2 lg:hidden" />
 
-      <div className="sec3 mt-4 sm:mt-8 lg:w-[70vw] lg:mx-auto lg:flex lg:space-x-20">
-        <img
-          src="/ourcoaches/purpose.jpg"
-          className=" hidden w-[28.125vw] rounded-lg pl-8 mt-8 lg:block "
-        />
-        <div className="pt-4">
-          <div className="text-emerald-800 px-4 text-center text-xl font-semibold lg:text-left lg:text-2xl">
-            Our Purpose{" "}
-          </div>
-          <div className="text-stone-500 text-base font-normal py-4 px-4 ">
-            At LIST Training Academy, we are proud to have a team of experienced
-            and passionate coaches who are dedicated to helping you succeed
-            <br />
-            <br />
-            Our coaches bring a wealth of knowledge and a genuine passion for
-            teaching. Get to know the experts who will guide you on your
-            entrepreneurial journey.
+      <div className="sec3 p-4 md:py-4 md:px-0 lg:p-4 bg-[url('/ourstory/sec2bg.png')] mt-12">
+      <h1 className="text-emerald-800 text-2xl font-semibold tracking-widest mb-4 md:hidden">
+              Our Purpose
+            </h1>
+
+        <div className="flex flex-col md:flex-row justify-between mt-4">
+          <div className="md:w-[40%] flex justify-center items-center md:ml-16">
+          <img src="/ourcoaches/purpose.jpg" className="w-full" />
           </div>
 
-          <div className="text-center mt-4 "><Button variant="contained" color="success">
-          Contact us to know more
-              </Button></div>
+          <div className="md:w-1/2 md:py-8 md:px-4 lg:p-8">
+          <h1 className="text-emerald-800 text-2xl font-semibold tracking-widest mb-4 hidden md:block">
+              Our Purpose
+            </h1>
 
+            <p className="text-stone-500 text-base md:text-base lg:text-lg font-normal leading-7 tracking-wide mt-4 md:mt-2">
+            At LIST Training Academy, we are proud to have a team of experienced and passionate coaches who are dedicated to helping you succeed
+            </p>
+            <p className="text-stone-500 text-base md:text-base lg:text-lg font-normal leading-7 tracking-wide mt-2">
+            Our coaches bring a wealth of knowledge and a genuine passion for teaching.
+            </p>
+
+            <div className="mt-4 text-center md:hidden">
+            <Button variant="contained" color="success">
+            Contact us to know more
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
 
       <hr className="border-t-2 border-gray-500 my-4 lg:hidden" />
 
-      <div className="sec4 mt-8 lg:w-[70vw] lg:mx-auto lg:flex lg:space-x-20">
-        <div className=" py-8">
-          <div className=" text-emerald-800 text-center text-xl font-semibold lg:pt-8">
-            From Founder’s Desk{" "}
-          </div>
-          <div className="text-stone-500 text-base font-normal pt-4 px-4 lg:pt-8">
-            {" "}
-            I remember the day GreenVayu was born as if it were yesterday. I was
-            sitting at my small kitchen table, filled with a burning desire to
-            start my own company. This longing wasn’t just a dream; it felt like
-            a beacon, guiding me through a sea of uncertainty and fear.{" "}
-          </div>
+      <div className="sec4 p-4 md:py-4 md:px-0 lg:p-4 bg-white mt-12">
+      <h1 className="text-emerald-800 text-xl font-semibold tracking-widest mb-4 md:hidden">
+      From Founder's Desk
+            </h1>
 
-            <div className="text-center mt-6"><Button variant="contained" color="success">
-                Read More 
-              </Button></div>
+        <div className="flex flex-col-reverse md:flex-row justify-between mt-4">
+
+          <div className="md:w-1/2 md:py-8 md:px-4 lg:p-8 md:ml-6">
+          <h1 className="text-emerald-800 text-2xl md:text-xl mdx:text-2xl font-semibold tracking-widest mb-4 hidden md:block ">
+          From Founder's Desk
+            </h1>
+
+            <p className="text-stone-500 text-base md:text-sm mdx:text-lg font-normal leading-7 tracking-wide mt-4 md:-mt-2">
+            I remember the day GreenVayu was born as if it were yesterday. I was sitting at my small kitchen table, filled with a burning desire to start my own company. This longing wasn't just a dream; it felt like a beacon, guiding me through a sea of uncertainty and fear.
+            </p>
           
-        </div>
+            <div className="mt-4 text-center md:text-start">
+            <Button variant="contained" color="success">
+            Read more
+              </Button>
+            </div>
+          </div>
 
-        <img
-          src="/ourcoaches/abhi.jpg"
-          className=" hidden w-[28.125vw] rounded-lg pl-8 mt-8 lg:block "
-        />
+          <div className="md:w-[40%] flex justify-center items-center md:mr-6">
+          <img src="/ourcoaches/abhi.jpg" className="w-full" />
+          </div>
+        </div>
       </div>
 
       <hr className="border-t-2 border-gray-500 my-4 lg:hidden" />
