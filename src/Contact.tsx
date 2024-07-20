@@ -4,6 +4,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 function Contact() {
   return (
     <div className="contactsec">
+
       <div className="sec1 mt-6">
         <h1 className="text-center text-emerald-800 text-2xl font-semibold leading-7 tracking-tight sm:text-3xl sm:font-bold">
           Have a question or need assistance?
@@ -39,90 +40,63 @@ function Contact() {
         </div>
       </div>
 
-      <div className="sec3 mt-6">
-        <h1 className="text-emerald-800 text-2xl font-semibold leading-relaxed tracking-wide text-center p-2">
-          Contact us
-        </h1>
-        <p className="text-center text-stone-500 text-sm font-normal leading-5 tracking-wide px-2">
-          Reach out to us using any of the methods below, and our dedicated team
-          will get back to you promptly.
-        </p>
+    <div className="sec3 mt-8">
 
-        <div className="flex flex-col md:flex-row w-fit mx-auto">
-          <div className="flex p-4">
-            <div className="mx-2 h-fit my-auto">
-              <div className="w-fit p-2 bg-amber-500 h-fit mx-auto my-auto">
-                <FaPhone className="text-2xl md:text-4xl text-white" />
-              </div>
-            </div>
+      <p className="text-emerald-800 text-xl font-semibold tracking-widest text-center">Contact us</p>
+      <h1 className="text-center text-stone-500 text-base font-normal leading-normal tracking-wide mt-2">Reach out to us using any of the methods below, and our dedicated team will get  <br className="hidden sm:block"/>back to you promptly.</h1>
 
-            <div className="mx-4 flex flex-col h-fit my-auto">
-              <h1 className="text-stone-500 text-sm font-normal leading-5 tracking-wide">
-                Call Us
-              </h1>
-              <p className="text-stone-500 text-xs font-normal leading-4 tracking-wide">
-                +91 91797 04005
-              </p>
-            </div>
+      <div className="main mt-4 grid grid-cols-1 gap-y-6 mdx:grid-cols-3 mdx:gap-x-8 w-fit mx-auto">
+
+        <div className="1st flex">
+          <div className="bg-gradient-to-b from-amber-500 to-yellow-600 p-3 w-fit h-fit">
+            <FaPhone className="text-3xl text-white"/>
           </div>
-
-          <div className="flex p-4">
-            <div className="mx-2 h-fit my-auto">
-              <div className="w-fit p-2 bg-amber-500 h-fit mx-auto my-auto">
-                <FaEnvelope className="text-2xl md:text-4xl text-white" />
-              </div>
-            </div>
-
-            <div className="mx-4 flex flex-col h-fit my-auto">
-              <h1 className="text-stone-500 text-sm font-normal leading-5 tracking-wide">
-                Email address
-              </h1>
-              <p className="text-stone-500 text-xs font-normal leading-4 tracking-wide">
-                info@listartup.com
-              </p>
-            </div>
-          </div>
-
-          <div className="flex p-4">
-            <div className="mx-2 h-fit my-auto">
-              <div className="w-fit p-2 bg-amber-500 h-fit mx-auto my-auto">
-                <FaMapMarkerAlt className="text-2xl md:text-4xl text-white" />
-              </div>
-            </div>
-
-            <div className="mx-4 flex flex-col h-fit my-auto">
-              <h1 className="text-stone-500 text-sm font-normal leading-5 tracking-wide">
-                Reach Us
-              </h1>
-              <p className="text-stone-500 text-xs font-normal leading-4 tracking-wide">
-                F-31 Aakriti Business{" "}
-                <span className="lg:hidden">
-                  <br />
-                </span>
-                Centre (ABC),Salaiya,
-                <span className="lg:hidden">
-                  <br />
-                </span>{" "}
-                Misrod, Bhopal MP
-              </p>
-            </div>
+          <div className="translate-x-6 mdx:translate-x-2">
+            <p className="text-stone-500 text-xl mdx:text-lg font-semibold leading-normal tracking-wide">Call Us</p>
+            <h1 className="text-stone-500 text-base mdx:text-sm font-normal leading-normal tracking-wide">+91 91797 04005</h1>
           </div>
         </div>
 
-        <div className="mt-6">
-          <div className="w-full h-full">
-            <iframe
-              className="w-full h-72"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
-              frameBorder="0"
-              style={{ border: 0 }}
-              allowFullScreen
-              aria-hidden="false"
-              tabIndex="0"
-            ></iframe>
+        <div className="2nd flex">
+          <div className="bg-gradient-to-b from-amber-500 to-yellow-600 p-3 w-fit h-fit">
+            <FaPhone className="text-3xl text-white"/>
+          </div>
+          <div className="translate-x-6 mdx:translate-x-2">
+            <p className="text-stone-500 text-xl mdx:text-lg font-semibold leading-normal tracking-wide">Email address</p>
+            <h1 className="text-stone-500 text-base mdx:text-sm font-normal leading-normal tracking-wide">info@listartup.com</h1>
+          </div>
+        </div>
+
+        <div className="3rd flex">
+          <div className="bg-gradient-to-b from-amber-500 to-yellow-600 p-3 w-fit h-fit ">
+            <FaPhone className="text-3xl text-white"/>
+          </div>
+          <div className="translate-x-6 mdx:translate-x-2 -translate-y-2">
+            <p className="text-stone-500 text-xl mdx:text-lg font-semibold leading-normal tracking-wide">Reach Us</p>
+            <h1 className="text-stone-500 text-base mdx:text-sm font-normal leading-normal tracking-wide">F-31 Aakriti Business Centre (ABC), <br className="hidden xsm:block"/>Salaiya, Misrod, Bhopal MP</h1>
           </div>
         </div>
       </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div className="sec4 mt-6">
         <h1 className="text-emerald-800 text-xl font-semibold leading-relaxed tracking-wide text-center">
