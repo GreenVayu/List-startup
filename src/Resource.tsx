@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb,faCalendarMinus,faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb,faCalendarMinus,faChevronRight,faCalendar,faFileAlt,faChartLine ,faCheckCircle} from "@fortawesome/free-solid-svg-icons";
 
 function Resource() {
 
@@ -211,80 +211,91 @@ function Resource() {
         <h1 className="text-emerald-800 text-lg font-semibold tracking-widest p-2 xsm:text-2xl">
           Step - by - Step Guide to Start your Startup
         </h1>
-        <p className="text-stone-500 text-sm font-normal leading-5 tracking-wide px-2 py-1 xsm:text-xl">
+        <p className="text-stone-500 text-base font-normal leading-5 tracking-wide px-2 py-1 xsm:text-xl">
           At LIST, we've crafted a detailed, step-by-step guide to help you
           navigate the process with confidence and clarity.
         </p>
         </div>
 
-        <div className="mx-4 lg:mx-20">
-          <div className="relative flex flex-col items-start md:items-center space-y-8 md:space-y-0 md:flex-row md:justify-between mt-8">
+        <div className="main mt-8 grid grid-cols-1 gap-y-6 md:grid-cols-5 relative">
 
-            <div className="hidden md:block absolute top-[20px] left-0 right-0 h-0.5 mx-4 bg-green-500 "></div>
+          <div className="hidden w-[80%] bg-emerald-800 h-1 absolute translate-y-7 translate-x-20 mx-4 md:block"></div>
 
-            <div className="block md:hidden absolute top-0 bottom-0 left-[18px] w-0.5 bg-green-500 "></div>
-
-            <div className="flex md:flex-col md:w-16 z-10 md:-translate-y-2">
-              <div className="min-w-10 h-10 md:w-14 md:h-14 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
-                <FontAwesomeIcon
+          <div className="1st z-10">
+             <div className="flex justify-center items-center">
+              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-3 w-fit">
+              <FontAwesomeIcon
                   icon={faLightbulb}
-                  className="text-white text-xl md:text-3xl"
+                  className="text-white text-4xl"
                 />
-              </div>
-              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide flex items-center justify-center text-center ml-2 xsm:ml-6 md:ml-0 md:mt-4" >
-                Idea Generation and Validation
-              </p>
-            </div>
 
-            <div className="flex md:flex-col md:w-16 z-10 md:-translate-y-6">
-              <div className="min-w-10 md:w-14 h-10 md:h-14 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
-                <FontAwesomeIcon
+              </div>
+             </div>
+             <div className="mt-2">
+              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide text-center md:text-base">Idea Generation and <br/> Validation</p>
+             </div>
+             </div>
+
+             <div className="2nd z-10">
+             <div className="flex justify-center items-center">
+              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-3 w-fit">
+              <FontAwesomeIcon
                   icon={faCalendarMinus}
-                  className="text-white text-xl md:text-3xl"
+                  className="text-white text-4xl"
                 />
-              </div>
-              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide flex items-center justify-center text-center ml-6 md:ml-0 md:mt-4">
-              Business Planning
-              </p>
-            </div>
 
-            <div className="flex md:flex-col md:w-16 z-10 md:-translate-y-2">
-              <div className="min-w-10 md:w-14 h-10 md:h-14 bg-amber-500 rounded-full flex items-center justify-center mx-auto  xsm:mr-4">
-                <FontAwesomeIcon
-                  icon={faLightbulb}
-                  className="text-white text-xl md:text-2xl"
+              </div>
+             </div>
+             <div className="mt-2">
+              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide text-center md:text-base"> Business Planning</p>
+             </div>
+             </div>
+
+             <div className="3rd z-10">
+             <div className="flex justify-center items-center">
+              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-3 w-fit">
+              <FontAwesomeIcon
+                  icon={faFileAlt}
+                  className="text-white text-4xl"
                 />
-              </div>
-              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide flex items-center justify-center text-center sm:ml-6 md:ml-0 md:mt-4">
-              Legal Considerations and Funding <br/> Opportunities
-              </p>
-            </div>
 
-            <div className="flex md:flex-col md:w-16 z-10 md:-translate-y-4">
-              <div className="min-w-10 md:w-14 h-10 md:h-14 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
-                <FontAwesomeIcon
-                  icon={faLightbulb}
-                  className="text-white text-xl md:text-2xl"
+              </div>
+             </div>
+             <div className="mt-2">
+              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide text-center md:text-base">Legal Considerations <br/>and Funding Opportunities</p>
+             </div>
+             </div>
+
+             <div className="4th z-10">
+             <div className="flex justify-center items-center">
+              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-3 w-fit">
+              <FontAwesomeIcon
+                  icon={faChartLine }
+                  className="text-white text-4xl"
                 />
-              </div>
-              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide flex items-center justify-center text-center ml-6 md:ml-0 md:mt-4">
-              Setting Up Your Business
-              </p>
-            </div>
 
-            <div className="flex md:flex-col md:w-16 z-10 md:-translate-y-2">
-              <div className="min-w-10 md:w-14 h-10 md:h-14 bg-amber-500 rounded-full flex items-center justify-center mx-auto">
-                <FontAwesomeIcon
-                  icon={faLightbulb}
-                  className="text-white text-xl md:text-2xl"
+              </div>
+             </div>
+             <div className="mt-2">
+              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide text-center md:text-base">Setting Up Your <br/> Business</p>
+             </div>
+             </div>
+
+             <div className="5th z-10">
+             <div className="flex justify-center items-center">
+              <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-full p-3 w-fit">
+              <FontAwesomeIcon
+                  icon={faCheckCircle}
+                  className="text-white text-4xl"
                 />
-              </div>
-              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide flex items-center justify-center text-center ml-2 xsm:ml-6 md:ml-0 md:mt-4">
-              Marketing & Sublime Customer Support
-              </p>
-            </div>
 
-          </div>
+              </div>
+             </div>
+             <div className="mt-2">
+              <p className="text-stone-500 text-lg font-semibold leading-5 tracking-wide text-center md:text-base">Marketing & Sublime <br/> Customer Support</p>
+             </div>
+             </div>
+
         </div>
 
       </div>
@@ -413,7 +424,7 @@ function Resource() {
 
         </div>
         
-        <div className="text-center mb-4 sm:hidden"><span className="text-purple-600 text-xl ">scroll to see more</span></div>
+        <div className="text-center mb-4 sm:hidden"><span className="text-purple-700 text-xl ">scroll to see more</span></div>
 
         <div className="py-4 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 sm:gap-12 my-6 mx-auto w-fit">
 
