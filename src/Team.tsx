@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Team() {
   return (
     <div className='team-container'>
@@ -13,7 +11,7 @@ function Team() {
 
       <h1 className="text-emerald-800 text-xl font-semibold tracking-widest border-b-2 border-amber-500 w-fit mx-auto mb-6">SCRUM MASTERS</h1>
 
-      <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
+      <div className="flex overflow-x-scroll no-scrollbar space-x-4  my-2 xmd:hidden mx-4">
 
           <div className="rounded border border-emerald-800 shadow-lg min-w-40 ">
             <img
@@ -76,7 +74,7 @@ function Team() {
 
       <h1 className="text-white text-xl font-semibold tracking-widest w-fit text-center mb-6 mt-6 xmd:w-fit xmd:mx-auto">ARCHITECTS <span className='border-b-2 border-amber-500'>AND</span> <span className='text-center'>STORYTELLERS</span> </h1>
 
-      <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
+      <div className="flex overflow-x-scroll no-scrollbar space-x-4  my-2 xmd:hidden mx-4">
 
           <div className="rounded border border-emerald-800 shadow-lg min-w-40 bg-white ">
             <img
@@ -111,21 +109,21 @@ function Team() {
 
         <div className='hidden xmd:flex justify-evenly gap-4 p-6'>
 
-        <div className='bg-white rounded border border-emerald-800 w-fit'>
-          <img src='/team/vrunda.png' className='w-52 h-[230px] mx-auto rounded-tl-[3px] rounded-tr-[3px]'/>
-          <h1 className="text-emerald-800 text-xl font-semibold leading-3 tracking-wide w-fit mx-auto py-2 px-1 mt-2">VRUNDA PRAJAPATI</h1>
+        <div className='bg-white rounded border border-emerald-800 w-fit rounded-tl-[3px] rounded-tr-[3px]'>
+          <img src='/team/vrunda.png' className='w-52 h-[230px] mx-auto '/>
+          <h1 className="text-emerald-800 text-base md:text-xl font-semibold leading-3 tracking-wide w-fit mx-auto py-2 px-1 mt-2 ">VRUNDA</h1>
           <p className=" text-emerald-800 text-sm mb-2 font-normal leading-5 tracking-tight text-center">Architect & Storyteller</p>
           </div>
 
           <div className='rounded bg-white border border-emerald-800 w-fit'>
           <img src='/team/sanjana.png' className='w-52 h-[230px] mx-auto rounded-tl-[3px] rounded-tr-[3px]'/>
-          <h1 className="text-emerald-800 text-xl font-semibold leading-3 tracking-wide w-fit p-2 mx-auto mt-2">SANJANA K</h1>
+          <h1 className="text-emerald-800 text-base md:text-xl font-semibold leading-3 tracking-wide w-fit p-2 mx-auto mt-2">SANJANA K</h1>
           <p className=" text-emerald-800 text-sm mb-2 font-normal leading-5 tracking-tight text-center">Architect & Storyteller</p>
           </div>
           
           <div className='rounded bg-white border border-emerald-800 w-fit'>
           <img src='/team/chechak.png' className='w-52 h-[230px] mx-auto rounded-tl-[3px] rounded-tr-[3px]'/>
-          <h1 className="text-emerald-800 text-xl font-semibold leading-3 tracking-wide w-fit p-2 mx-auto mt-2">CHEHAK ARORA</h1>
+          <h1 className="text-emerald-800 text-base md:text-xl font-semibold leading-5 tracking-wide w-fit p-2 mx-auto mt-2 ">CHEHAK ARORA</h1>
           <p className=" text-emerald-800 text-sm mb-2 font-normal leading-5 tracking-tight text-center">Architect & Storyteller</p>
           </div>
 
@@ -138,7 +136,7 @@ function Team() {
 
 <h1 className="text-emerald-800 text-xl font-semibold tracking-widest border-b-2 border-amber-500 w-fit mx-auto mb-6">R & D</h1>
 
-<div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
+<div className="flex overflow-x-scroll no-scrollbar space-x-4  my-2 xmd:hidden mx-4">
 
     <div className="rounded border border-emerald-800 shadow-lg min-w-40 ">
       <img
@@ -201,7 +199,7 @@ function Team() {
 
       <h1 className="text-white text-xl font-semibold tracking-widest w-fit mx-auto mb-6 mt-6">D<span className='border-b-2 border-amber-500'>ESIGN UX/U</span>I</h1>
 
-      <div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
+      <div className="flex overflow-x-scroll no-scrollbar space-x-4  my-2 xmd:hidden mx-4">
 
           <div className="rounded border border-emerald-800 shadow-lg min-w-40 bg-white ">
             <img
@@ -263,7 +261,7 @@ function Team() {
 
 <h1 className="text-emerald-800 text-xl font-semibold tracking-widest xmd:w-fit xmd:mx-auto mb-6 text-center">VIDEO <span className='border-b-2 border-amber-500'>PRODUCTION </span>& EDITING</h1>
 
-<div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
+<div className="flex overflow-x-scroll no-scrollbar space-x-4  my-2 xmd:hidden mx-4">
 
 <div className="rounded border border-emerald-800 shadow-lg min-w-40 ">
       <img
@@ -377,7 +375,7 @@ function Team() {
 
 <h1 className="text-white text-xl font-semibold tracking-widest border-b-2 border-amber-500 w-fit mx-auto mb-6">DIGITAL TECHNOLOGIES</h1>
 
-<div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
+<div className="flex overflow-x-scroll no-scrollbar space-x-4  my-2 xmd:hidden mx-4">
 
 <div className="rounded border border-emerald-800 shadow-lg min-w-40 bg-white">
       <img
@@ -491,7 +489,7 @@ function Team() {
 
 <h1 className="text-emerald-800 text-xl font-semibold tracking-widest border-b-2 border-amber-500 w-fit mx-auto mb-6">INHOUSE EXPERTS</h1>
 
-<div className="flex overflow-x-scroll no-scrollbar space-x-4 border-2 my-2 xmd:hidden mx-4">
+<div className="flex overflow-x-scroll no-scrollbar space-x-4  my-2 xmd:hidden mx-4">
 
 <div className="rounded border border-emerald-800 shadow-lg min-w-40 ">
       <img
