@@ -3,13 +3,14 @@ import { Button } from "@mui/material";
 function Blog() {
   return (
     <div className="container w-full mx-auto">
+
       <div className="sec1 mt-6 md:flex justify-between space-x-14">
         <div className="p-2 md:w-[45%] lg:mt-16 flex flex-col justify-center items-center pt-4">
           <div className="md:min-w-[45%] w-full min-h-64 xsm:min-h-4/5 md:min-h-72 flex justify-center items-center">
             <img src="/Blog/Rectangle.png" className="w-full min-h-72 " />
           </div>
 
-          <div className="mt-4 lg:mt-14">
+          <div className="mt-4 lg:mt-6">
             <h1 className="text-black text-lg lg:text-2xl font-semibold leading-6 tracking-wider">
               Low cost business ideas with high profits
             </h1>
@@ -28,7 +29,6 @@ function Blog() {
 
         <div className="hidden md:flex  md:flex-col md:w-[55%] p-2 my-auto mx-auto ">
           <div className="relative">
-            {/* <hr className="bg-black h-0.5 w-auto absolute bottom-3"/> */}
 
             <div className="text-emerald-800 text-2xl font-normal px-4 z-10 text-center -mt-8">
               Recent posts
@@ -39,7 +39,7 @@ function Blog() {
             <div className="flex justify-between ">
               <div className="flex justify-center items-center min-w-[32%] xl:min-h-32 my-auto">
                 <img
-                  src="/Blog/G.png"
+                  src="/Blog/R1.png"
                   className="min-w-28 lg:min-h-44 xl:w-full h-36 xl:min-h-40"
                 />
               </div>
@@ -59,7 +59,7 @@ function Blog() {
             <div className="flex justify-between ">
               <div className="flex justify-center items-center min-w-[32%] xl:min-h-32 my-auto">
                 <img
-                  src="/Blog/G.png"
+                  src="/Blog/R2.png"
                   className="min-w-28 lg:min-h-44 xl:w-full h-36 xl:min-h-40"
                 />
               </div>
@@ -79,7 +79,7 @@ function Blog() {
             <div className="flex justify-between ">
               <div className="flex justify-center items-center min-w-[32%] xl:min-h-32 my-auto">
                 <img
-                  src="/Blog/G.png"
+                  src="/Blog/R3.png"
                   className="min-w-28 lg:min-h-44 xl:w-full h-36 xl:min-h-40"
                 />
               </div>
@@ -161,32 +161,31 @@ function Blog() {
 
         </div>
 
-      <div className="sec2 bg-gradient-to-br from-emerald-800 via-emerald-900 to-neutral-400 mt-12">
-        <div className="container mx-auto flex p-6 sm:p-16 md:flex-row flex-col items-center">
-
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center justify-center ">
-            <h1 className="text-white font-semibold leading-5 tracking-widest sm:text-xl text-lg mb-4 px-2 lg:text-2xl">
-              The Best Ways to Build a Strong Customer Community for Your
-              Startup
+      <div className="sec2 p-4 md:py-4 md:px-0 lg:p-4 mt-12 bg-emerald-800 hidden md:block">
+      <h1 className="text-emerald-800 text-xl font-semibold tracking-widest mb-4 md:hidden">
+      From Founder's Desk
             </h1>
-            <p className="mb-8 text-white text-base font-normal leading-relaxed tracking-wide px-2 lg:text-xl">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the.....
-            </p>
 
-<div className="px-4">
+        <div className="flex flex-col-reverse md:flex-row justify-between mt-4">
+
+          <div className="md:w-1/2 md:py-8 md:px-4 lg:p-8 md:ml-6">
+          <h1 className="text-white md:text-lg mdx:text-2xl font-bold tracking-widest mb-4 hidden md:block ">
+          The Best Ways to Build a Strong Customer Community for Your Startup
+            </h1>
+
+            <p className="text-white md:text-base mdx:text-xl font-normal leading-7 tracking-wide mt-4 md:-mt-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.....
+            </p>
+          
+            <div className="mt-4 text-center md:text-start">
             <Button variant="contained" color="success">
             Read more
-              </Button></div>
-
+              </Button>
+            </div>
           </div>
-          <div className="w-full h-full lg:max-w-lg lg:w-full md:w-1/2 md:min-h-full -mt-6 md:mt-0 flex items-center justify-center">
-            <img
-              className="w-full h-full object-cover object-center rounded"
-              alt="hero"
-              src="/ourstory/Colorpalette.jpg"
-            />
+
+          <div className="md:w-[40%] flex justify-center items-center md:mr-6">
+          <img src="/Blog/G.png" className="w-full" />
           </div>
         </div>
       </div>
@@ -226,7 +225,7 @@ function Blog() {
             <div className="bg-white rounded-xl shadow-md min-w-48 sm:min-w-64">
               <img
                 className="w-48 sm:w-64 h-44 rounded-xl object-cover object-center mb-6"
-                src="/ourstory/Rectangle1.jpg"
+                src="/Blog/R4.png"
                 alt="content"
               />
               <h2 className="text-black text-sm font-semibold tracking-wide text-center">
@@ -288,7 +287,7 @@ function Blog() {
             <div className="bg-white rounded-xl shadow-md max-w-64">
               <img
                 className="w-64 h-36 rounded-xl object-cover object-center mb-6"
-                src="/ourstory/Rectangle1.jpg"
+                src="/Blog/R4.png"
                 alt="content"
               />
               <h2 className="text-black text-sm font-semibold tracking-wide text-center">
@@ -405,11 +404,11 @@ function Blog() {
         </div>
       </div>
 
-      <div className="sec5 mt-12 p-4 ">
-        <h1 className="text-emerald-800 text-xl font-semibold tracking-widest text-center md:text-start p-2 -mt-10 md:mt-0 md:px-8 ">
-          Our best picks
+      <div className="sec5 mt-12 p-2 ">
+        <h1 className="text-emerald-800 text-2xl font-semibold tracking-widest text-center md:text-start p-2 -mt-10 md:mt-0 md:px-8 ">
+          Our Best Picks
         </h1>
-        <p className="text-stone-500 text-base font-normal leading-normal tracking-wide px-8">
+        <p className="text-stone-500 text-base md:text-lg font-normal leading-normal tracking-wide px-8">
           Explore our curated selection of top blog posts. These articles are
           handpicked by our team for their exceptional value and relevance to
           aspiring entrepreneurs.
