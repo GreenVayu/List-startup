@@ -1,11 +1,10 @@
 import StarIcon from "@mui/icons-material/Star";
 import { Button } from "@mui/material";
+import CardApp from "./Cards.tsx";
 
 function Ourstory() {
-
   return (
     <div className="container w-fit mx-auto">
-      
       <div className="sec1">
         <div className="text-center mt-6">
           <div className="w-fit mx-auto">
@@ -37,38 +36,44 @@ function Ourstory() {
         <div className="w-4/5 mx-auto mt-6 h-[2px] opacity-20 border-2 border-stone-500"></div>
       </div>
 
-      <div className="sec2 mt-6 sm:mx-auto sm:flex md:space-x-2 ">
-        <img
-          src="/ourstory/Colorpalette.jpg"
-          className=" hidden w-[30vw] rounded-lg pl-4 ml-4 mt-8 md:block "
-        />
+      <div className="sec2 p-4 md:py-4 md:px-0 lg:p-4 bg-[url('/ourstory/sec2bg.png')] mt-12">
+      <h1 className="text-emerald-800 text-2xl font-semibold tracking-widest md:hidden mb-4">
+              Our <span className="border-b-2 border-amber-500">  Mission</span>
+            </h1>
 
-        <div className="flex flex-col mx-auto border-gray-900 sm:mt-6">
-          <div className="text-emerald-800 text-xl font-semibold tracking-widest mx-auto w-fit md:text-2xl lg:text-3xl">
-            Our <span className="border-b-2 border-yellow-500">Mission</span>
+        <div className="flex flex-col md:flex-row space-x-4 ">
+          <div className="md:w-1/2 flex justify-center items-center">
+          <img src="/ourstory/Colorpalette.jpg" className="w-full" />
           </div>
 
-          <div className="text-stone-500 text-base font-normal leading-8 tracking-wide w-4/5 mx-auto mt-4 pl-4 md:pl-2 lg:text-lg lg:leading-8">
-            LIST was created to empower individuals to pursue their
-            entrepreneurial dreams with confidence.
-            <br />
-            We understand the fear that can hold aspiring business owners back.
-            <br />
-            LIST is here to discard any uncertainty and foster a space where
-            dreams come true and you can make changes in the world. Let’s
-            Innovate together.
-          </div>
+          <div className="md:w-1/2 md:py-8 md:px-4 lg:p-8">
 
-          <div className="mx-auto mt-6 bg-emerald-800 rounded-lg w-fit sm:pl-0 sm:ml-16">
-            {" "}
+            <h1 className="text-emerald-800 text-xl lg:text-2xl font-semibold tracking-widest hidden md:block">
+              Our <span className="border-b-2 border-amber-400">Mission</span>
+            </h1>
+
+            <p className="text-stone-500 text-base md:text-base lg:text-lg font-normal leading-7 tracking-wide mt-4 md:mt-2">
+              LIST was created to empower individuals to pursue their
+              <br />
+              entrepreneurial dreams with confidence. We understand the fear
+              that can hold aspiring business owners back.
+            </p>
+            <p className="text-stone-500 text-base md:text-base lg:text-lg font-normal leading-7 tracking-wide mt-2">
+              LIST is here to discard any uncertainty and foster a space where
+              dreams come true and you can make changes in the world. Let's
+              Innovate together.
+            </p>
+
+            <div className="mt-4">
             <Button variant="contained" color="success">
-                Meet Our Coaches
+            Meet Our Coaches
               </Button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="sec3 mt-20 sm:relative">
+      <div className="sec3 mt-10 sm:relative">
         <div className="sm:bg-[url('/ourstory/cp.png')] sm:bg-cover sm:block sm:py-10 ">
           <div className="text-xl font-semibold tracking-widest w-fit mx-auto text-amber-500 lg:text-2xl sm:text-white sm:absolute sm:left-[40px] sm:top-[25px]">
             How we work?
@@ -171,7 +176,11 @@ function Ourstory() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row md:justify-around">
+        <div className="-mt-32 md:hidden">
+          <CardApp/>
+        </div>
+
+        <div className="hidden md:flex justify-around">
           <div className="bg-white shadow-md p-6 rounded-lg mb-6 md:mb-0 md:mr-4 flex-1">
             <div className="flex justify-center mb-4">
               <img
@@ -224,8 +233,7 @@ function Ourstory() {
         </div>
       </div>
 
-      <div className="sec6 mt-20 mb-8 lg:mr-8">
-
+      <div className="sec6 -mt-12 mb-8 lg:mr-8 md:mt-20 ">
         <div className="bg-gradient-to-b from-emerald-100 py-12 md:ml-3 lg:ml-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -237,9 +245,8 @@ function Ourstory() {
                 needs of entrepreneurs at every stage of their journey.
               </p>
             </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="bg-gradient-to-b from-amber-500 to-yellow-600 rounded-2xl py-2 px-2 w-fit mx-auto mb-4 flex items-center justify-center">
                   <img
@@ -302,60 +309,51 @@ function Ourstory() {
                   and crisp videos, each under 10 minutes.
                 </p>
               </div>
-
             </div>
           </div>
         </div>
-
       </div>
 
       <div className="sec7">
-
-      <div className="p-8 bg-white">
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-              <div className="p-6">
-                <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
+        <div className="px-8 bg-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4">
+            <div className="p-2">
+              <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
                 500+
-                </h3>
-                <p className="text-xl leading-6 text-stone-500 text-center">
+              </h3>
+              <p className="text-xl leading-6 text-stone-500 text-center">
                 Start - up ideas
-                </p>
-              </div>
-
-              <div className="p-6">
-
-                <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
-                1500+
-                </h3>
-                <p className="text-xl leading-6 text-stone-500 text-center">
-                Subscribers joined our program and became self employed
-                </p>
-              </div>
-
-              <div className="p-6">
-
-                <h3 className="text-2xl leading-7 font-extarbold text-emerald-800 mb-2 text-center md:text-3xl">
-                25+
-                </h3>
-                <p className="text-xl leading-6 text-stone-500 text-center">
-                The Ratio of theory and  practice in each course
-                </p>
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
-                99%
-                </h3>
-                <p className="text-xl leading-6 text-stone-500 text-center">
-                Discover the various funding options available for your startup
-                </p>
-              </div>
+              </p>
             </div>
 
-      </div>
+            <div className="p-2">
+              <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
+                1500+
+              </h3>
+              <p className="text-xl leading-6 text-stone-500 text-center">
+                Subscribers joined our program and became self employed
+              </p>
+            </div>
 
+            <div className="p-2">
+              <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
+                25+
+              </h3>
+              <p className="text-xl leading-6 text-stone-500 text-center">
+                The Ratio of theory and practice in each course
+              </p>
+            </div>
+
+            <div className="p-2">
+              <h3 className="text-2xl leading-7 font-extrabold text-emerald-800 mb-2 text-center md:text-3xl">
+                99%
+              </h3>
+              <p className="text-xl leading-6 text-stone-500 text-center">
+                Discover the various funding options available for your startup
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="sec8 mt-12">
@@ -369,15 +367,14 @@ function Ourstory() {
               journey today!
             </div>
 
-            <div className="sm:flex w-fit sm:ml-16 lg:ml-24 lg:mt-6 sm:space-x-4 mx-auto">
+            <div className="sm:flex w-fit sm:ml-16 lg:ml-24 lg:mt-6 sm:space-x-4 mx-auto mt-4">
               <Button variant="contained" color="success">
                 Explore Courses
               </Button>
-
-              <div className="mx-auto bg-white border-2 border-emerald-800 rounded-lg w-fit mt-0">
-                <button className="text-emerald-800 text-base font-normal px-4 py-2">
+              <div className="text-center mt-2">
+                <Button variant="outlined" color="secondary">
                   Get in touch
-                </button>
+                </Button>
               </div>
             </div>
           </div>
