@@ -5,7 +5,7 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
 import Testimonials from "./Testimonials";
 
-interface Section2PicProps {
+interface div2PicProps {
   alt: string;
   src: string;
 }
@@ -17,7 +17,7 @@ interface Videos {
   Finance: string[];
 }
 
-const Section2Pic: React.FC<Section2PicProps> = ({ alt, src }) => {
+const div2Pic: React.FC<div2PicProps> = ({ alt, src }) => {
   return (
     <img
       className="object-cover object-center rounded w-1/2"
@@ -27,7 +27,7 @@ const Section2Pic: React.FC<Section2PicProps> = ({ alt, src }) => {
   );
 };
 
-const Section2Text: React.FC<{
+const div2Text: React.FC<{
   Icon: React.ElementType;
   children: React.ReactNode;
 }> = ({ Icon, children }) => {
@@ -81,7 +81,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="text-gray-600 body-font">
+      <div className="text-gray-600 body-font">
         <div className="flex px-0 py-10 flex-col md:flex-row items-center justify-between">
           <div className="lg:flex-grow md:w-1/2 lg:pr-8 md:pr-2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <p className="mb-4 title-font text-base md:text-xl md:font-medium text-[#686868]">
@@ -116,9 +116,9 @@ const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="text-gray-600 body-font py-10">
+      <div className="sec2 text-gray-600 body-font py-10">
         <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#005D3E] mb-4">
           What is LIST?
         </p>
@@ -126,12 +126,12 @@ const Home = () => {
           <div className="hidden md:block lg:max-w-lg md:w-1/2 lg:w-full">
             <div className="flex flex-col gap-2">
               <div className="flex flex-row gap-2">
-                <Section2Pic alt="Plan" src="img/sec2-1.png" />
-                <Section2Pic alt="Train" src="img/sec2-2.png" />
+                <div2Pic alt="Plan" src="img/sec2-1.png" />
+                <div2Pic alt="Train" src="img/sec2-2.png" />
               </div>
               <div className="flex flex-row gap-2">
-                <Section2Pic alt="Collaborate" src="img/sec2-3.png" />
-                <Section2Pic alt="Succeed" src="img/sec2-4.png" />
+                <div2Pic alt="Collaborate" src="img/sec2-3.png" />
+                <div2Pic alt="Succeed" src="img/sec2-4.png" />
               </div>
             </div>
           </div>
@@ -142,18 +142,18 @@ const Home = () => {
             </p>
             <div className="flex px-0 flex-col md:flex-row items-center gap-3">
               <div className="lg:max-w-lg  lg:w-full">
-                <Section2Text Icon={RocketIcon}>
+                <div2Text Icon={RocketIcon}>
                   Startup Focused - The course content is tailored to the
                   challenges and opportunities faced by early-stage businesses.
-                </Section2Text>
-                <Section2Text Icon={PsychologyIcon}>
+                </div2Text>
+                <div2Text Icon={PsychologyIcon}>
                   Beginner Friendly - If you're unfamiliar with the startup
                   ecosystem, List is a perfect starting point.
-                </Section2Text>
-                <Section2Text Icon={CallSplitIcon}>
+                </div2Text>
+                <div2Text Icon={CallSplitIcon}>
                   Topic Variety - List offers a broad range of courses covering
                   various essential startup topics.
-                </Section2Text>
+                </div2Text>
               </div>
             </div>
 
@@ -164,7 +164,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <div className="sec3 mt-6">
         <div className="p-8 bg-gradient-to-br from-emerald-900 via-emerald-900 to-neutral-400">
@@ -581,8 +581,31 @@ const Home = () => {
       <div className="sec8 -mt-2">
         <Testimonials/>
       </div>
+
+      <div className="sec9 mt-6 md:mt-10">
+            <div className=" bg-[url('/img/R.png')]">
+            <div className="bg-teal-900 opacity-75 px-4 py-8 md:py-20 md:px-32">
+              <h1 className="text-center text-white text-lg md:text-2xl font-semibold leading-6 tracking-normal z-20">Network, Learn, and Grow with LIST Training Academy</h1>
+              <p className="text-center text-white text-base md:text-xl font-normal leading-normal tracking-wide mt-4 z-20">At LIST Training Academy, you’re not just enrolling in a course – you’re joining a vibrant community of innovators from around the world. Transform your entrepreneurial dreams into reality and become part of a global network pushing boundaries and achieving greatness. </p>
+              <div className="mt-6 text-center z-20">
+              <Button variant="contained" color="success">
+              Join our Community
+              </Button>
+              </div>
+            </div>
+
+            </div>
+      </div>
     </>
   );
 };
 
 export default Home;
+
+{
+  /*
+  
+
+
+  */
+}
