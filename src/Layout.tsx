@@ -1,22 +1,52 @@
 import { useRef, useState } from "react";
-import { Button } from "@mui/material";
+import { Button, Box, Container } from "@mui/material";
 import { Outlet, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Box, Container } from "@mui/material";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Newsletter from "./newsletter.tsx";
 import Footer from "./Footer.tsx";
 
-
 const navItems = [
   { name: "Home", link: "/" },
-  { name: "About", link: "/about" },
-  { name: "Resources", link: "/Resource" },
-  { name: "Contact Us", link: "/Contact" },
+  { name: "About", link: "#", dropdown: "about" },
+  { name: "Resources", link: "/resources", dropdown: "resources" },
+  { name: "Contact Us", link: "/contact" },
+];
+
+const aboutDropdownItems = [
+  { name: "Our Coaches", link: "ourCoaches" },
+  { name: "Our Story", link: "Ourstory" },
+  { name: "Our Team", link: "Team" },
+];
+
+const resourcesDropdownItems = [
+  { name: "Blog", link: "Blog" },
+  { name: "FAQ", link: "FAQ" },
 ];
 
 const Layout = () => {
   const mobileMenu = useRef(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const timeoutRef = useRef<number | null>(null);
+
+  const handleMouseEnter = (menu: string) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setOpenDropdown(menu);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = window.setTimeout(() => {
+      setOpenDropdown(null);
+    }, 300);
+  };
+
+  const handleClick = (event: React.MouseEvent, menu: string) => {
+    event.preventDefault();
+    setOpenDropdown(openDropdown === menu ? null : menu);
+  };
 
   return (
     <Container className="bg-white">
@@ -26,7 +56,7 @@ const Layout = () => {
             <Box
               component="img"
               className="w-34 h-14"
-              alt="Low Investment STartup"
+              alt="Low Investment Startup"
               src="img/logoLISTv4.png"
             />
             <Box
@@ -43,30 +73,61 @@ const Layout = () => {
             } md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 navigation-menu bg-gray-100 md:bg-white`}
           >
             {navItems.map((item) => (
-              <Link
+              <div
                 key={item.name}
-                to={item.link}
-                className="py-2 px-3 block hover:text-white hover:bg-gray-800 hover:rounded-md"
+                className="relative flex items-center"
+                onMouseEnter={item.dropdown ? () => handleMouseEnter(item.dropdown) : undefined}
+                onMouseLeave={item.dropdown ? handleMouseLeave : undefined}
               >
-                {item.name}
-              </Link>
+                <Link
+                  to={item.link}
+                  className="py-2 px-3 block hover:text-white hover:bg-gray-800 hover:rounded-md"
+                >
+                  {item.name}
+                </Link>
+                {item.dropdown && (
+                  <>
+                    <ArrowDropDownIcon
+                      className="cursor-pointer"
+                      onClick={(e) => handleClick(e, item.dropdown)}
+                      onMouseEnter={() => handleMouseEnter(item.dropdown!)}
+                    />
+                    {openDropdown === item.dropdown && (
+                      <div
+                        className="absolute left-0 top-full mt-2 w-48 bg-white border border-gray-200 shadow-lg z-50"
+                        onMouseEnter={() => handleMouseEnter(item.dropdown!)}
+                        onMouseLeave={handleMouseLeave}
+                      >
+                        {(item.dropdown === "about" ? aboutDropdownItems : resourcesDropdownItems).map((dropdownItem) => (
+                          <Link
+                            key={dropdownItem.name}
+                            to={dropdownItem.link}
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          >
+                            {dropdownItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
             ))}
-
-            <div className="flex flex-col md:flex-row  md:space-y-0 md:mx-0 md:mt-0 md:space-x-4 mx-4 mt-4 space-y-3">
-            <Button variant="outlined" color="secondary">
+            <div className="flex flex-col md:flex-row md:space-y-0 md:mx-0 md:mt-0 md:space-x-4 mx-4 mt-4 space-y-3">
+              <Button variant="outlined" color="secondary">
                 Log in
               </Button>
-            <Button variant="contained" color="success">
+              <Button variant="contained" color="success">
                 Sign up
               </Button>
-              </div>
+            </div>
           </Box>
         </Box>
       </nav>
       <Box className="m-1 md:m-5 p-1 md:p-2">
         <Outlet />
-        <Newsletter/>
-        <Footer/>
+        <Newsletter />
+        <Footer />
       </Box>
     </Container>
   );
