@@ -5,7 +5,7 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
 import Testimonials from "./Testimonials";
 
-interface div2PicProps {
+interface Section2PicProps {
   alt: string;
   src: string;
 }
@@ -17,7 +17,7 @@ interface Videos {
   Finance: string[];
 }
 
-const div2Pic: React.FC<div2PicProps> = ({ alt, src }) => {
+const Section2Pic: React.FC<Section2PicProps> = ({ alt, src }) => {
   return (
     <img
       className="object-cover object-center rounded w-1/2"
@@ -27,7 +27,7 @@ const div2Pic: React.FC<div2PicProps> = ({ alt, src }) => {
   );
 };
 
-const div2Text: React.FC<{
+const Section2Text: React.FC<{
   Icon: React.ElementType;
   children: React.ReactNode;
 }> = ({ Icon, children }) => {
@@ -81,7 +81,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font">
         <div className="flex px-0 py-10 flex-col md:flex-row items-center justify-between">
           <div className="lg:flex-grow md:w-1/2 lg:pr-8 md:pr-2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <p className="mb-4 title-font text-base md:text-xl md:font-medium text-[#686868]">
@@ -116,9 +116,9 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="sec2 text-gray-600 body-font py-10">
+      <section className="sec2 text-gray-600 body-font py-10">
         <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#005D3E] mb-4">
           What is LIST?
         </p>
@@ -126,12 +126,12 @@ const Home = () => {
           <div className="hidden md:block lg:max-w-lg md:w-1/2 lg:w-full">
             <div className="flex flex-col gap-2">
               <div className="flex flex-row gap-2">
-                <div2Pic alt="Plan" src="img/sec2-1.png" />
-                <div2Pic alt="Train" src="img/sec2-2.png" />
+                <Section2Pic alt="Plan" src="img/sec2-1.png" />
+                <Section2Pic alt="Train" src="img/sec2-2.png" />
               </div>
               <div className="flex flex-row gap-2">
-                <div2Pic alt="Collaborate" src="img/sec2-3.png" />
-                <div2Pic alt="Succeed" src="img/sec2-4.png" />
+                <Section2Pic alt="Collaborate" src="img/sec2-3.png" />
+                <Section2Pic alt="Succeed" src="img/sec2-4.png" />
               </div>
             </div>
           </div>
@@ -142,18 +142,18 @@ const Home = () => {
             </p>
             <div className="flex px-0 flex-col md:flex-row items-center gap-3">
               <div className="lg:max-w-lg  lg:w-full">
-                <div2Text Icon={RocketIcon}>
+                <Section2Text Icon={RocketIcon}>
                   Startup Focused - The course content is tailored to the
                   challenges and opportunities faced by early-stage businesses.
-                </div2Text>
-                <div2Text Icon={PsychologyIcon}>
+                </Section2Text>
+                <Section2Text Icon={PsychologyIcon}>
                   Beginner Friendly - If you're unfamiliar with the startup
                   ecosystem, List is a perfect starting point.
-                </div2Text>
-                <div2Text Icon={CallSplitIcon}>
+                </Section2Text>
+                <Section2Text Icon={CallSplitIcon}>
                   Topic Variety - List offers a broad range of courses covering
                   various essential startup topics.
-                </div2Text>
+                </Section2Text>
               </div>
             </div>
 
@@ -164,7 +164,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="sec3 mt-6">
         <div className="p-8 bg-gradient-to-br from-emerald-900 via-emerald-900 to-neutral-400">
@@ -596,16 +596,9 @@ const Home = () => {
 
             </div>
       </div>
+      
     </>
   );
 };
 
 export default Home;
-
-{
-  /*
-  
-
-
-  */
-}
