@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Button, Box, Container } from "@mui/material";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Newsletter from "./newsletter.tsx";
@@ -9,7 +9,7 @@ import Footer from "./Footer.tsx";
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "#", dropdown: "about" },
-  { name: "Resources", link: "/resources", dropdown: "resources" },
+  { name: "Resources", link: "/Resource", dropdown: "resources" },
   { name: "Contact Us", link: "/contact" },
 ];
 
@@ -29,6 +29,7 @@ const Layout = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const timeoutRef = useRef<number | null>(null);
+  const location = useLocation();
 
   const handleMouseEnter = (menu: string) => {
     if (timeoutRef.current) {
@@ -47,6 +48,8 @@ const Layout = () => {
     event.preventDefault();
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <Container className="bg-white">
@@ -81,14 +84,16 @@ const Layout = () => {
               >
                 <Link
                   to={item.link}
-                  className="py-2 px-3 block hover:text-white hover:bg-gray-800 hover:rounded-md"
+                  className={`py-2 px-3 block hover:text-white hover:bg-gray-800 hover:rounded-md text-lg ${
+                    isActive(item.link) ? "text-emerald-700 underline underline-offset-4 decoration-amber-500" : ""
+                  }`}
                 >
                   {item.name}
                 </Link>
                 {item.dropdown && (
                   <>
                     <ArrowDropDownIcon
-                      className="cursor-pointer"
+                      className="cursor-pointer -ml-[0.7rem]"
                       onClick={(e) => handleClick(e, item.dropdown)}
                       onMouseEnter={() => handleMouseEnter(item.dropdown!)}
                     />
@@ -113,7 +118,8 @@ const Layout = () => {
                 )}
               </div>
             ))}
-            <div className="flex flex-col md:flex-row md:space-y-0 md:mx-0 md:mt-0 md:space-x-4 mx-4 mt-4 space-y-3">
+
+            <div className="flex flex-col md:flex-row md:space-y-0 md:px-6 md:mt-0 md:space-x-4 mx-4 mt-4 space-y-3 ">
               <Button variant="outlined" color="secondary">
                 Log in
               </Button>
@@ -121,6 +127,7 @@ const Layout = () => {
                 Sign up
               </Button>
             </div>
+
           </Box>
         </Box>
       </nav>
