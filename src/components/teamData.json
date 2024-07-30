@@ -1,0 +1,194 @@
+{
+    "intro": {
+      "title": "Meet Our Team",
+      "description": "Meet Our Awesome Team who are always here to help and make your life easier with their expertise."
+    },
+    "sections": [
+      {
+        "title": "SCRUM MASTERS",
+        "members": [
+          {
+            "name": "MEGHA GUPTA",
+            "role": "Strategy, Digital Marketing & Research",
+            "image": "/team/megha.png"
+          },
+          {
+            "name": "PATHIK DESAI",
+            "role": "Faculty of Product design",
+            "image": "/team/pathik.png"
+          },
+          {
+            "name": "HARSHITH K B",
+            "role": "Entrepreneur, Digital Platforms",
+            "image": "/team/harshit.png"
+          }
+        ]
+      },
+      {
+        "title": "ARCHITECTS AND STORYTELLERS",
+        "members": [
+          {
+            "name": "VRUNDA",
+            "role": "Architect & Storyteller",
+            "image": "/team/vrunda.png"
+          },
+          {
+            "name": "SANJANA K",
+            "role": "Architect & Storyteller",
+            "image": "/team/sanjana.png"
+          },
+          {
+            "name": "CHEHAK ARORA",
+            "role": "Architect & Storyteller",
+            "image": "/team/chechak.png"
+          }
+        ]
+      },
+      {
+        "title": "R & D",
+        "members": [
+          {
+            "name": "PREET PANCHAL",
+            "role": "Research & Development",
+            "image": "/team/preet.png"
+          },
+          {
+            "name": "TEJESHWAR",
+            "role": "Research & Development",
+            "image": "/team/pandey.png"
+          },
+          {
+            "name": "MEHAK SURI",
+            "role": "Research & Development",
+            "image": "/team/mehak.png"
+          }
+        ]
+      },
+      {
+        "title": "DESIGN UX/UI",
+        "members": [
+          {
+            "name": "ARUSHI",
+            "role": "UI/UX Designer",
+            "image": "/team/arushi.png"
+          },
+          {
+            "name": "PATHIK DESAI",
+            "role": "Faculty of Product design",
+            "image": "/team/pathik.png"
+          },
+          {
+            "name": "BHAKTI",
+            "role": "UI/UX Designer",
+            "image": "/team/bhakti.png"
+          }
+        ]
+      },
+      {
+        "title": "VIDEO PRODUCTION & EDITING",
+        "members": [
+          {
+            "name": "ANKITA",
+            "role": "Production & Editing",
+            "image": "/team/ankita.png"
+          },
+          {
+            "name": "DIYASHRI",
+            "role": "Production & Editing",
+            "image": "/team/diyashri.png"
+          },
+          {
+            "name": "NAYIM",
+            "role": "Production & Editing",
+            "image": "/team/nayim.png"
+          },
+          {
+            "name": "CHANDRU",
+            "role": "Production & Editing",
+            "image": "/team/chandru.png"
+          },
+          {
+            "name": "RISHIKESH",
+            "role": "Production & Editing",
+            "image": "/team/rishikesh.png"
+          },
+          {
+            "name": "ANSH",
+            "role": "Production & Editing",
+            "image": "/team/ansh.png"
+          }
+        ]
+      },
+      {
+        "title": "DIGITAL TECHNOLOGIES",
+        "members": [
+          {
+            "name": "TEJESHWAR",
+            "role": "DIGITAL Marketing",
+            "image": "/team/pandey.png"
+          },
+          {
+            "name": "AASTHA",
+            "role": "DIGITAL Marketing",
+            "image": "/team/aashta.png"
+          },
+          {
+            "name": "SOHAIL",
+            "role": "Developer",
+            "image": "/team/sohail.png"
+          },
+          {
+            "name": "SHIVAM",
+            "role": "DIGITAL Marketing",
+            "image": "/team/shivam.png"
+          },
+          {
+            "name": "HARSHITH",
+            "role": "DIGITAL Marketing",
+            "image": "/team/harshit.png"
+          },
+          {
+            "name": "KHUSHI SINGH",
+            "role": "DIGITAL Marketing",
+            "image": "/team/khushi.png"
+          }
+        ]
+      },
+      {
+        "title": "INHOUSE EXPERTS",
+        "background": "bg-[url('/team/Colorpalette.png')]",
+        "members": [
+          {
+            "name": "SUBHAN",
+            "role": "Mechatronics and IOT",
+            "image": "/team/subhan.png"
+          },
+          {
+            "name": "MANOJ",
+            "role": "Production",
+            "image": "/team/manoj.png"
+          },
+          {
+            "name": "PRASANTH",
+            "role": "Sustainability",
+            "image": "/team/prasanth.png"
+          },
+          {
+            "name": "NEERAJ",
+            "role": "Sustainability",
+            "image": "/team/neeraj.png"
+          },
+          {
+            "name": "VARSHA",
+            "role": "Agriculture Training, R&D",
+            "image": "/team/varsha.png"
+          },
+          {
+            "name": "BALVEER",
+            "role": "Mechanical/Solar",
+            "image": "/team/balveer.png"
+          }
+        ]
+      }
+    ]
+  }

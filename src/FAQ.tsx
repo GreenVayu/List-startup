@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import data from "./data.json";
+import data from "./components/data.json";
 
 interface Question {
   question: string;
