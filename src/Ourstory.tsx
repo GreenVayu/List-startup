@@ -1,7 +1,7 @@
 import StarIcon from "@mui/icons-material/Star";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
-import CardApp from "./Cards.tsx";
+import CardApp from "./cards.tsx";
 
 function Ourstory() {
   return (

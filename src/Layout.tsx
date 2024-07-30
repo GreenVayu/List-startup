@@ -4,7 +4,7 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Newsletter from "./newsletter.tsx";
-import Footer from "./Footer.tsx";
+import Footer from "./footer.tsx";
 
 const navItems = [
   { name: "Home", link: "/" },

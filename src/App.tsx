@@ -1,16 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Layout from "./Layout.tsx";
-import Home from "./Home.tsx";
-import Contact from "./Contact.tsx";
+import Layout from "./layout.tsx";
+import Home from "./home.tsx";
+import Contact from "./contact.tsx";
 import NotFound from "./NotFound.tsx";
-import About from "./About.tsx";
-import Ourstory from "./Ourstory.tsx";
-import Coaches from "./ourcoaches.tsx";
-import Team from "./Team.tsx";
-import FAQ from "./FAQ.tsx";
-import Resource from "./Resource.tsx";
-import Blog from "./Blog.tsx";
+import About from "./about.tsx";
+import Ourstory from "./ourStory.tsx";
+import Coaches from "./ourCoaches.tsx";
+import Team from "./team.tsx";
+import FAQ from "./faq.tsx";
+import Resource from "./resource.tsx";
+import Blog from "./blog.tsx";
 
 
 function App() {

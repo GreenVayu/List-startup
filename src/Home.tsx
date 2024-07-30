@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import RocketIcon from "@mui/icons-material/Rocket";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
-import Testimonials from "./Testimonials";
+import Testimonials from "./testimonials";
 
 interface Section2PicProps {
   alt: string;
