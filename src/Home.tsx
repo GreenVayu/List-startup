@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import RocketIcon from "@mui/icons-material/Rocket";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import CallSplitIcon from "@mui/icons-material/CallSplit";
@@ -50,32 +51,34 @@ const Section2Text: React.FC<{
 };
 
 const Home = () => {
-  const [selectedTab, setSelectedTab] = useState<'Mindset' | 'Idea' | 'Legal' | 'Finance'>('Mindset');
+  const [selectedTab, setSelectedTab] = useState<
+    "Mindset" | "Idea" | "Legal" | "Finance"
+  >("Mindset");
 
   const videos: Videos = {
     Mindset: [
-      '/img/vide01.mp4',
-      '/img/vide01.mp4',
-      '/img/vide02.mp4',
-      '/img/vide03.mp4',
+      "/img/vide01.mp4",
+      "/img/vide01.mp4",
+      "/img/vide02.mp4",
+      "/img/vide03.mp4",
     ],
     Idea: [
-      '/img/vide01.mp4',
-      '/img/vide02.mp4',
-      '/img/vide01.mp4',
-      '/img/vide02.mp4',
+      "/img/vide01.mp4",
+      "/img/vide02.mp4",
+      "/img/vide01.mp4",
+      "/img/vide02.mp4",
     ],
     Legal: [
-      '/img/vide02.mp4',
-      '/img/vide01.mp4',
-      '/img/vide02.mp4',
-      '/img/vide01.mp4',
+      "/img/vide02.mp4",
+      "/img/vide01.mp4",
+      "/img/vide02.mp4",
+      "/img/vide01.mp4",
     ],
     Finance: [
-      '/img/vide03.mp4',
-      '/img/vide02.mp4',
-      '/img/vide01.mp4',
-      '/img/vide02.mp4',
+      "/img/vide03.mp4",
+      "/img/vide02.mp4",
+      "/img/vide01.mp4",
+      "/img/vide02.mp4",
     ],
   };
 
@@ -100,12 +103,15 @@ const Home = () => {
             </p>
 
             <div className="flex item-center gap-3">
+            <Link to="/contact">
               <Button variant="contained" color="success">
                 Register now
-              </Button>
-              <Button variant="outlined" color="secondary">
-                Contact to know more
-              </Button>
+              </Button></Link>
+              <Link to="/contact">
+                <Button variant="outlined" color="secondary">
+                  Contact to know more
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="lg:max-w-lg w-5/6 md:w-1/2 lg:w-full">
@@ -158,9 +164,10 @@ const Home = () => {
             </div>
 
             <div className="mt-2 flex item-center gap-3">
+            <Link to="/Ourstory">
               <Button variant="contained" color="success">
                 About us
-              </Button>
+              </Button></Link>
             </div>
           </div>
         </div>
@@ -219,72 +226,85 @@ const Home = () => {
           </p>
 
           <div>
-      <div className="border-2 border-gray-500 rounded-lg flex justify-between md:hidden px-2 mt-6">
-        <h1 className="text-center text-stone-500 text-sm font-semibold leading-normal tracking-wide h-fit my-auto">
-          Categories
-        </h1>
+            <div className="border-2 border-gray-500 rounded-lg flex justify-between md:hidden px-2 mt-6">
+              <h1 className="text-center text-stone-500 text-sm font-semibold leading-normal tracking-wide h-fit my-auto">
+                Categories
+              </h1>
 
-        <select
-          name="category"
-          id="category"
-          className="text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide p-2 mr-2 bg-white"
-          onChange={(e) => setSelectedTab(e.target.value as 'Mindset' | 'Idea' | 'Legal' | 'Finance')}
-          value={selectedTab}
-        >
-          <option value="Mindset">Mindset</option>
-          <option value="Legal">Legal</option>
-          <option value="Idea">Idea</option>
-          <option value="Finance">Finance</option>
-        </select>
-      </div>
+              <select
+                name="category"
+                id="category"
+                className="text-center text-emerald-800 text-sm font-medium leading-3 tracking-wide p-2 mr-2 bg-white"
+                onChange={(e) =>
+                  setSelectedTab(
+                    e.target.value as "Mindset" | "Idea" | "Legal" | "Finance"
+                  )
+                }
+                value={selectedTab}
+              >
+                <option value="Mindset">Mindset</option>
+                <option value="Legal">Legal</option>
+                <option value="Idea">Idea</option>
+                <option value="Finance">Finance</option>
+              </select>
+            </div>
 
-      <div className="md:hidden mt-6">
-        <div
-          key={selectedTab} 
-          className="flex overflow-x-scroll no-scrollbar space-x-6 px-4"
-        >
-          {videos[selectedTab].map((video, index) => (
-            <video key={index} className="w-60 rounded-xl" controls>
-              <source src={video} type="video/mp4" />
-            </video>
-          ))}
-        </div>
-      </div>
-    </div>
+            <div className="md:hidden mt-6">
+              <div
+                key={selectedTab}
+                className="flex overflow-x-scroll no-scrollbar space-x-6 px-4"
+              >
+                {videos[selectedTab].map((video, index) => (
+                  <video key={index} className="w-60 rounded-xl" controls>
+                    <source src={video} type="video/mp4" />
+                  </video>
+                ))}
+              </div>
+            </div>
+          </div>
 
           <div className="fortab&laptop">
-      <div className="mt-8 hidden md:block w-fit mx-auto lg:w-full">
-        <ul className="border-2 border-slate-200 flex justify-between p-2 px-16 rounded-lg space-x-32 lg:space-x-0">
-          {['Mindset', 'Idea', 'Legal', 'Finance'].map((tab) => (
-            <li
-              key={tab}
-              className={`text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide cursor-pointer ${
-                selectedTab === tab ? 'border-b-2 border-amber-500' : ''
-              }`}
-              onClick={() => setSelectedTab(tab as 'Mindset' | 'Idea' | 'Legal' | 'Finance')}
-            >
-              {tab}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="hidden md:block container w-fit mx-auto">
-        <div
-          key={selectedTab} 
-          className="md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-x-6 md:gap-x-20 md:gap-y-12 lg:mx-4 my-4 md:mx-10"
-        >
-          {videos[selectedTab].map((video, index) => (
-            <div key={index} className="overflow-hidden h-[330px] w-[240px] rounded-lg">
-              <video className="w-full h-full object-cover border-none outline-none" controls>
-                <source src={video} type="video/mp4" />
-              </video>
+            <div className="mt-8 hidden md:block w-fit mx-auto lg:w-full">
+              <ul className="border-2 border-slate-200 flex justify-between p-2 px-16 rounded-lg space-x-32 lg:space-x-0">
+                {["Mindset", "Idea", "Legal", "Finance"].map((tab) => (
+                  <li
+                    key={tab}
+                    className={`text-center text-emerald-800 text-sm font-medium leading-4 tracking-wide cursor-pointer ${
+                      selectedTab === tab ? "border-b-2 border-amber-500" : ""
+                    }`}
+                    onClick={() =>
+                      setSelectedTab(
+                        tab as "Mindset" | "Idea" | "Legal" | "Finance"
+                      )
+                    }
+                  >
+                    {tab}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
 
+            <div className="hidden md:block container w-fit mx-auto">
+              <div
+                key={selectedTab}
+                className="md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-x-6 md:gap-x-20 md:gap-y-12 lg:mx-4 my-4 md:mx-10"
+              >
+                {videos[selectedTab].map((video, index) => (
+                  <div
+                    key={index}
+                    className="overflow-hidden h-[330px] w-[240px] rounded-lg"
+                  >
+                    <video
+                      className="w-full h-full object-cover border-none outline-none"
+                      controls
+                    >
+                      <source src={video} type="video/mp4" />
+                    </video>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -555,15 +575,20 @@ const Home = () => {
               <br /> with List.
             </p>
             <div className="mt-2 w-fit mx-auto sm:hidden">
+            <Link to="/contact">
               <Button variant="outlined" color="secondary">
                 Get in touch
               </Button>
+              </Link>
+                
+              
             </div>
 
             <div className="hidden sm:flex items-center space-x-4 mt-4">
+            <Link to="/contact">
               <Button variant="contained" color="success">
                 Get in touch
-              </Button>
+              </Button></Link>
 
               <Button variant="outlined" color="secondary">
                 Learn more
@@ -579,24 +604,30 @@ const Home = () => {
       </div>
 
       <div className="sec8 -mt-2">
-        <Testimonials/>
+        <Testimonials />
       </div>
 
       <div className="sec9 mt-6 md:mt-10">
-            <div className=" bg-[url('/img/R.png')]">
-            <div className="bg-teal-900 opacity-75 px-4 py-8 md:py-20 md:px-32">
-              <h1 className="text-center text-white text-lg md:text-2xl font-semibold leading-6 tracking-normal z-20">Network, Learn, and Grow with LIST Training Academy</h1>
-              <p className="text-center text-white text-base md:text-xl font-normal leading-normal tracking-wide mt-4 z-20">At LIST Training Academy, you’re not just enrolling in a course – you’re joining a vibrant community of innovators from around the world. Transform your entrepreneurial dreams into reality and become part of a global network pushing boundaries and achieving greatness. </p>
-              <div className="mt-6 text-center z-20">
+        <div className=" bg-[url('/img/R.png')]">
+          <div className="bg-teal-900 opacity-75 px-4 py-8 md:py-20 md:px-32">
+            <h1 className="text-center text-white text-lg md:text-2xl font-semibold leading-6 tracking-normal z-20">
+              Network, Learn, and Grow with LIST Training Academy
+            </h1>
+            <p className="text-center text-white text-base md:text-xl font-normal leading-normal tracking-wide mt-4 z-20">
+              At LIST Training Academy, you’re not just enrolling in a course –
+              you’re joining a vibrant community of innovators from around the
+              world. Transform your entrepreneurial dreams into reality and
+              become part of a global network pushing boundaries and achieving
+              greatness. 
+            </p>
+            <div className="mt-6 text-center z-20">
               <Button variant="contained" color="success">
-              Join our Community
+                Join our Community
               </Button>
-              </div>
             </div>
-
-            </div>
+          </div>
+        </div>
       </div>
-      
     </>
   );
 };

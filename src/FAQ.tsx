@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import data from "./Data.json";
 
 interface Question {
@@ -17,68 +18,88 @@ const Accordion = () => {
 
   return (
     <div className="FAQcont">
-
       <div className="sec1 mt-6">
         <div className="bg-gradient-to-r from-emerald-800 to-zinc-300 p-5 md:p-8 md:px-12">
-          <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-bold tracking-wide">FAQs</h1>
-          <p className="text-white text-base lg:text-lg font-normal leading-7 tracking-wide py-2">These are some of the most important queries that we have answered to help you get started on your entrepreneurial journey with LIST.</p>
+          <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-bold tracking-wide">
+            FAQs
+          </h1>
+          <p className="text-white text-base lg:text-lg font-normal leading-7 tracking-wide py-2">
+            These are some of the most important queries that we have answered
+            to help you get started on your entrepreneurial journey with LIST.
+          </p>
         </div>
       </div>
-      
-      <div className="sec2 flex flex-col gap-2 sm:flex-row md:gap-1 justify-evenly items-center my-4 sm:w-[80%] md:w-[70%] lg:w-[60%] mx-auto mt-8">
-          <input
-            type="text"
-            placeholder="Search for Question"
-            className="border-2 border-gray-600 rounded-lg px-2 w-full h-10"
-          />
-        <Button variant="contained" color="success">
-        Search
-        </Button>
 
+      <div className="sec2 flex flex-col gap-2 sm:flex-row md:gap-1 justify-evenly items-center my-4 sm:w-[80%] md:w-[70%] lg:w-[60%] mx-auto mt-8">
+        <input
+          type="text"
+          placeholder="Search for Question"
+          className="border-2 border-gray-600 rounded-lg px-2 w-full h-10"
+        />
+        <Button variant="contained" color="success">
+          Search
+        </Button>
       </div>
-      
-<div className="sec3 relative z-20 overflow-hidden bg-white mt-3">
-      <div className="container mx-auto">
-        {faqData.map((category, index) => (
-          <div
-            key={index}
-            className={`mt-4 md:mt-8 p-4 ${
-              category.category === "Plans & Pricing " ? "bg-[url('/team/Cp1.png')] bg-cover bg-center" : "bg-white"
-            }`}
-          >
-            <h2 className="text-emerald-800 text-base sm:text-2xl font-semibold tracking-widest leading-7 mb-4 md:ml-7 md:font-bold">
-              {category.category} <span className="border-b-2 border-amber-500">Questions</span>
-            </h2>
-            <div className="-mx-4 flex flex-wrap">
-              <div className="w-full px-4 md:w-1/2">
-                {category.questions.slice(0, Math.ceil(category.questions.length / 2)).map((item, idx) => (
-                  <AccordionItem key={idx} header={item.question} text={item.answer} />
-                ))}
-              </div>
-              <div className="w-full px-4 md:w-1/2 ">
-                {category.questions.slice(Math.ceil(category.questions.length / 2)).map((item, idx) => (
-                  <AccordionItem key={idx} header={item.question} text={item.answer} />
-                ))}
+
+      <div className="sec3 relative z-20 overflow-hidden bg-white mt-3">
+        <div className="container mx-auto">
+          {faqData.map((category, index) => (
+            <div
+              key={index}
+              className={`mt-4 md:mt-8 p-4 ${
+                category.category === "Plans & Pricing "
+                  ? "bg-[url('/team/Cp1.png')] bg-cover bg-center"
+                  : "bg-white"
+              }`}
+            >
+              <h2 className="text-emerald-800 text-base sm:text-2xl font-semibold tracking-widest leading-7 mb-4 md:ml-7 md:font-bold">
+                {category.category}{" "}
+                <span className="border-b-2 border-amber-500">Questions</span>
+              </h2>
+              <div className="-mx-4 flex flex-wrap">
+                <div className="w-full px-4 md:w-1/2">
+                  {category.questions
+                    .slice(0, Math.ceil(category.questions.length / 2))
+                    .map((item, idx) => (
+                      <AccordionItem
+                        key={idx}
+                        header={item.question}
+                        text={item.answer}
+                      />
+                    ))}
+                </div>
+                <div className="w-full px-4 md:w-1/2 ">
+                  {category.questions
+                    .slice(Math.ceil(category.questions.length / 2))
+                    .map((item, idx) => (
+                      <AccordionItem
+                        key={idx}
+                        header={item.question}
+                        text={item.answer}
+                      />
+                    ))}
+                </div>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="sec4 mt-6">
+        <div className="bg-gradient-to-br from-emerald-800 via-emerald-900 to-neutral-400 p-7 md:p-10 md:px-14">
+          <h1 className="text-white text-lg md:text-2xl lg:text-3xl font-bold tracking-widest text-center">
+            Didn't find an answer to your question?
+          </h1>
+          <div className="text-center mt-4">
+            <Link to="/contact">
+              <Button variant="contained" color="success">
+                Contact us
+              </Button>
+            </Link>
           </div>
-        ))}
+        </div>
       </div>
     </div>
-
-    <div className="sec4 mt-6">
-      <div className="bg-gradient-to-br from-emerald-800 via-emerald-900 to-neutral-400 p-7 md:p-10 md:px-14">
-        <h1 className="text-white text-lg md:text-2xl lg:text-3xl font-bold tracking-widest text-center">Didn't find an answer to your question?</h1>
-        <div className="text-center mt-4"><Button variant="contained" color="success">
-        Contact us
-              </Button></div>
-        
-      </div>
-
-    </div>
-
-    </div>
-    
   );
 };
 

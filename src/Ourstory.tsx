@@ -1,4 +1,5 @@
 import StarIcon from "@mui/icons-material/Star";
+import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import CardApp from "./Cards.tsx";
 
@@ -66,9 +67,10 @@ function Ourstory() {
             </p>
 
             <div className="mt-4">
+            <Link to="/ourCoaches">
             <Button variant="contained" color="success">
             Meet Our Coaches
-              </Button>
+              </Button></Link>
             </div>
           </div>
         </div>
@@ -373,9 +375,10 @@ function Ourstory() {
                 Explore Courses
               </Button>
               <div className="text-center mt-2">
+              <Link to="/contact">
                 <Button variant="outlined" color="secondary">
                   Get in touch
-                </Button>
+                </Button> </Link>
               </div>
             </div>
           </div>

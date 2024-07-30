@@ -49,7 +49,21 @@ const Layout = () => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    return location.pathname === path || 
+      (openDropdown && navItems.find(item => item.dropdown === openDropdown)?.link.includes(location.pathname));
+  };
+
+  const isDropdownActive = (dropdownName: string) => {
+    const dropdownItems = dropdownName === "about" ? aboutDropdownItems : resourcesDropdownItems;
+    return dropdownItems.some(item => location.pathname.includes(item.link));
+  };
+
+  const getNavItemClass = (item: typeof navItems[0]) => {
+    return `py-2 px-3 block hover:text-white hover:bg-gray-800 hover:rounded-md text-lg ${
+      isActive(item.link) || (item.dropdown && isDropdownActive(item.dropdown)) ? "text-emerald-700 underline underline-offset-4 decoration-amber-500" : ""
+    }`;
+  };
 
   return (
     <Container className="bg-white">
@@ -84,9 +98,7 @@ const Layout = () => {
               >
                 <Link
                   to={item.link}
-                  className={`py-2 px-3 block hover:text-white hover:bg-gray-800 hover:rounded-md text-lg ${
-                    isActive(item.link) ? "text-emerald-700 underline underline-offset-4 decoration-amber-500" : ""
-                  }`}
+                  className={getNavItemClass(item)}
                 >
                   {item.name}
                 </Link>
@@ -107,7 +119,9 @@ const Layout = () => {
                           <Link
                             key={dropdownItem.name}
                             to={dropdownItem.link}
-                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                            className={`block px-4 py-2 text-gray-700 hover:bg-gray-100 ${
+                              isActive(dropdownItem.link) ? "text-emerald-700 underline underline-offset-4 decoration-amber-500" : ""
+                            }`}
                           >
                             {dropdownItem.name}
                           </Link>

@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb,faCalendarMinus,faChevronRight,faCalendar,faFileAlt,faChartLine ,faCheckCircle} from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb,faCalendarMinus,faChevronRight,faFileAlt,faChartLine ,faCheckCircle} from "@fortawesome/free-solid-svg-icons";
 
 function Resource() {
 
@@ -200,9 +201,10 @@ function Resource() {
         </div>
 
         <div className="text-center mt-4 xsm:mt-8">
+        <Link to="/Blog">
           <Button variant="contained" color="success">
             view All
-          </Button>
+          </Button></Link>
         </div>
       </div>
 
